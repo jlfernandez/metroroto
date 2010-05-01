@@ -1,0 +1,7 @@
+<h1>Incidencias en la <%=@line.name%></h1>
+
+<ul>
+<%@line.incidents.each do |incident|%>
+  <li><%=incident.comment%>. <%=incident.date%></li>	
+<%end%>
+</ul>

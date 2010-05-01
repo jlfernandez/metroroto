@@ -1,0 +1,22 @@
+<script>
+$(document).ready(function() { 
+
+	if (GBrowserIsCompatible()) {
+      var map = new GMap2(document.getElementById("map_canvas"));
+      map.setCenter(new GLatLng(40.4166909, -3.7003454), 12);
+      map.addControl(new GSmallMapControl());
+      <%=incident_markers @incidents%>      
+    }   
+});
+
+</script>
+
+<h1>Metroroto</h1>
+ <div id="map_canvas" style="width:800px; height:500px"></div>
+
+<h2>Últimas incidencias</h2>
+<ul>
+  <%@incidents.each do |incident|%> 
+    <li><%=link_to "Línea #{incident.line.number}", incident.line%>. Estación de <%=incident.station%>. <%=incident.comment%>. <%=incident.date%></li>	
+  <%end%>	
+</ul>

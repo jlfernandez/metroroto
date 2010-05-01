@@ -1,0 +1,13 @@
+Para empezar con metroroto:
+
+rake db:create
+rake db:migrate
+rake db:seed
+
+Para bajar twitts de metroroto:
+
+rake metroroto:search
+
+
+
+

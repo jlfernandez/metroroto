@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+ 
+  <title>Metroroto</title> 
+  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAScZd0t0Z0iHa3k8zvpRwsBT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQohyjT4ULl3Evlr-R-t-LyrhOozA" type="text/javascript"></script> 
+  <script src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js" type="text/javascript" charset="utf-8"></script> 
+  <script type="text/javascript" charset="utf-8"> 
+ 
+ 
+ 
+ window.onload = function(){
+
+
+    if (GBrowserIsCompatible()) {
+      var map = new GMap2(document.getElementById("map_canvas"));
+      map.setCenter(new GLatLng(40.4166909, -3.7003454), 12);
+      map.addControl(new GSmallMapControl());
+
+    }
+
+    var geocoder = new GClientGeocoder();
+    var infoHtml ="";
+
+    // sustituir la url
+    new Ajax.Request('/incidents/last', {
+      method:'get',
+      onSuccess: function(transport){
+        var json = transport.responseText.evalJSON();
+        json.each(function(t){
+              if ((t.incident.lat!="") && (t.incident.long!="")){
+                var marker = new GMarker(new GLatLng(t.incident.lat, t.incident.long));
+                map.addOverlay(marker);
+                GEvent.addListener(marker, "click", function() {
+                  infoHtml='';
+                  infoHtml+='<div>';
+                  infoHtml+='<p>Estación:'+t.incident.station+'</p>';
+                  infoHtml+='<p>Línea:'+t.incident.line_id+'</p>';
+				  infoHtml+='<p>Incidencia:'+t.incident.comment+'</p>';
+				  infoHtml+='</div>';
+
+                  marker.openInfoWindowHtml(infoHtml);
+                });
+              }
+        })
+      }
+    });
+
+  }
+
+</script>
+</head> 
+ 
+<body> 
+   <h1>Metroroto</h1>
+  <div id="map_canvas" style="width:800px; height:500px"></div> 
+</body> 
+</html>
