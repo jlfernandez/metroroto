@@ -1,5 +1,7 @@
 Para empezar con metroroto:
 
+Hace falta la gema de geokit basicamente.
+
 rake db:create
 rake db:migrate
 rake db:seed
