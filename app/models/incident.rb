@@ -12,6 +12,15 @@ class Incident < ActiveRecord::Base
     Incident.maximum(:twitter_id)
   end
   
+  def options_for_feed
+    {
+      :id => id,
+      :title => "Incidencia en Línea #{self.line_id} en la estación de #{self.station}",
+      :content => comment,
+      :date => date    
+    }
+  end
+  
   private
   
   def geolocate
