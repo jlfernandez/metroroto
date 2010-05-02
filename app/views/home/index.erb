@@ -6,6 +6,17 @@ $(document).ready(function() {
       map.setCenter(new GLatLng(40.4166909, -3.7003454), 12);
       map.addControl(new GSmallMapControl());
       <%=incident_markers @incidents%>      
+
+	//Create new Tile Layer
+	  var gTileUrlTemplate = 'http://mt1.google.com/vt/lyrs=m@121,transit|vm:1&hl=en&opts=r&x={X}&y={Y}&z={Z}';
+	  var tileLayerOverlay = new GTileLayerOverlay(
+	    new GTileLayer(null, null, null, {
+	      tileUrlTemplate: gTileUrlTemplate,
+	      isPng:true,
+	      opacity:0.8
+	    })
+	  );
+	  map.addOverlay(tileLayerOverlay);
     }   
 });
 
