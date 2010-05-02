@@ -42,6 +42,7 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => "home"
   
   map.resources :lines, :has_many => :incidents
+  map.resources :incidents
    
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

@@ -19,7 +19,6 @@ require 'ruby-debug'
           incident.line_id = text_arr[2].gsub("l","").to_i 
           incident.station = text_arr[3] 
           incident.comment = text_arr[0] 
-          incident.lat, incident.long = Geolocation.geolocate(text_arr[3])
           incident.save!      
       end  
     end
