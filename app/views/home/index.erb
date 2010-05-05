@@ -1,11 +1,11 @@
 <script>
-$(document).ready(function() { 
+$(document).ready(function() {
 
 	if (GBrowserIsCompatible()) {
       var map = new GMap2(document.getElementById("map_canvas"));
       map.setCenter(new GLatLng(40.4166909, -3.7003454), 13);
       map.addControl(new GSmallMapControl());
-      <%=incident_markers @incidents%>      
+      <%=incident_markers @incidents%>
 
 	//Create new Tile Layer
 	  var gTileUrlTemplate = 'http://mt1.google.com/vt/lyrs=m@121,transit|vm:1&hl=en&opts=r&x={X}&y={Y}&z={Z}';
@@ -17,7 +17,7 @@ $(document).ready(function() {
 	    })
 	  );
 	  map.addOverlay(tileLayerOverlay);
-    }   
+    }
 });
 
 </script>
@@ -27,25 +27,39 @@ $(document).ready(function() {
 
 <h2>Últimas incidencias</h2>
 <ul>
-  <%@incidents.each do |incident|%> 
-    <li><%=link_to "Línea #{incident.line.number}", incident.line%>. Estación de <%=incident.station%>. <%=incident.comment%>. <%=incident.date%></li>	
-  <%end%>	
+  <%@incidents.each do |incident|%>
+    <li><%=link_to "Línea #{incident.line.number}", incident.line%>. Estación de <%=incident.station.name%>. <%=incident.comment%>. <%=incident.date%></li>
+  <%end%>
 </ul>
 
 <h2>Nueva incidencia</h2>
 <%form_for(Incident.new) do |f|%>
 	<div>
 	  Está pasando <%=f.text_field :comment%>
-	</div>		
-	<div>
-	  En la <%=f.select :line_id, Line.find(:all).collect {|l| [l.name, l.id]}%> 
 	</div>
 	<div>
-	  En la estación de <%=f.text_field :station %>
+	  En la <%=f.select :line_id, Line.find(:all).collect {|l| [l.name, l.id]}%>
+	</div>
+	<div id="station">
+	  En la estación de <%=f.select :station_id, Station.by_line(1).collect {|l| [l.name, l.id]}%>
 	</div>
 	<div>
-	  <%=f.submit "Compártelo!!"%>	
-	</div>	
-<%end%>
+	  <%=f.submit "Compártelo!!"%>
+	</div>
 
+
+<% content_for :js_inside_script do %>
+
+ $('select#incident_line_id').change(function(){
+   $.getJSON("lines/"+ $(this).val() +"/stations", function(j){
+      var options = '';
+      for (var i = 0; i < j.length; i++) {
+        options += '<option value="' + j[i][1] + '">' + j[i][0] + '</option>';
+      }
+      $("select#incident_station_id'").html(options);
+    })
+ });
+
+<% end %>
+<%end%>
 

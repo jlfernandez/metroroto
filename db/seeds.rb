@@ -2,7 +2,7 @@
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
 # Examples:
-#   
+#
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
 
@@ -19,3 +19,5 @@ Line.create(:name => "Linea 9", :number => "9")
 Line.create(:name => "Linea 10", :number => "10")
 Line.create(:name => "Linea 11", :number => "11")
 Line.create(:name => "Linea 12", :number => "12")
+Line.create(:name => "Linea R", :number => "R")
+

@@ -1,22 +1,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
- 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
-<head> 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
- 
-  <title>Metroroto</title> 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <title>Metroroto</title>
 
    <%= stylesheet_link_tag "metroroto" %>
    <%= javascript_include_tag 'application', 'jquery' %>
    <%= yield :js_includes %>
 
-<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAScZd0t0Z0iHa3k8zvpRwsBT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQohyjT4ULl3Evlr-R-t-LyrhOozA" type="text/javascript"></script> 
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAScZd0t0Z0iHa3k8zvpRwsBT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQohyjT4ULl3Evlr-R-t-LyrhOozA" type="text/javascript"></script>
 
 
-</head> 
- 
-<body> 
+</head>
+
+<body>
    <%= yield%>
-</body> 
+  <script>
+  $(document).ready(function(){
+   <%= yield :js_inside_script%>
+   });
+  </script>
+</body>
 </html>
+

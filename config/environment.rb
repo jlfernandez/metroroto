@@ -6,7 +6,7 @@ RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
 
-require 'Geokit'
+require 'geokit'
 require 'atom'
 
 Rails::Initializer.run do |config|
@@ -41,8 +41,9 @@ Rails::Initializer.run do |config|
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
-  
+
   Geokit::Geocoders::google = 'ABQIAAAAScZd0t0Z0iHa3k8zvpRwsBT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQohyjT4ULl3Evlr-R-t-LyrhOozA'
   Geokit::Geocoders::request_timeout = 5
-  
+
 end
+
