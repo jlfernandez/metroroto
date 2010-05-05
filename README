@@ -6,10 +6,11 @@ rake db:create
 rake db:migrate
 rake db:seed
 
+Para cargar las estaciones de metro por lineas, con lat y long:
+
+rake metroroto:load_stations
+
 Para bajar twitts de metroroto:
 
 rake metroroto:search
-
-
-
 
