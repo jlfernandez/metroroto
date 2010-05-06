@@ -1,6 +1,5 @@
 class Metrotwitt
   require 'twitter'
-require 'ruby-debug'
   def self.last_metrorotos(interval=5.minutes)
     since = Incident.last_twitterid || 0
     twitts = Twitter::Search.new('#metroroto').since(since).fetch().results
@@ -18,7 +17,7 @@ require 'ruby-debug'
           incident.twitter_id = twitt["id"]
           station_string = text_arr[3]
           line_number = text_arr[2].gsub("l","").to_i
-          if line = Line.find_by_number(line_number)
+         if line = Line.find_by_number(line_number)
             incident.line_id = line.id
             station = line.stations.find_exact_from_twitt(station_string)
             if station.blank?
@@ -27,7 +26,12 @@ require 'ruby-debug'
             unless station.blank?
               incident.station_id = station.first.id
             else
-             #no hemos macheado ni exacto ni aproximado con ninguna extación, podemos consultar a google :)
+             station = line.stations.find_outspaces(station_string)
+             unless  station.blank?       
+                incident.station_id = station.first.id
+             else
+               #No hay nada que hacer, a leprosos
+             end  
             end
           else
             # no nos manda la linea en el twitt
@@ -42,6 +46,7 @@ require 'ruby-debug'
             end
 
           end
+          incident.station_string = station_string
           incident.comment = text_arr[0]
           incident.save!
       end

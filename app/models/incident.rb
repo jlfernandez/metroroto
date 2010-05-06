@@ -32,7 +32,7 @@ class Incident < ActiveRecord::Base
     self.lat, self.long = if self.station && self.station.lat && self.station.long
         [self.station.lat,self.station.long]
      else
-       Geolocation.geolocate(self.station.name)
+       #Geolocation.geolocate(self.station.name)
      end
   end
 

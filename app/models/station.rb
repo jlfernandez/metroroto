@@ -13,6 +13,10 @@ class Station < ActiveRecord::Base
   named_scope :by_line, lambda { |line|
     {:conditions => "line_id = '#{line}'"}
   }
+  
+  named_scope :find_outspaces, lambda {|string|
+    {:conditions => "REPLACE(nicename,'-','') like '%#{string}%'"}
+    }
   private
 
 

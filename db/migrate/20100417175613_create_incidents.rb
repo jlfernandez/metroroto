@@ -6,7 +6,7 @@ class CreateIncidents < ActiveRecord::Migration
       t.string :user
       t.integer :twitter_id, :unique => true, :limit => 8
       t.integer :line_id
-      t.string :station
+      t.string :station_string
       t.float :lat
       t.float :long
     end
