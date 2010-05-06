@@ -3,8 +3,8 @@
 development:
   adapter: mysql
   database: metroroto_dev
-  username: cantorrodista
-  password:
+  username: admin
+  password: gogo
   host: localhost
 
 
@@ -14,8 +14,8 @@ development:
 test:
   adapter: mysql
   database: metroroto_test
-  username: cantorrodista
-  password:
+  username: admin
+  password: gogo
   host: localhost
 
 
