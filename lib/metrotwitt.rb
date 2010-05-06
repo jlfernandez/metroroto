@@ -3,54 +3,75 @@ class Metrotwitt
   def self.last_metrorotos(interval=5.minutes)
     since = Incident.last_twitterid || 0
     twitts = Twitter::Search.new('#metroroto').since(since).fetch().results
-    self.process_twitts twitts
-  end
-
-  def self.process_twitts(twitts)
     puts "Cargando #{twitts.size} nuevos twitts"
     twitts.each do |twitt|
-      text_arr=twitt["text"].scan(/(.*)#(.*)#(.*)#(.*)/)[0]
+      self.parse_twitt(twitt)
+    end
+  end
+
+  def self.parse_twitt(twitt)
+    require 'ruby-debug'
+
+      text_arr=twitt["text"].scan(/(.*)#(\S*)\s#(\S*)\s#(\S*)(.*)/).flatten
       unless text_arr.blank?
           incident = Incident.new
           incident.date = twitt["created_at"]
           incident.user = twitt["from_user"]
           incident.twitter_id = twitt["id"]
-          station_string = text_arr[3]
-          line_number = text_arr[2].gsub("l","").to_i
+          text_arr = text_arr.reject{|x| x.blank?}
+          #A partir del hashtag metroroto, buscamos los dos siguientes, el orden de los dos es lo mismo
+          index = text_arr.index('metroroto')
+          if text_arr[index+1].match(/l\d{1,2}/)
+              line_number = text_arr[index+1].gsub("l","")
+              station_string = text_arr[index+2]
+          elsif text_arr[index+2].match(/l\d{1,2}/)
+              line_number = text_arr[index+2].gsub("l","")
+              station_string = text_arr[index+1]
+          end
+          3.times do
+            text_arr.delete_at(index)
+          end
          if line = Line.find_by_number(line_number)
             incident.line_id = line.id
-            station = line.stations.find_exact_from_twitt(station_string)
-            if station.blank?
-              station = line.stations.find_from_twitt(station_string)
-            end
-            unless station.blank?
-              incident.station_id = station.first.id
-            else
-             station = line.stations.find_outspaces(station_string)
-             unless  station.blank?       
-                incident.station_id = station.first.id
-             else
-               #No hay nada que hacer, a leprosos
-             end  
+            stations = self.search_stations(station_string,line.stations)
+            unless stations.blank?
+              incident.station_id = stations.uniq.first.id
             end
           else
             # no nos manda la linea en el twitt
-            station = Station.find_exact_from_twitt(station_string)
-            if station.blank?
-              station = Stations.find_from_twitt(station_string)
-            end
-            unless station.blank? || station.size > 1
-              incident.station_id = station.first.id
-            else
-              # no tenemos la linea en el twitt, y por la estación tenemos mas de una posibilidad: Es ambiguo, lo descartamos
+            stations = self.search_stations(station_string,line.stations)
+            unless stations.blank? || stations.size > 1
+              incident.station_id = stations.first.id
             end
 
           end
-          incident.station_string = station_string
-          incident.comment = text_arr[0]
-          incident.save!
+          if incident.station
+            incident.station_string = station_string
+            incident.comment = text_arr.first
+            incident.save!
+          else
+            # aleprosos que no encuentra nada
+            fail = FailedTwitt.new(:twitter_id => incident.twitter_id, :date => incident.date, :user => incident.user, :station_string => station_string )
+            if incident.line_id
+              fail.line_id = incident.line_id
+            end
+            fail.save!
+          end
       end
-    end
+  end
+
+  def self.search_stations(name,stations)
+     if !stations.find_exact_from_twitt(name).blank?
+            stations.find_exact_from_twitt(name)
+   elsif !stations.find_from_twitt(name).blank?
+            stations.find_from_twitt(name)
+   elsif !stations.find_outspaces(name).blank?
+          stations.find_outspaces(name)
+    else
+      nil
+     end
+
+
   end
 
 end

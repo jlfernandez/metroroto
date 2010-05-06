@@ -9,15 +9,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100505203124) do
+ActiveRecord::Schema.define(:version => 20100506212015) do
+
+  create_table "failed_twitts", :force => true do |t|
+    t.string   "station_string"
+    t.datetime "date"
+    t.string   "user"
+    t.integer  "twitter_id",     :limit => 8
+    t.integer  "line_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "incidents", :force => true do |t|
     t.text     "comment"
     t.datetime "date"
     t.string   "user"
-    t.integer  "twitter_id", :limit => 8
+    t.integer  "twitter_id",     :limit => 8
     t.integer  "line_id"
-    t.string   "station"
+    t.string   "station_string"
     t.float    "lat"
     t.float    "long"
     t.integer  "station_id"

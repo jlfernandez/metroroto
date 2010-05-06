@@ -4,7 +4,7 @@ class Incident < ActiveRecord::Base
 
 
   before_save :geolocate
-
+  validates_presence_of :station
   def self.last_incidents
     Incident.find(:all, :conditions => "date > '#{(Time.now - 30.days).to_s(:db)}'", :order => "date DESC")
   end
