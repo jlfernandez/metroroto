@@ -14,3 +14,13 @@ Para bajar twitts de metroroto:
 
 rake metroroto:search
 
+
+REGLAS DEL PARSER DE TWITTS
+
+Los hashtags se pueden poner al principio del twitt o al final. El ordern siempre sera: 1ª #metroroto  #linea #estación
+
+EJ:
+
+Metro averiado por causas ajenas a metro , Ja!! #metroroto #l1 #estrecho
+#metroroto #l3 #legazpi incendio en los andenes
+
