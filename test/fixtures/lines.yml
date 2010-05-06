@@ -1,7 +1,60 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+line_1:
+  id: 1
+  number: 1
+  name: "Linea 1"
 
-# one:
-#   column: value
-#
-# two:
-#   column: value
+line_2:
+  id: 2
+  number: 2
+  name: "Linea 2"
+
+line_3:
+  id: 3
+  number: 3
+  name: "Linea 3"
+
+line_4:
+  id: 4
+  number: 4
+  name: "Linea 4"
+
+line_5:
+  id: 5
+  number: 5
+  name: "Linea 5"
+
+line_6:
+  id: 6
+  number: 6
+  name: "Linea 6"
+
+line_7:
+  id: 7
+  number: 7
+  name: "Linea 7"
+
+line_8:
+  id: 8
+  number: 8
+  name: "Linea 8"
+
+line_9:
+  id: 9
+  number: 9
+  name: "Linea 9"
+
+line_10:
+  id: 10
+  number: 10
+  name: "Linea 10"
+
+line_11:
+  id: 11
+  number: 11
+  name: "Linea 11"
+
+line_12:
+  id: 12
+  number: 12
+  name: "Linea 12"
+

@@ -10,9 +10,7 @@ class Metrotwitt
   end
 
   def self.parse_twitt(twitt)
-    require 'ruby-debug'
-
-      text_arr=twitt["text"].scan(/(.*)#(\S*)\s#(\S*)\s#(\S*)(.*)/).flatten
+      text_arr=twitt["text"].scan(/([^#]*)\s*#(\S*)\s#(\S*)\s#?(\S*)\s*(.*)/).flatten
       unless text_arr.blank?
           incident = Incident.new
           incident.date = twitt["created_at"]
@@ -24,11 +22,18 @@ class Metrotwitt
           if text_arr[index+1].match(/l\d{1,2}/)
               line_number = text_arr[index+1].gsub("l","")
               station_string = text_arr[index+2]
-          elsif text_arr[index+2].match(/l\d{1,2}/)
+              i = 3
+          elsif text_arr[index+2] && text_arr[index+2].match(/l\d{1,2}/)
               line_number = text_arr[index+2].gsub("l","")
               station_string = text_arr[index+1]
+              i = 3
+          else
+            #suponemos que no hay linea y cogemos lo siguiente a metroroto para la estación
+            station_string=text_arr[index+1]
+            line_number = nil
+            i = 2
           end
-          3.times do
+          i.times do
             text_arr.delete_at(index)
           end
          if line = Line.find_by_number(line_number)
@@ -39,7 +44,7 @@ class Metrotwitt
             end
           else
             # no nos manda la linea en el twitt
-            stations = self.search_stations(station_string,line.stations)
+            stations = self.search_stations(station_string,Station)
             unless stations.blank? || stations.size > 1
               incident.station_id = stations.first.id
             end
@@ -47,7 +52,7 @@ class Metrotwitt
           end
           if incident.station
             incident.station_string = station_string
-            incident.comment = text_arr.first
+            incident.comment = text_arr.join(' ')
             incident.save!
           else
             # aleprosos que no encuentra nada
@@ -65,7 +70,7 @@ class Metrotwitt
             stations.find_exact_from_twitt(name)
    elsif !stations.find_from_twitt(name).blank?
             stations.find_from_twitt(name)
-   elsif !stations.find_outspaces(name).blank?
+   elsif !stations.find_outspaces(name.downcase).blank?
           stations.find_outspaces(name)
     else
       nil

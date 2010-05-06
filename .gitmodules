@@ -1,0 +1,3 @@
+[submodule "vendor/plugins/yaml_db"]
+	path = vendor/plugins/yaml_db
+	url = git://github.com/adamwiggins/yaml_db.git
