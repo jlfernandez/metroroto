@@ -15,6 +15,10 @@ Para bajar twitts de metroroto:
 rake metroroto:search
 
 
+Para arreglar algunas estaciones mal posicionadas:
+
+desde la consola:  Station.update_wrong_stations
+
 REGLAS DEL PARSER DE TWITTS
 
 Los hashtags se pueden poner al principio del twitt o al final. El ordern siempre sera: 1ª #metroroto  #linea #estación

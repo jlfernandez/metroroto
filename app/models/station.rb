@@ -23,5 +23,20 @@ class Station < ActiveRecord::Base
   def set_nicename
     self.nicename = self.name.parameterize
   end
+  
+  def self.update_wrong_stations
+    if s = find_by_nicename("colon")
+      s.update_attributes(:lat => 40.4254188, :long => -3.6910038)
+    end
+    if s = find_all_by_nicename("avenida-de-america")
+      s.each do |station|
+       station.update_attributes(:lat => 40.438035, :long => -3.6766893)
+      end
+     end
+     if s = find_by_nicename("pinar-de-chamartin")
+       s.update_attributes(:lat =>40.4801375, :long => -3.6667999)
+     end 
+    
+  end
 end
 

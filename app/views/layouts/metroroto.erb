@@ -17,12 +17,16 @@
 </head>
 
 <body>
-   <%= yield%>
+   <div class="wrapper">
+		<%= yield%>
+	</div>
+	
   <script>
   $(document).ready(function(){
    <%= yield :js_inside_script%>
    });
   </script>
+
 </body>
 </html>
 
