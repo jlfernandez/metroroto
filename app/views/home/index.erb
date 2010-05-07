@@ -28,7 +28,11 @@ $(document).ready(function() {
 <h2>Últimas incidencias</h2>
 <ul>
   <%@incidents.each do |incident|%>
-    <li><%=link_to "Línea #{incident.line.number}", incident.line%>. Estación de <%=incident.station.name%>. <%=incident.comment%>. <%=incident.date%></li>
+    <li><%=link_to "Línea #{incident.line.number}", incident.line%>. 
+		Estación de <%=incident.station.name%>. <%=incident.comment%>. <%=incident.date%>. 
+		<%unless incident.user.blank?%>
+			Por <a href ="http://twitter.com/<%=incident.user%>" target="_blank">@<%=incident.user%></a></li>
+		<%end%>	
   <%end%>
 </ul>
 
