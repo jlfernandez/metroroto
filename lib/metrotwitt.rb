@@ -19,12 +19,12 @@ class Metrotwitt
           text_arr = text_arr.reject{|x| x.blank?}
           #A partir del hashtag metroroto, buscamos los dos siguientes, el orden de los dos es lo mismo
           index = text_arr.index('metroroto')
-          if text_arr[index+1].match(/l\d{1,2}/)
-              line_number = text_arr[index+1].gsub("l","")
+          if text_arr[index+1].match(/[lL]\d{1,2}/)
+              line_number = text_arr[index+1].gsub(/[lL]/,"")
               station_string = text_arr[index+2]
               i = 3
-          elsif text_arr[index+2] && text_arr[index+2].match(/l\d{1,2}/)
-              line_number = text_arr[index+2].gsub("l","")
+          elsif text_arr[index+2] && text_arr[index+2].match(/[lL]\d{1,2}/)
+              line_number = text_arr[index+2].gsub(/[lL]/,"")
               station_string = text_arr[index+1]
               i = 3
           else
