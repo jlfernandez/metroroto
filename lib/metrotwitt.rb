@@ -84,7 +84,8 @@ class Metrotwitt
     client = Twitter::Base.new(httpauth)
     user = incident.user || "metroroto"
     begin
-      client.update("RT @#{user}: #{incident.comment} ##{incident.station.nicename.gsub("-","")} #l#{incident.line.number}")
+      client.update("##{incident.station.nicename.gsub("-","")} #l#{incident.line.number} 
+                    #{incident.comment} by @#{user}")
     rescue
       puts "No se ha podido retwittear la incidencia #{incident.id} por alguna razón (twitt duplicado probablemente)"
     end  
