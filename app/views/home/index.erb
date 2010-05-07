@@ -31,7 +31,8 @@ $(document).ready(function() {
     <li><%=link_to "Línea #{incident.line.number}", incident.line%>. 
 		Estación de <%=incident.station.name%>. <%=incident.comment%>. <%=incident.date%>. 
 		<%unless incident.user.blank?%>
-			Por <a href ="http://twitter.com/<%=incident.user%>" target="_blank">@<%=incident.user%></a></li>
+			Por <a href ="http://twitter.com/<%=incident.user%>/status/<%=incident.twitter_id%>"
+				target="_blank">@<%=incident.user%></a></li>
 		<%end%>	
   <%end%>
 </ul>

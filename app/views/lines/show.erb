@@ -7,7 +7,7 @@
 <%@line.incidents.each do |incident|%>
   <li><%=incident.comment%>. <%=incident.date%>. 
 	<%unless incident.user.blank?%>
-		Por <a href ="http://twitter.com/<%=incident.user%>" target="_blank">@<%=incident.user%></a></li>	
+		Por <a href ="http://twitter.com/<%=incident.user%>/status/<%=incident.twitter_id%>" target="_blank">@<%=incident.user%></a></li>	
 	<%end%>
 <%end%>
 </ul>
