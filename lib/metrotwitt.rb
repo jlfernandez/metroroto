@@ -66,9 +66,7 @@ class Metrotwitt
   end
 
   def self.search_stations(name,stations)
-     if !stations.find_exact_from_twitt(name).blank?
-            stations.find_exact_from_twitt(name)
-   elsif !stations.find_from_twitt(name).blank?
+   if !stations.find_from_twitt(name).blank?
             stations.find_from_twitt(name)
    elsif !stations.find_outspaces(name.downcase).blank?
           stations.find_outspaces(name)

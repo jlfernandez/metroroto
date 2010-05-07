@@ -4,18 +4,18 @@ class Station < ActiveRecord::Base
    before_save :set_nicename
   has_many :incidents
   named_scope :find_exact_from_twitt, lambda { |string|
-    {:conditions => " name = '#{string}' or nicename='#{string}'"}
+    {:conditions => " name = '#{string}' or nicename='#{string.parameterize}'"}
    }
 
   named_scope :find_from_twitt, lambda { |string|
-    {:conditions => " name like '%#{string}%' or nicename like '%#{string}%'"}
+    {:conditions => " name like '%#{string}%' or nicename like '%#{string.parameterize}%'"}
    }
   named_scope :by_line, lambda { |line|
     {:conditions => "line_id = '#{line}'"}
   }
   
   named_scope :find_outspaces, lambda {|string|
-    {:conditions => "REPLACE(nicename,'-','') like '%#{string}%'"}
+    {:conditions => "REPLACE(nicename,'-','') like '%#{string}%' or REPLACE(nicename,'-','') like '%#{string.parameterize}%' "}
     }
   private
 

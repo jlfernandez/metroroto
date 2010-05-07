@@ -179,6 +179,29 @@ class MetrotwittTest < ActiveSupport::TestCase
     assert_equal 1, FailedTwitt.all.size
   end
 
+  test "debe reconocer el patron: con line y ñ" do
+    Metrotwitt.parse_twitt(create_twitt("Nuevo twitt de prueba #metroroto #l3 #plazadeespaña"))
+    assert_equal 1,Incident.all.size
+    assert_equal Incident.last.line.id,3
+    assert_equal Incident.last.station.nicename, 'plaza-de-espana'
+    assert_equal Incident.last.comment, "Nuevo twitt de prueba "
+  end
+  
+  test "debe reconocer el patron: con line y ñ v2" do
+    Metrotwitt.parse_twitt(create_twitt("Nuevo twitt de prueba #metroroto #l3 #españa"))
+    assert_equal 1,Incident.all.size
+    assert_equal Incident.last.line.id,3
+    assert_equal Incident.last.station.nicename, 'plaza-de-espana'
+    assert_equal Incident.last.comment, "Nuevo twitt de prueba "
+  end
+  
+  test "debe reconocer el patron: con line y y solo parte de la estación" do
+    Metrotwitt.parse_twitt(create_twitt("Nuevo twitt de prueba #metroroto #l3 #plaza"))
+    assert_equal 1,Incident.all.size
+    assert_equal Incident.last.line.id,3
+    assert_equal Incident.last.station.nicename, 'plaza-de-espana'
+    assert_equal Incident.last.comment, "Nuevo twitt de prueba "
+  end
   def create_twitt(text)
    {"text" => text,
      "created_at" => Time.now,
