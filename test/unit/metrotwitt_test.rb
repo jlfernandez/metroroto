@@ -20,6 +20,14 @@ class MetrotwittTest < ActiveSupport::TestCase
     assert_equal Incident.last.station.nicename, 'cuatro-caminos'
     assert_equal Incident.last.comment, "Nuevo twitt de prueba"
   end
+  
+  test "debe reconocer las lineas con l y L" do
+    Metrotwitt.parse_twitt(create_twitt("#metroroto #L5 #puerta Metro roto en puerta de toledo"))
+    assert_equal 1,Incident.all.size
+    assert_equal Incident.last.line.id,5
+    assert_equal Incident.last.station.nicename, 'puerta-de-toledo'
+    assert_equal Incident.last.comment, "Metro roto en puerta de toledo"
+  end
 
 
   test "debe reconocer el patron: #metroroto #l6 #guzmanelbueno Nuevo twitt de prueba " do
@@ -175,6 +183,12 @@ class MetrotwittTest < ActiveSupport::TestCase
 
   test "no debe reconocer el patron: sin linea,y con estación ambigua v2" do
     Metrotwitt.parse_twitt(create_twitt("Nuevo twitt de prueba #metroroto #cuatrocaminos "))
+    assert_equal 0,Incident.all.size
+    assert_equal 1, FailedTwitt.all.size
+  end
+  
+  test "no debe reconocer el patron: otra cosa en vez de L o l para la linea" do
+    Metrotwitt.parse_twitt(create_twitt("Nuevo twitt de prueba #metroroto #p2 #wadus "))
     assert_equal 0,Incident.all.size
     assert_equal 1, FailedTwitt.all.size
   end
