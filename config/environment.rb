@@ -40,11 +40,11 @@ Rails::Initializer.run do |config|
 
   # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
   # Run "rake -D time" for a list of tasks for finding time zone names.
- # config.time_zone = 'UTC'
+  config.time_zone = 'Madrid'
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
-  # config.i18n.default_locale = :de
+   config.i18n.default_locale = :es
 
   Geokit::Geocoders::google = 'ABQIAAAAScZd0t0Z0iHa3k8zvpRwsBT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQohyjT4ULl3Evlr-R-t-LyrhOozA'
   Geokit::Geocoders::request_timeout = 5

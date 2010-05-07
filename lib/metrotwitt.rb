@@ -14,7 +14,8 @@ class Metrotwitt
       text_arr=twitt["text"].scan(/([^#]*)\s*#(\S*)\s#(\S*)\s#?(\S*)\s*(.*)/).flatten
       unless text_arr.blank?
           incident = Incident.new
-          incident.date = twitt["created_at"]
+          #Transformamos la fecha del twitt, que viene en utc, a nuestra hora local
+          incident.date = twitt["created_at"].to_time.getlocal
           incident.user = twitt["from_user"]
           incident.twitter_id = twitt["id"]
           text_arr = text_arr.reject{|x| x.blank?}
