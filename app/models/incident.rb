@@ -41,8 +41,7 @@ class Incident < ActiveRecord::Base
   end
   
   def retwitt
-    Metrotwitt.retwitt self
-    
+    Metrotwitt.send_later(:retwitt,self)
   end
 
 end

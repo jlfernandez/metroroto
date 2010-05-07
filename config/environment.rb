@@ -25,6 +25,8 @@ Rails::Initializer.run do |config|
   config.gem 'ratom', :version => '0.6.7'
   config.gem 'twitter', :version => '0.9.5'
   config.gem 'nokogiri', :version => '1.4.1'
+  config.gem 'delayed_job', :version => "2.0.1"
+  
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
   # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
