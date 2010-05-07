@@ -4,7 +4,11 @@ class Incident < ActiveRecord::Base
 
 
   before_save :geolocate
+  
+  after_save :retwitt
+  
   validates_presence_of :station
+  
   def self.last_incidents
     Incident.find(:all, :conditions => "date > '#{(Time.now - 30.days).to_s(:db)}'", :order => "date DESC")
   end
@@ -34,6 +38,11 @@ class Incident < ActiveRecord::Base
      else
        #Geolocation.geolocate(self.station.name)
      end
+  end
+  
+  def retwitt
+    Metrotwitt.retwitt self
+    
   end
 
 end

@@ -3,6 +3,7 @@ class Metrotwitt
   def self.last_metrorotos(interval=5.minutes)
     since = Incident.last_twitterid || 0
     twitts = Twitter::Search.new('#metroroto').since(since).fetch().results
+    twitts.reverse! #Esto se hace para que guarde primero los más antiguos, y se retwitteen en orden.
     puts "Cargando #{twitts.size} nuevos twitts"
     twitts.each do |twitt|
       self.parse_twitt(twitt)
@@ -76,6 +77,17 @@ class Metrotwitt
 
 
   end
-
+  
+  def self.retwitt(incident)
+    puts "Retwitt..."
+    httpauth = Twitter::HTTPAuth.new('metroroto', 'oliva123')
+    client = Twitter::Base.new(httpauth)
+    user = incident.user || "metroroto"
+    begin
+      client.update("RT @#{user}: #{incident.comment} ##{incident.station.nicename.gsub("-","")} #l#{incident.line.number}")
+    rescue
+      puts "No se ha podido retwittear la incidencia #{incident.id} por alguna razón (twitt duplicado probablemente)"
+    end  
+  end
 end
 
