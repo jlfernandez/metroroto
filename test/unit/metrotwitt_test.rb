@@ -201,6 +201,14 @@ class MetrotwittTest < ActiveSupport::TestCase
     assert_equal Incident.last.comment, "Nuevo twitt de prueba "
   end
   
+  test "debe reconocer el patron: con line y ñ v3" do
+    Metrotwitt.parse_twitt(create_twitt("Nuevo twitt de prueba #metroroto #l3 #plaza_de_españa"))
+    assert_equal 1,Incident.all.size
+    assert_equal Incident.last.line.id,3
+    assert_equal Incident.last.station.nicename, 'plaza-de-espana'
+    assert_equal Incident.last.comment, "Nuevo twitt de prueba "
+  end
+  
   test "debe reconocer el patron: con line y ñ v2" do
     Metrotwitt.parse_twitt(create_twitt("Nuevo twitt de prueba #metroroto #l3 #españa"))
     assert_equal 1,Incident.all.size
