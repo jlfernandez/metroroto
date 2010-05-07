@@ -81,15 +81,24 @@ class Metrotwitt
   def self.retwitt(incident)
     puts "Retwitt..."
     unless Rails.env=="test"
-      httpauth = Twitter::HTTPAuth.new('metroroto', 'oliva123')
-      client = Twitter::Base.new(httpauth)
+      client = self.connect_twitter
       user = incident.user || "metroroto"
       begin
-        client.update("RT @#{user}: #{incident.comment} ##{incident.station.nicename.gsub("-","")} #l#{incident.line.number}")
+        client.update("##{incident.station.nicename.gsub("-","")} 
+                       #l#{incident.line.number} #{incident.comment} by @#{user}")
       rescue
         puts "No se ha podido retwittear la incidencia #{incident.id} por alguna razón (twitt duplicado probablemente)"
       end  
     end
   end
+  
+  private
+  
+  def self.connect_twitter
+    oauth = Twitter::OAuth.new(OAUTH_CONSUMER_TOKEN, OAUTH_CONSUMER_SECRET_TOKEN)
+    oauth.authorize_from_access(OAUTH_ACCESS_TOKEN, OAUTH_ACCESS_SECRET_TOKEN)
+    return Twitter::Base.new(oauth)
+  end
+  
 end
 
