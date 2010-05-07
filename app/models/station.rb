@@ -33,10 +33,33 @@ class Station < ActiveRecord::Base
        station.update_attributes(:lat => 40.438035, :long => -3.6766893)
       end
      end
-     if s = find_by_nicename("pinar-de-chamartin")
-       s.update_attributes(:lat =>40.4801375, :long => -3.6667999)
+     if s = find_all_by_nicename("pinar-de-chamartin")
+       s.each do |station|
+       station.update_attributes(:lat =>40.4801375, :long => -3.6667999)
+       end
      end 
-    
+     if s = find_all_by_nicename("plaza-eliptica")
+       s.each do |station|
+       station.update_attributes(:lat =>40.3845936, :long => -3.7184733)
+       end
+     end 
+     if s = find_all_by_nicename("moncloa")
+       s.each do |station|
+       station.update_attributes(:lat =>40.4352293, :long => -3.7191882)
+       end
+     end    
+     if s = find_all_by_nicename("principe-pio")
+       s.each do |station|
+       station.update_attributes(:lat =>40.4210686, :long => -3.7203813)
+       end
+     end
+
+     if s = find_all_by_nicename("plaza-de-castilla")
+       s.each do |station|
+       station.update_attributes(:lat =>40.4668982, :long => -3.6892107)
+       end
+     end
+     
   end
 end
 
