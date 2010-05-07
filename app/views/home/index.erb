@@ -23,13 +23,19 @@ $(document).ready(function() {
 </script>
 
 <h1><a href="/">Metroroto</a></h1>
- <div id="map_canvas" style="width:800px; height:500px"></div>
+<div id="report">
+	<ul>
+	<li><a href="#new_incident">Reportar incidencia</a></li>
+	<li><a href="#last_incidents">Últimas incidencias</a></li>
+	</ul>
+</div>
+ <div id="map_canvas" style="width:960px; height:500px"></div>
 
 <h2>Últimas incidencias</h2>
-<ul>
+<ul id="last_incidents">
   <%@incidents.each do |incident|%>
-    <li><%=link_to "Línea #{incident.line.number}", incident.line%>. 
-		Estación de <%=incident.station.name%>. <%=incident.comment%>. <%=incident.date%>. 
+    <li><%=l(incident.date, :format => 'long')%> - <%=link_to "Línea #{incident.line.number}", incident.line, :class => "line"%>. 
+		Estación de <strong><%=incident.station.name%></strong>. <%=incident.comment%>. 
 		<%unless incident.user.blank?%>
 			Por <a href ="http://twitter.com/<%=incident.user%>/status/<%=incident.twitter_id%>"
 				target="_blank">@<%=incident.user%></a></li>
@@ -39,18 +45,19 @@ $(document).ready(function() {
 
 <h2>Nueva incidencia</h2>
 <%form_for(Incident.new) do |f|%>
-	<div>
-	  Está pasando <%=f.text_field :comment%>
-	</div>
-	<div>
-	  En la <%=f.select :line_id, Line.find(:all).collect {|l| [l.name, l.id]}%>
-	</div>
-	<div id="station">
-	  En la estación de <%=f.select :station_id, Station.by_line(1).collect {|l| [l.name, l.id]}%>
-	</div>
-	<div>
-	  <%=f.submit "Compártelo!!"%>
-	</div>
+	<p>
+	  <%= f.label :comment, "¿Qué pasa?"%><br>
+	 <%=f.text_field :comment%>
+	</p>
+	<p>
+		<%= f.label :line_id, "¿En qué linea?"%><br>
+	  	<%=f.select :line_id, Line.find(:all).collect {|l| [l.name, l.id]}%>
+	</p>
+	<p id="station">
+	  <%= f.label :station_id ,"¿En qué estación?"%><br>
+	  <%=f.select :station_id, Station.by_line(1).collect {|l| [l.name, l.id]}%>
+	</p>
+		<button type="submit">Compártelo!!</button>
 
 
 <% content_for :js_inside_script do %>

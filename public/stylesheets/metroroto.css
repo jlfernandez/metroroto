@@ -23,7 +23,16 @@ a:hover {
 	background: #1F5570;
 	text-decoration: underline;
 }
+a.line{
+	color: #FFF;
+	background: #1F5570;
+	text-decoration: underline;
+	padding: 0.15em 0.3em;
+}
+a.line:hover{
+	color: #FF9900;
 
+}
 fieldset {
 	border: none;
 }
@@ -42,6 +51,10 @@ h1 {
 
 h1 a{
 	text-decoration: none;
+}
+h2{
+	font-size: 3em;
+	color: #1F5570;
 }
 .map_pop p.line_number {
 	border:1px solid;
@@ -115,4 +128,65 @@ h1 a{
 p.station {
 	font-weight: bold;
 	font-size: 1.2em;
+}
+
+#map_canvas {
+	margin-bottom: 2em;
+}
+
+ul#last_incidents {
+	padding: 1em;
+	font-size: 1.3em;
+	list-style:none outside none;
+	color: #888;
+}
+
+ul#last_incidents li{
+	border-bottom:2px solid #1F5570;
+	padding:0.3em 0;
+}
+form.new_incident {
+	padding: 1em;
+}
+form.new_incident p {
+	padding: 0.7em 0;
+}
+form.new_incident label {
+	font-size: 1.5em;
+	color: #888;
+}
+
+form.new_incident input {
+	font-size:2em;
+	height:1em;
+	padding:0.3em;
+	width:30em;
+}
+
+form.new_incident select {
+	font-size: 1.5em;
+}
+form.new_incident button {
+	border:1px solid #CECECE;
+	padding:0.5em;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+div#report {
+	padding: 1em;
+	background: #F7F7F7;
+	height: 2em;
+	
+}
+div#report ul{
+		list-style:none outside none;
+}
+div#report ul li{
+	float: left;
+	padding-left: 1em;
+}
+
+div#report a{
+	font-size: 2em;
 }
