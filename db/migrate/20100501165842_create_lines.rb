@@ -3,6 +3,7 @@ class CreateLines < ActiveRecord::Migration
     create_table :lines do |t|
       t.string :number
       t.string :name
+      t.string :colour
     end
   end
 

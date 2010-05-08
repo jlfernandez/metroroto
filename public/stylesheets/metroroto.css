@@ -84,6 +84,12 @@ span.station {
 	border-color:#ED1C24;
 	color:#FFFFFF;
 }
+
+.line_3 {
+	background-color:#FFD000;
+	border-color:#FFD000;
+	color:#000000;
+}
 .line_4{
 	background-color:#B65518;
 	border-color:#B65518;
@@ -115,11 +121,6 @@ span.station {
 	color:#FFFFFF;
 }
 
-.line_3 {
-	background-color:#FFD000;
-	border-color:#FFD000;
-	color:#000000;
-}
 
 .line_10{
 	background-color:#005AA9;
