@@ -8,7 +8,7 @@ $(document).ready(function() {
       var map = new GMap2(document.getElementById("map_canvas"));
       map.setCenter(new GLatLng(40.4166909, -3.7003454), 13);
       map.addControl(new GSmallMapControl());
-      <%=incident_markers @incidents%>
+      <%=incident_markers @line.incidents%>
 
       <%=create_map_line @line%>
 
