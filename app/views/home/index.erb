@@ -21,6 +21,12 @@ $(document).ready(function() {
 	  map.addOverlay(tileLayerOverlay);
     }
 
+	function new_marker(comment,lat,lng,line,station) {
+		var div_info ="<div class=\"map_pop\"><p><span class=\"line_number line_"+line+"\">"+line+"</span><span class=\"station\">"+station+"</span></p><p class=\"date\">date</p><p class=\"comment\">Incidencia:     "+comment+"</p></div>";
+		map.addOverlay(addInfoWindowToMarker(new GMarker(new GLatLng(lat,lng),{title : 'Incidencia en línea'+line}),div_info,{}));
+	   return false;
+	}
+
 
   $('#sharebutton').click(function() {
     
@@ -31,7 +37,9 @@ $(document).ready(function() {
 	          "&incident[station_id]="+$('#incident_station_id').val(),
 	   success: function(html) {
 	 	 $('#incidents').html(html); 
-	     <%=incident_markers @incidents%>
+	     $.getJSON("/stations/"+$('#incident_station_id').val()+".json", function(json){
+		 			new_marker($('#incident_comment').val(),json.station.lat,json.station.long,$('#incident_line_id').val(),json.station.name)
+	     })
 	   }
     }
 	)

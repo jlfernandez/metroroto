@@ -43,6 +43,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :lines, :has_many => [:incidents, :stations]
   map.resources :incidents
+  map.resources :stations
 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

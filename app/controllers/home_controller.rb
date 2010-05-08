@@ -15,5 +15,6 @@ class HomeController < ApplicationController
     @incidents = Incident.last_incidents
     render :partial => "last_incidents"
   end
+
   
 end
