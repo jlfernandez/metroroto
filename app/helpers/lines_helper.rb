@@ -4,7 +4,7 @@ module LinesHelper
     line.stations.each do |station|
       js << "new GLatLng(#{station.lat}, #{station.long}),"
     end  
-    js << "],'#{line.colour}', 4);"
+    js << "],'#{line.colour}', 8);"
     js << "map.addOverlay(polyline);"
     
     return js
