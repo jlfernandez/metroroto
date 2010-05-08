@@ -1,7 +1,7 @@
 class CreateLines < ActiveRecord::Migration
   def self.up
     create_table :lines do |t|
-      t.integer :number
+      t.string :number
       t.string :name
     end
   end
