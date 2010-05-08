@@ -1,7 +1,28 @@
 <%= auto_discovery_link_tag(:atom, {:action => "show", :format => :atom}, 
  {:title => "Atom Feed"}) %>
 
+<script>
+$(document).ready(function() {
+
+	if (GBrowserIsCompatible()) {
+      var map = new GMap2(document.getElementById("map_canvas"));
+      map.setCenter(new GLatLng(40.4166909, -3.7003454), 13);
+      map.addControl(new GSmallMapControl());
+      <%=incident_markers @incidents%>
+
+      <%=create_map_line @line%>
+
+   	  map.addOverlay(polyline);
+
+    }
+});
+
+</script>
+
+
 <h1>Incidencias en la <%=@line.name%></h1>
+
+<div id="map_canvas" style="width:960px; height:500px"></div>
 
 <ul>
 <%@line.incidents.each do |incident|%>

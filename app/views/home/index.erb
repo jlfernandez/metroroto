@@ -10,6 +10,12 @@ $(document).ready(function() {
       map.addControl(new GSmallMapControl());
       <%=incident_markers @incidents%>
 
+	var polyline = new GPolyline([
+	    new GLatLng(40.407, -3.71105),
+	    new GLatLng(40.3888, -3.73982)
+	], "#FF0000", 5);
+	map.addOverlay(polyline);
+
 	//Create new Tile Layer
 	  var gTileUrlTemplate = 'http://mt1.google.com/vt/lyrs=m@121,transit|vm:1&hl=en&opts=r&x={X}&y={Y}&z={Z}';
 	  var tileLayerOverlay = new GTileLayerOverlay(
