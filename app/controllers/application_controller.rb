@@ -19,12 +19,12 @@ class ApplicationController < ActionController::Base
          feed_item = Atom::Entry.new
          feed_item.title = item_options[:title]
          feed_item.links << Atom::Link.new(:rel =>'alternate',
-                                           :href => incident_path)
+                                           :href => url_for(Incident.find(item_options[:id])))
          feed_item.summary = item_options[:excerpt]
          feed_item.content =  Atom::Content::Html.new(item_options[:content])
          feed_item.published = item_options[:date]
          feed_item.updated = item_options[:date]
-         feed_item.id = url_for(Incident.find(item_options[:id]))
+         feed_item.id = item_options[:id]
          feed.entries << feed_item
        end
        return feed

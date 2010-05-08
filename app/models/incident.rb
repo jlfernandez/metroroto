@@ -20,7 +20,7 @@ class Incident < ActiveRecord::Base
   def options_for_feed
     {
       :id => id,
-      :title => "Incidencia en Línea #{self.line_id} en la estación de #{self.station}",
+      :title => "Incidencia en Línea #{self.line.number} en la estación de #{self.station.name}",
       :content => comment,
       :date => date
     }
