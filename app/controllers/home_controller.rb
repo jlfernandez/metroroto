@@ -8,4 +8,12 @@ class HomeController < ApplicationController
     end  
   end
   
+  def new_incident
+    incident = Incident.new(params[:incident])
+    incident.date = Time.now
+    incident.save!
+    @incidents = Incident.last_incidents
+    render :partial => "last_incidents"
+  end
+  
 end

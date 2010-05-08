@@ -10,12 +10,6 @@ $(document).ready(function() {
       map.addControl(new GSmallMapControl());
       <%=incident_markers @incidents%>
 
-	var polyline = new GPolyline([
-	    new GLatLng(40.407, -3.71105),
-	    new GLatLng(40.3888, -3.73982)
-	], "#FF0000", 5);
-	map.addOverlay(polyline);
-
 	//Create new Tile Layer
 	  var gTileUrlTemplate = 'http://mt1.google.com/vt/lyrs=m@121,transit|vm:1&hl=en&opts=r&x={X}&y={Y}&z={Z}';
 	  var tileLayerOverlay = new GTileLayerOverlay(
@@ -27,9 +21,33 @@ $(document).ready(function() {
 	  );
 	  map.addOverlay(tileLayerOverlay);
     }
+
+
+  $('#sharebutton').click(function() {
+    
+    $.ajax({
+	   type: "POST",
+	   url: "/home/new_incident",
+	   data: "incident[comment]="+$('#incident_comment').val()+"&incident[line_id]="+$('#incident_line_id').val()+
+	          "&incident[station_id]="+$('#incident_station_id').val(),
+	   success: function(html) {
+	 	 $('#incidents').html(html); 
+	   }
+    }
+	)
+    return false;
+  })
+
+
+
 });
 
 </script>
+
+
+
+
+
 
 
 
@@ -43,16 +61,9 @@ $(document).ready(function() {
  <div id="map_canvas" style="width:960px; height:500px"></div>
 
 <h2>Últimas incidencias</h2>
-<ul id="last_incidents">
-  <%@incidents.each do |incident|%>
-    <li><%=l(incident.date, :format => 'long')%> - <%=link_to "Línea #{incident.line.number}", incident.line, :class => "line"%>. 
-		Estación de <strong><%=incident.station.name%></strong>. <%=incident.comment%>. 
-		<%unless incident.user.blank?%>
-			Por <a href ="http://twitter.com/<%=incident.user%>/status/<%=incident.twitter_id%>"
-				target="_blank">@<%=incident.user%></a></li>
-		<%end%>	
-  <%end%>
-</ul>
+<div id="incidents">
+	<%= render :partial => 'last_incidents' %>
+</div>
 
 <h2>Nueva incidencia</h2>
 <%form_for(Incident.new) do |f|%>
@@ -68,7 +79,7 @@ $(document).ready(function() {
 	  <%= f.label :station_id ,"¿En qué estación?"%><br>
 	  <%=f.select :station_id, Station.by_line(1).collect {|l| [l.name, l.id]}%>
 	</p>
-		<button type="submit">Compártelo!!</button>
+		<button type="submit" id="sharebutton">Compártelo!!</button>
 
 
 <% content_for :js_inside_script do %>
