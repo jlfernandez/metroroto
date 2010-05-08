@@ -1,5 +1,4 @@
-<%= auto_discovery_link_tag(:atom, {:action => "index", :format => :atom}, 
- {:title => "Atom Feed"}) %>
+
 
 <script>
 $(document).ready(function() {
@@ -32,6 +31,7 @@ $(document).ready(function() {
 	          "&incident[station_id]="+$('#incident_station_id').val(),
 	   success: function(html) {
 	 	 $('#incidents').html(html); 
+	     <%=incident_markers @incidents%>
 	   }
     }
 	)
