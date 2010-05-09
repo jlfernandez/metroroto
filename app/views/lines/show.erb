@@ -16,7 +16,7 @@ $(document).ready(function() {
 </script>
 
 
-<h1>Incidencias en la <%=@line.name%></h1>
+<h1>Incidencias en la <%=@line.name%> <%=image_tag(line_status_image @line)%></h1>
 
 <div id="map_canvas" style="width:960px; height:500px"></div>
 

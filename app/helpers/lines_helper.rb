@@ -9,4 +9,18 @@ module LinesHelper
     
     return js
   end
+  
+  def line_status_image(line)
+    case line.status
+    when Line::LINE_STATUS_LEVELS["tormentoso"]
+      "img_tormenta.gif"
+    when Line::LINE_STATUS_LEVELS["nublado"]
+      "img_nublado.gif"
+    when Line::LINE_STATUS_LEVELS["nubes"]
+      "img_nubes.gif"
+    when Line::LINE_STATUS_LEVELS["solazo"]
+      "img_solazo.gif"  
+    end    
+  end
+  
 end

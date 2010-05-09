@@ -76,6 +76,13 @@ $(document).ready(function() {
 </div>
  <div id="map_canvas" style="width:960px; height:500px"></div>
 
+<h2>Estado de las líneas</h2>
+<div id="lines">
+	<ul>
+		<%=render :partial => "line", :collection => Line.find(:all)%>
+	</ul>
+</div>
+
 <h2>Últimas incidencias</h2>
 <div id="incidents">
 	<%= render :partial => 'last_incidents' %>
