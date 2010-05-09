@@ -46,7 +46,7 @@ $(document).ready(function() {
 	   success: function(html) {
 	 	 $('#incidents').html(html); 
 	     $.getJSON("/stations/"+$('#incident_station_id').val()+".json", function(json){
-		 			new_marker($('#incident_comment').val(),json.station.lat,json.station.long,$('#incident_line_id').val(),json.station.name)
+	new_marker($('#incident_comment').val(),json.station.lat,json.station.long,$('#incident_line_id').val(),json.station.name)
 	     })
 	   }
     }

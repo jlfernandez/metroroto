@@ -9,6 +9,10 @@ class Incident < ActiveRecord::Base
   
   validates_presence_of :station
   
+  INCIDENT_LEVELS={"inmediato" => 0,
+                   "hace_un_rato" => 1,
+                   "hace_mucho" => 2}
+  
   def self.last_incidents
     Incident.find(:all, :conditions => "date > '#{(Time.now - 30.days).to_s(:db)}'", :order => "date DESC")
   end
@@ -28,6 +32,16 @@ class Incident < ActiveRecord::Base
 
   def line
     station.line
+  end
+  
+  def status
+    if date > Time.now - 15.minutes
+      INCIDENT_LEVELS["inmediato"]
+    elsif date > Time.now - 1.hour
+      INCIDENT_LEVELS["hace_un_rato"]
+    else
+      INCIDENT_LEVELS["hace_mucho"]
+    end
   end
 
   private
