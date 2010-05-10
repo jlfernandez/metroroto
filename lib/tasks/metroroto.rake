@@ -8,6 +8,7 @@ namespace :metroroto do
 
   task :load_stations => :environment do
     Metroparser.load_stations
+    Station.update_wrong_stations
   end
 end
 
