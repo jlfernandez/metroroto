@@ -19,9 +19,46 @@
 </head>
 
 <body>
-   <div class="wrapper">
-		<%= yield%>
-	</div>
+  <div id="header">
+    
+    <div>
+      <a href="/">Metroroto</a>
+      <h1>Sistema de trackeo de incidencias del Metro de Madrid</h1>
+    </div>
+    
+    <ul>
+      <li><a href="/">Incidencias</a></li>
+      <li class="lines">
+        <a href="#">Lineas</a>
+        <ul>
+          <li><a href="#">Linea 1</a></li>
+          <li><a href="#">Linea 2</a></li>
+          <li><a href="#">Linea 3</a></li>
+          <li><a href="#">Linea 4</a></li>
+          <li><a href="#">Linea 5</a></li>
+          <li><a href="#">Linea 6</a></li>
+          <li><a href="#">Linea 7</a></li>
+          <li><a href="#">Linea 8</a></li>
+          <li><a href="#">Linea 9</a></li>
+          <li><a href="#">Linea 10</a></li>
+          <li><a href="#">Linea 11</a></li>
+          <li><a href="#">Linea 12</a></li>
+          <li><a href="#">Linea R</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Histórico</a></li>
+    </ul>
+  </div><!-- .header -->
+  
+	<%= yield%>
+	
+	<div id="footer" class="wrapper">
+	 <p>Metroroto.com 2010 - <a href="#">Aviso legal</a> - Un proyecto de @larubyroom.</p>
+	 <ul>
+	   <li><a href="#">¿Qué es metroroto?</a></li>
+	   <li><a href="#">¿Cómo se usa?</a> </li>
+	 </ul>
+	</div><!-- #footer -->
 	
   <script>
   $(document).ready(function(){

@@ -1,6 +1,13 @@
+<div id="map_canvas" style="width:100%; height:900px"></div>
 
 
-<script>
+
+
+
+
+
+
+<script type="text/javascript" charset="utf-8">
 $(document).ready(function() {
 
 	if (GBrowserIsCompatible()) {
@@ -22,15 +29,9 @@ $(document).ready(function() {
     }
 
 	function new_marker(comment,lat,lng,line,station) {
-		
 		var now = new Date();
-		
 		var date = now.getDate() + " de " + (now.getMonth() +1) + " de " + now.getFullYear() + " " + now.getHours() + ":" + now.getMinutes();
-		
 		var div_info ="<div class=\"map_pop\"><p><span class=\"line_number line_"+line+"\">"+line+"</span><span class=\"station\">"+station+"</span></p><p class=\"date\">"+date+"</p><p class=\"comment\">Incidencia:     "+comment+"</p></div>";
-		
-		
-		
 		map.addOverlay(addInfoWindowToMarker(new GMarker(new GLatLng(lat,lng),{title : 'Incidencia en línea'+line}),div_info,{}));
 	   return false;
 	}
@@ -62,61 +63,47 @@ $(document).ready(function() {
 
 
 
+<div id="content" class="wrapper">
+  <h2>Estado de las líneas</h2>
+  <ul class="lines_status">
+  		<%=render :partial => "line", :collection => Line.find(:all)%>
+  </ul>
+  
+  <h2>Últimas incidencias</h2>
+  <div id="incidents">
+  	<%= render :partial => 'last_incidents' %>
+  </div>
+  
+  <h2>Nueva incidencia</h2>
+  <%form_for(Incident.new) do |f|%>
+  	<p>
+  	  <%= f.label :comment, "¿Qué pasa?"%><br>
+  	 <%=f.text_field :comment%>
+  	</p>
+  	<p>
+  		<%= f.label :line_id, "¿En qué linea?"%><br>
+  	  	<%=f.select :line_id, Line.find(:all).collect {|l| [l.name, l.id]}%>
+  	</p>
+  	<p id="station">
+  	  <%= f.label :station_id ,"¿En qué estación?"%><br>
+  	  <%=f.select :station_id, Station.by_line(1).collect {|l| [l.name, l.id]}%>
+  	</p>
+  		<button type="submit" id="sharebutton">Compártelo!!</button>
+  
+  
+  <% content_for :js_inside_script do %>
+  
+   $('select#incident_line_id').change(function(){
+     $.getJSON("lines/"+ $(this).val() +"/stations", function(j){
+        var options = '';
+        for (var i = 0; i < j.length; i++) {
+          options += '<option value="' + j[i][1] + '">' + j[i][0] + '</option>';
+        }
+        $("select#incident_station_id'").html(options);
+      })
+   });
+  
+  <% end %>
+  <%end%>
 
-
-
-
-
-<h1><a href="/">Metroroto</a></h1>
-<div id="report">
-	<ul>
-	<li><a href="#new_incident">Reportar incidencia</a></li>
-	<li><a href="#last_incidents">Últimas incidencias</a></li>
-	</ul>
-</div>
- <div id="map_canvas" style="width:960px; height:500px"></div>
-
-<h2>Estado de las líneas</h2>
-<div id="lines">
-	<ul>
-		<%=render :partial => "line", :collection => Line.find(:all)%>
-	</ul>
-</div>
-
-<h2>Últimas incidencias</h2>
-<div id="incidents">
-	<%= render :partial => 'last_incidents' %>
-</div>
-
-<h2>Nueva incidencia</h2>
-<%form_for(Incident.new) do |f|%>
-	<p>
-	  <%= f.label :comment, "¿Qué pasa?"%><br>
-	 <%=f.text_field :comment%>
-	</p>
-	<p>
-		<%= f.label :line_id, "¿En qué linea?"%><br>
-	  	<%=f.select :line_id, Line.find(:all).collect {|l| [l.name, l.id]}%>
-	</p>
-	<p id="station">
-	  <%= f.label :station_id ,"¿En qué estación?"%><br>
-	  <%=f.select :station_id, Station.by_line(1).collect {|l| [l.name, l.id]}%>
-	</p>
-		<button type="submit" id="sharebutton">Compártelo!!</button>
-
-
-<% content_for :js_inside_script do %>
-
- $('select#incident_line_id').change(function(){
-   $.getJSON("lines/"+ $(this).val() +"/stations", function(j){
-      var options = '';
-      for (var i = 0; i < j.length; i++) {
-        options += '<option value="' + j[i][1] + '">' + j[i][0] + '</option>';
-      }
-      $("select#incident_station_id'").html(options);
-    })
- });
-
-<% end %>
-<%end%>
-
+</div><!-- content -->

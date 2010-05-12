@@ -1,11 +1,10 @@
 
 <ul id="last_incidents">
   <%@incidents.each do |incident|%>
-    <li><%=l(incident.date, :format => 'long')%> - <%=link_to "Línea #{incident.line.number}", incident.line, :class => "line"%>. 
+    <li><%=l(incident.date, :format => 'long')%> - <%=link_to "#{incident.line.number}", incident.line, :class => "line_number line_"+incident.line.number %>. 
 		Estación de <strong><%=incident.station.name%></strong>. <%=incident.comment%>. 
 		<%unless incident.user.blank?%>
-			Por <a href ="http://twitter.com/<%=incident.user%>/status/<%=incident.twitter_id%>"
-				target="_blank">@<%=incident.user%></a></li>
+			Por <a href ="http://twitter.com/<%=incident.user%>/status/<%=incident.twitter_id%>" target="_blank">@<%=incident.user%></a></li>
 		<%end%>	
   <%end%>
 </ul>

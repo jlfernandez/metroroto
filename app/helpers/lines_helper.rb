@@ -15,11 +15,11 @@ module LinesHelper
     when Line::LINE_STATUS_LEVELS["tormentoso"]
       "img_tormenta.gif"
     when Line::LINE_STATUS_LEVELS["nublado"]
-      "img_nublado.gif"
+      "averia"
     when Line::LINE_STATUS_LEVELS["nubes"]
-      "img_nubes.gif"
+      "averia_reciente"
     when Line::LINE_STATUS_LEVELS["solazo"]
-      "img_solazo.gif"  
+      "ok"  
     end    
   end
   
