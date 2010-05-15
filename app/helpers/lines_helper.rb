@@ -10,16 +10,16 @@ module LinesHelper
     return js
   end
   
-  def line_status_image(line)
+  def line_status(line)
     case line.status
     when Line::LINE_STATUS_LEVELS["tormentoso"]
-      "img_tormenta.gif"
+      "<span class=\"breakdown_3\">Línea cerrada</span>"
     when Line::LINE_STATUS_LEVELS["nublado"]
-      "averia"
+      "<span class=\"breakdown_2\">Línea con incidencias largas </span>"
     when Line::LINE_STATUS_LEVELS["nubes"]
-      "averia_reciente"
+      "<span class=\"breakdown_1\">Línea con incidencias cortas</span>"
     when Line::LINE_STATUS_LEVELS["solazo"]
-      "ok"  
+      "<span class=\"ok\">Línea abierta</span>"
     end    
   end
   

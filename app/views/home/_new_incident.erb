@@ -1,0 +1,28 @@
+<%form_for(Incident.new) do |f|%>
+  <h2>Nueva incidencia</h2>
+  <p>
+    <%= f.label :comment, "¿Qué pasa?"%>
+   <%=f.text_field :comment%>
+  </p>
+  <p class="line">
+  	<%= f.label :line_id, "¿En qué linea?"%>
+    	<%=f.select :line_id, Line.find(:all).collect {|l| [l.name, l.id]}%>
+  </p>
+  <p id="station">
+    <%= f.label :station_id ,"¿En qué estación?"%>
+    <%=f.select :station_id, Station.by_line(1).collect {|l| [l.name, l.id]}%>
+  </p>
+  
+  <p class="direction">
+    <label>¿En qué sentido?</label>
+    <span>
+      <input type="radio" name="incident[direction]" value="128" id="start_station"/> <label for="start_station">Pinar de Chamartín</label>
+    </span>
+    
+    <span>
+      <input type="radio" name="incident[direction]" value="160" id="end_station"/> <label for="end_station">Valdecarros</label>
+    </span>
+  </p>
+  
+  <button type="submit">Compártelo!!</button>  
+<%end%>

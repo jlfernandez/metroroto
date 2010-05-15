@@ -7,9 +7,7 @@
 
   <title>Metroroto</title>
 
-   <%= stylesheet_link_tag "metroroto" %>
-   <%= javascript_include_tag 'application', 'jquery' %>
-   <%= yield :js_includes %>
+   <%= stylesheet_link_tag "metroroto", "uniform.default" %>
 
 <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAScZd0t0Z0iHa3k8zvpRwsBT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQohyjT4ULl3Evlr-R-t-LyrhOozA" type="text/javascript"></script>
 
@@ -60,12 +58,9 @@
 	 </ul>
 	</div><!-- #footer -->
 	
-  <script>
-  $(document).ready(function(){
-   <%= yield :js_inside_script%>
-   });
-  </script>
-
+	
+	<%= javascript_include_tag 'jquery', 'application', 'jquery.uniform.min' %>
+  <%= yield :js_includes %>
 </body>
 </html>
 
