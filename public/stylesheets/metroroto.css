@@ -361,6 +361,21 @@ h2 {
 
 
 
+
+ul#last_incidents p{
+  font-size:1.3em;
+  color:#666;
+}
+
+ul#last_incidents p .line_number {
+  font-size:1em;
+}
+
+ul#last_incidents p strong {
+  font-size:inherit;
+}
+
+
 /*----------------------------------------------------------------------------------------------------------------------------
   FOOTER
 ##############################################################################################################################*/
@@ -476,22 +491,45 @@ form#new_incident .direction span span{
   padding:0;
 }
 
+/*----------------------------------------------------------------------------------------------------------------------------
+  LINE - show
+##############################################################################################################################*/
 
+.line_show h2 {
+  font-size:47px;
+  padding-bottom:7px;
+}
 
+.line_show h2 strong{
+  font-size:47px;
+  font-family:'YanoneBold';
+  font-weight:normal;
+}
 
+.line_stations{
+  overflow:hidden;
+  width:100%;
+  clear:both;
+  margin-left:-2.5em;
+  padding-bottom:2.5em;
+}
 
-ul#last_incidents p{
-  font-size:1.3em;
+.line_stations li{
+  behavior:url('../javascripts/-ms-transform.htc');
+  float:left;
+  text-align:left;
+  width:26px;
+  height:100px;
+  white-space:nowrap;
+  font-size:1.2em;
   color:#666;
+  -moz-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
 }
 
-ul#last_incidents p .line_number {
-  font-size:1em;
-}
 
-ul#last_incidents p strong {
-  font-size:inherit;
-  }
 
 
 

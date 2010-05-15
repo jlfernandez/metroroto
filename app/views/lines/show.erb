@@ -1,17 +1,33 @@
 <div id="map_canvas" style="width:100%; height:900px"></div>
 
-<div id="content"  class="wrapper">
+<div id="content"  class="wrapper line_show">
+  <%=line_status @line%>
   
-  <h1>Incidencias en la <%=@line.name%> <%=line_status @line%></h1>
-
-  <ul>
-  <%@line.incidents.each do |incident|%>
-    <li><%=incident.comment%>. <%=incident.date%>. 
-  	<%unless incident.user.blank?%>
-  		Por <a href ="http://twitter.com/<%=incident.user%>/status/<%=incident.twitter_id%>" target="_blank">@<%=incident.user%></a></li>	
-  	<%end%>
+  <h2><strong><%=@line.name%>:</strong> <%=@line.stations.find(:first).name%> - <%=@line.stations.find(:last).name%></h2>
+  <ul class="line_stations">
+  <%@line.stations.each do |station|%>
+    <li>
+    <%= station.name %>
+    </li>
   <%end%>
   </ul>
+
+  <ul id="last_incidents">
+  <%@line.incidents.each do |incident|%>
+    <li>
+      <p>
+      <%=link_to "#{incident.line.number}", incident.line, :class => "line_number line_"+incident.line.number %>
+		  Estación de <strong><%=incident.station.name%></strong> -
+		  <span><%=l(incident.date, :format => 'long')%>.</span> -
+		  <%=incident.comment%> 
+		  <%unless incident.user.blank?%>
+			  Por <a href ="http://twitter.com/<%=incident.user%>/status/<%=incident.twitter_id%>" target="_blank">@<%=incident.user%></a>
+		  <%end%>	
+		  </p>
+		</li>
+  <%end%>
+  </ul>
+  
   
 </div><!-- content -->
 

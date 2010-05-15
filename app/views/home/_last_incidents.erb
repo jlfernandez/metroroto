@@ -8,8 +8,9 @@
 		  <span><%=l(incident.date, :format => 'long')%>.</span> -
 		  <%=incident.comment%> 
 		  <%unless incident.user.blank?%>
-			  Por <a href ="http://twitter.com/<%=incident.user%>/status/<%=incident.twitter_id%>" target="_blank">@<%=incident.user%></a></li>
+			  Por <a href ="http://twitter.com/<%=incident.user%>/status/<%=incident.twitter_id%>" target="_blank">@<%=incident.user%></a>
 		  <%end%>	
 		  </p>
+		</li>
   <%end%>
 </ul>
