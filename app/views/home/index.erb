@@ -27,7 +27,7 @@
           var map = new GMap2(document.getElementById("map_canvas"));
           map.setCenter(new GLatLng(40.4166909, -3.7003454), 13);
           map.addControl(new GSmallMapControl());
-          <%=incident_markers @incidents%>
+          <%= incident_markers_grouped_by_station @incidents %>
     
     	//Create new Tile Layer
     	  var gTileUrlTemplate = 'http://mt1.google.com/vt/lyrs=m@121,transit|vm:1&hl=en&opts=r&x={X}&y={Y}&z={Z}';

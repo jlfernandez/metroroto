@@ -39,8 +39,8 @@
         var map = new GMap2(document.getElementById("map_canvas"));
         map.setCenter(new GLatLng(40.4166909, -3.7003454), 13);
         map.addControl(new GSmallMapControl());
-        <%=incident_markers @line.incidents%>
-        <%=create_map_line @line%>
+        <%= incident_markers_grouped_by_station @line.incidents %>
+        <%= create_map_line @line%>
       }
   });
 

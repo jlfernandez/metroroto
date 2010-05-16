@@ -43,7 +43,16 @@ class Incident < ActiveRecord::Base
       INCIDENT_LEVELS["hace_mucho"]
     end
   end
-
+  
+  def self.group_by_station_name(incidents)
+    incidents.inject({}) do |hash, incident|
+      hash[incident.station.name] ||= []
+      hash[incident.station.name] << incident
+      hash[incident.station.name].sort{|a,b| -(a.date <=> b.date)}
+      hash
+    end
+  end
+  
   private
 
   def geolocate
