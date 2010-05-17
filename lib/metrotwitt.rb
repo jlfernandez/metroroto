@@ -83,10 +83,11 @@ class Metrotwitt
     puts "Retwitt..."
     unless Rails.env=="test"
       client = self.connect_twitter
-      user = incident.user || "metroroto"
+      user = incident.user ? "by @#{incident.user}" : ""
+      
       begin
-        client.update("##{incident.station.nicename.gsub("-","")} 
-                       #l#{incident.line.number} #{incident.comment} by @#{user}")
+        client.update("#metroroto ##{incident.station.nicename.gsub("-","")} 
+                       #l#{incident.line.number} #{incident.comment} #{user}")
       rescue
         puts "No se ha podido retwittear la incidencia #{incident.id} por alguna razón (twitt duplicado probablemente)"
       end  
