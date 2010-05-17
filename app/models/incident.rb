@@ -68,8 +68,8 @@ class Incident < ActiveRecord::Base
   
   def send_subscriptions
     line.subscriptions.each do |subscription|
-      Notifications.deliver_new_incident(subscription.email,self)
-      #Notifications.send_later(:deliver_new_incident,(subscription.email,self))
+      #Notifications.deliver_new_incident(subscription.email,self)
+      Notifications.send_later(:deliver_new_incident,subscription.email,self)
     end
   end
 
