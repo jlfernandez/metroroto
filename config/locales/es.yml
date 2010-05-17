@@ -107,4 +107,10 @@ es:
       normal: "%d, %B, %Y"
     am: "am"
     pm: "pm"
-    
+  app:
+    site:
+      title: Metroroto
+    incident:
+      email:
+        new:
+          subject: "[Metroroto] Linea {{line}}"

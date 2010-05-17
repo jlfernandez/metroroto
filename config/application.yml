@@ -1,0 +1,12 @@
+defaults: &defaults
+  app:
+    admin_email: "noreply@metroroto.com"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

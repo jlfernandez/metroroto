@@ -9,11 +9,13 @@
 
 <div id="content" class="wrapper">
   <h2>Últimas incidencias</h2>
+<p class="tag_line">Incidencias recibidas en las últimas horas o que siguen sin solucionarse</p>
   <div id="incidents">
   	<%= render :partial => 'incidents/last_incidents' %>
   </div>
   
   <%= render :partial => 'incidents/new' %>
+  <%= render :partial => 'subscriptions/new' %>
 
 </div><!-- content -->
 

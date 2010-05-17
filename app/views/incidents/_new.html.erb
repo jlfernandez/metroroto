@@ -1,5 +1,7 @@
 <%form_for(Incident.new) do |f|%>
   <h2>Nueva incidencia</h2>
+<p class="tag_line">Desde aquí puedes añadir incidencias para mantener actualizado el estado de circulación de las líneas de metro. También puedes enviarlas desde <a href="http://twitter.com">twitter</a>, mira <a href="/como-funciona">como funciona</a>.</p>
+
   <p>
     <%= f.label :comment, "¿Qué pasa?"%>
    <%=f.text_field :comment%>

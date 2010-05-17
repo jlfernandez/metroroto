@@ -5,8 +5,7 @@ class Incident < ActiveRecord::Base
 
   before_save :geolocate
   
-  after_save :retwitt
-  
+  after_create :retwitt, :send_subscriptions
   validates_presence_of :station
   
   INCIDENT_LEVELS={"inmediato" => 0,
@@ -65,6 +64,13 @@ class Incident < ActiveRecord::Base
   
   def retwitt
     Metrotwitt.send_later(:retwitt,self)
+  end
+  
+  def send_subscriptions
+    line.subscriptions.each do |subscription|
+      Notifications.deliver_new_incident(subscription.email,self)
+      #Notifications.send_later(:deliver_new_incident,(subscription.email,self))
+    end
   end
 
 end

@@ -1,3 +1,9 @@
 [submodule "vendor/plugins/yaml_db"]
 	path = vendor/plugins/yaml_db
 	url = git://github.com/adamwiggins/yaml_db.git
+[submodule "vendor/plugins/settingslogic"]
+	path = vendor/plugins/settingslogic
+	url = git://github.com/binarylogic/settingslogic.git
+[submodule "vendor/plugins/jrails"]
+	path = vendor/plugins/jrails
+	url = git://github.com/aaronchi/jrails.git
