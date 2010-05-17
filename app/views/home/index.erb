@@ -24,7 +24,7 @@
     $(document).ready(function() {
     
     	if (GBrowserIsCompatible()) {
-          var map = new GMap2(document.getElementById("map_canvas"));
+          map = new GMap2(document.getElementById("map_canvas"));
           map.setCenter(new GLatLng(40.4166909, -3.7003454), 13);
           map.addControl(new GSmallMapControl());
           <%= incident_markers_grouped_by_station @incidents %>
@@ -41,13 +41,6 @@
     	  map.addOverlay(tileLayerOverlay);
         }
     
-    	function new_marker(comment,lat,lng,line,station) {
-    		var now = new Date();
-    		var date = now.getDate() + " de " + (now.getMonth() +1) + " de " + now.getFullYear() + " " + now.getHours() + ":" + now.getMinutes();
-    		var div_info ="<div class=\"map_pop\"><p><span class=\"line_number line_"+line+"\">"+line+"</span><span class=\"station\">"+station+"</span></p><p class=\"date\">"+date+"</p><p class=\"comment\">Incidencia:     "+comment+"</p></div>";
-    		map.addOverlay(addInfoWindowToMarker(new GMarker(new GLatLng(lat,lng),{title : 'Incidencia en línea'+line}),div_info,{}));
-    	   return false;
-    	}
     
     
     

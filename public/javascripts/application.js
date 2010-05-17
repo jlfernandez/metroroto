@@ -4,6 +4,7 @@
 
 function addInfoWindowToMarker(marker,info,options){
 	GEvent.addListener(marker, "click", function() {marker.openInfoWindowHtml(info,options);});
+	console.log(marker)
 	return marker;
 }
 
@@ -19,6 +20,16 @@ var getFirstandLastStation = {
     getFirstandLastStation.end_station.val(j[(j.length)-1][1])
     getFirstandLastStation.end_station_label.html(j[(j.length)-1][0])
   }
+}
+
+
+var map; 
+function new_marker(comment, lat, lng, line, station) {
+	var now = new Date(),
+	    date = now.getDate() + " de " + (now.getMonth() +1) + " de " + now.getFullYear() + " " + now.getHours() + ":" + now.getMinutes(),
+	    div_info ="<div class=\"map_pop\"><p><span class=\"line_number line_"+line+"\">"+line+"</span><span class=\"station\">"+station+"</span></p><p class=\"date\">"+date+"</p><p class=\"comment\">Incidencia:     "+comment+"</p></div>";
+	map.addOverlay(addInfoWindowToMarker(new GMarker(new GLatLng(lat,lng) , {title : 'Incidencia en línea'+line} ) , div_info ,{}));
+  return false;
 }
 
 
@@ -54,7 +65,7 @@ $(function(){
  	    success: function(html){
  	 	  $('#incidents').html(html); 
  	      $.getJSON("/stations/"+$('#incident_station_id').val()+".json", function(json){
- 	        new_marker($('#incident_comment').val(),json.station.lat,json.station.long,$('#incident_line_id').val(),json.station.name)
+ 	        new_marker( $('#incident_comment').val(),json.station.lat,json.station.long,$('#incident_line_id').val(),json.station.name)
  	      })
  	    }
       })
