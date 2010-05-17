@@ -60,8 +60,8 @@ $(function(){
      e.preventDefault();
       $.ajax({
  	    type: "POST",
- 	    url: "/home/new_incident",
- 	    data: "incident[comment]="+$('#incident_comment').val()+"&incident[line_id]="+$('#incident_line_id').val()+"&incident[station_id]="+$('#incident_station_id').val(),
+ 	    url: $(this).attr("action"),
+ 	    data: "incident[comment]="+$('#incident_comment').val()+"&incident[line_id]="+$('#incident_line_id').val()+"&incident[station_id]="+$('#incident_station_id').val()+"&incident[direction_id]="+$("input:checked[type='radio'][name='incident[direction]']").val(),
  	    success: function(html){
  	 	  $('#incidents').html(html); 
  	      $.getJSON("/stations/"+$('#incident_station_id').val()+".json", function(json){

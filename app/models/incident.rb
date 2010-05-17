@@ -1,7 +1,7 @@
 class Incident < ActiveRecord::Base
 
   belongs_to :station
-
+  belongs_to :direction, :class_name => "Station"
 
   before_save :geolocate
   

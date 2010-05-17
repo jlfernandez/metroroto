@@ -25,23 +25,13 @@
     </div>
     
     <ul>
-      <li><a href="/">Incidencias</a></li>
+      <li><a href="<%=root_path%>">Incidencias</a></li>
       <li class="lines">
         <a href="#">Lineas</a>
         <ul>
-          <li><a href="<%=line_path 1%>">Linea 1</a></li>
-          <li><a href="<%=line_path 2%>">Linea 2</a></li>
-          <li><a href="<%=line_path 3%>">Linea 3</a></li>
-          <li><a href="<%=line_path 4%>">Linea 4</a></li>
-          <li><a href="<%=line_path 5%>">Linea 5</a></li>
-          <li><a href="<%=line_path 6%>">Linea 6</a></li>
-          <li><a href="<%=line_path 7%>">Linea 7</a></li>
-          <li><a href="<%=line_path 8%>">Linea 8</a></li>
-          <li><a href="<%=line_path 9%>">Linea 9</a></li>
-          <li><a href="<%=line_path 10%>">Linea 10</a></li>
-          <li><a href="<%=line_path 11%>">Linea 11</a></li>
-          <li><a href="<%=line_path 12%>">Linea 12</a></li>
-          <li><a href="<%=line_path 13%>">Linea R</a></li>
+		  <% @lines.each do |line|%>
+          <li><a href="<%=line_path line%>">Linea <%= line.number%></a></li>
+		  <% end %>
         </ul>
       </li>
       <li><a href="#">Histórico</a></li>
