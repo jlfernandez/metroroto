@@ -4,7 +4,6 @@
 
 function addInfoWindowToMarker(marker,info,options){
 	GEvent.addListener(marker, "click", function() {marker.openInfoWindowHtml(info,options);});
-	console.log(marker)
 	return marker;
 }
 
@@ -15,10 +14,10 @@ var getFirstandLastStation = {
   start_station_label : $('label', $('#start_station').closest('span')),
   end_station_label : $('label', $('#end_station').closest('span')),
   change : function(j){
-    getFirstandLastStation.start_station.val(j[0][1])
-    getFirstandLastStation.start_station_label.html(j[0][0])
-    getFirstandLastStation.end_station.val(j[(j.length)-1][1])
-    getFirstandLastStation.end_station_label.html(j[(j.length)-1][0])
+    getFirstandLastStation.start_station.val(j[0][1]);
+    getFirstandLastStation.start_station_label.html(j[0][0]);
+    getFirstandLastStation.end_station.val(j[(j.length)-1][1]);
+    getFirstandLastStation.end_station_label.html(j[(j.length)-1][0]);
   }
 }
 
