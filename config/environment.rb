@@ -46,8 +46,6 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
    config.i18n.default_locale = :es
 
-  Geokit::Geocoders::google = 'ABQIAAAAScZd0t0Z0iHa3k8zvpRwsBT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQohyjT4ULl3Evlr-R-t-LyrhOozA'
-  Geokit::Geocoders::request_timeout = 5
   
   OAUTH_ACCESS_TOKEN = "134175860-0Wzs51rpR88WdsbOIY5pQGL1CGAMw3ULtpEX6YSE"
   OAUTH_ACCESS_SECRET_TOKEN = "AukFvpY5E9a6qmzu9F3wEQls6clpt4zSZlvaSBo"
