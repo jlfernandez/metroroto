@@ -5,7 +5,7 @@
   
   <h2><strong><%=@line.name%>:</strong> <%=@line.stations.find(:first).name%> - <%=@line.stations.find(:last).name%></h2>
   <ul class="line_stations">
-    <%@line.stations.each do |station|%><li><p><%= station.name %></p></li><%end%>
+    <%@line.stations.each do |station|%><li class="<%= station_status(station)%>"><p><%= station.name %></p></li><%end%>
   </ul>
 
   <ul id="last_incidents">

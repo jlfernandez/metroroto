@@ -12,9 +12,8 @@ class Incident < ActiveRecord::Base
                    "hace_un_rato" => 1,
                    "hace_mucho" => 2}
   
-  def self.last_incidents
-    Incident.find(:all, :conditions => "date > '#{(Time.now - 30.days).to_s(:db)}'", :order => "date DESC")
-  end
+  named_scope :last_incidents,:conditions => "date > '#{(Time.now - 7.days).to_s(:db)}'", :order => "date DESC"
+
 
   def self.last_twitterid
     Incident.maximum(:twitter_id)
