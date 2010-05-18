@@ -12,12 +12,10 @@ class Line < ActiveRecord::Base
 
     if date.blank?
       LINE_STATUS_LEVELS["solazo"]
-    elsif date > Time.now - 30.minutes
+    elsif date > Time.now - 15.minutes
       LINE_STATUS_LEVELS["tormentoso"]
-    elsif date > Time.now - 2.hours
+    elsif date > Time.now - 1.hours
       LINE_STATUS_LEVELS["nublado"]
-    elsif date > Time.now - 5.hours
-      LINE_STATUS_LEVELS["nubes"]
     else
       LINE_STATUS_LEVELS["solazo"]
     end  

@@ -13,10 +13,8 @@ module LinesHelper
   def line_status(line)
     case line.status
     when Line::LINE_STATUS_LEVELS["tormentoso"]
-      "<span class=\"breakdown_3\">Línea cerrada</span>"
-    when Line::LINE_STATUS_LEVELS["nublado"]
       "<span class=\"breakdown_2\">Línea con incidencias largas </span>"
-    when Line::LINE_STATUS_LEVELS["nubes"]
+    when Line::LINE_STATUS_LEVELS["nublado"]
       "<span class=\"breakdown_1\">Línea con incidencias cortas</span>"
     when Line::LINE_STATUS_LEVELS["solazo"]
       "<span class=\"ok\">Línea abierta</span>"
