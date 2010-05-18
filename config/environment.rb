@@ -6,7 +6,7 @@ RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
 require 'geokit'
-require 'atom'
+#require 'atom'
 
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
@@ -22,7 +22,7 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem 'geokit', :version => '1.5.0'
-  config.gem 'ratom', :version => '0.6.7'
+  config.gem 'ratom', :version => '0.6.7', :lib => 'atom'
   config.gem 'twitter', :version => '0.9.5'
   config.gem 'nokogiri', :version => '1.4.1'
   config.gem 'delayed_job', :version => "2.0.1"
