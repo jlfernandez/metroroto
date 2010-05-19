@@ -37,7 +37,7 @@ function new_marker(comment, lat, lng, line, station) {
 $(function(){
   
    //custom form elements
-   $("select, input:radio").uniform();
+   $("select, input").uniform();
    
    
    //new incident form - get stations from a line
