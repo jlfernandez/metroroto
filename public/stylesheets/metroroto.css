@@ -70,14 +70,18 @@ select {
   font-size:1em;
 }
 
-h2 {
+h2,
+h3 {
   font-family:'YanoneRegular', Arial, Helvetica, sans-serif;
-  font-size:28px;
+  font-size:2.8em;
   color:#3383D3;
   font-weight:normal;
   line-height:normal;
+  clear:both;
 /*  text-shadow:1px 1px 1px #CCC;*/
 }
+
+
 
 
 .wrapper{
@@ -85,7 +89,6 @@ h2 {
   padding:2.5em;
   margin:0 auto;
 } 
-
 
 button {
   background: #F53333 url('../images/button_bg_tile.png') repeat-x top left;
@@ -570,6 +573,23 @@ div#data p.subscription_notice{
 	font-size: 1.5em;
 	color: #F53333;
 }
+
+form label.error {
+  display:none!important;
+}
+
+form span.error {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  padding:.3em .7em;
+  background:#FFFD8B;
+  font-size:1.1em;
+}
+
+
 /*----------------------------------------------------------------------------------------------------------------------------
   LINE - show
 ##############################################################################################################################*/
@@ -599,14 +619,22 @@ div#data p.subscription_notice{
   vertical-align: top;
   zoom: 1;
   *display: inline;
-  width:26px;
+  width:2.6em;
   padding-top:5px;
+}
+
+li.red {
+  background-position:-202px top;
+}
+
+li.yellow {
+  background-position:-101px top;
 }
 
 .line_stations li p {
   behavior:url('../javascripts/-ms-transform.htc');
-  width:26px;
-  height:100px;
+  width:2.5em;
+  height:8.3em;
   margin-left:-2em;
   white-space:nowrap;
   font-size:1.2em;
@@ -619,11 +647,27 @@ div#data p.subscription_notice{
 }
 
 
+.line_show span.breakdown_1,
+.line_show span.breakdown_2,
+.line_show span.ok {
+  width:9.3em;
+  height:3.4em;
+  background:url('../images/line_status_big.png') no-repeat top left;
+  display:block;
+  text-indent:-99999em;
+}
 
+.line_show span.ok {
+  background-position:left top;
+}
 
+.line_show span.breakdown_1 {
+  background-position:-101px top;
+}
 
-
-
+.line_show span.breakdown_2 {
+  background-position:-195px top;
+}
 
 
 

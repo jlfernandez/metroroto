@@ -33,6 +33,8 @@ function new_marker(comment, lat, lng, line, station) {
 
 
 
+
+
 //DOMready
 $(function(){
   
@@ -54,21 +56,28 @@ $(function(){
       })
    });
    
+   
+   
    //new incident form , ajax submit
    $('#new_incident').bind('submit',function(e){
-     e.preventDefault();
-      $.ajax({
- 	    type: "POST",
- 	    url: $(this).attr("action"),
- 	    data: "incident[comment]="+$('#incident_comment').val()+"&incident[line_id]="+$('#incident_line_id').val()+"&incident[station_id]="+$('#incident_station_id').val()+"&incident[direction_id]="+$("input:checked[type='radio'][name='incident[direction]']").val(),
- 	    success: function(html){
- 	 	  $('#incidents').html(html); 
- 	      $.getJSON("/stations/"+$('#incident_station_id').val()+".json", function(json){
- 	        new_marker( $('#incident_comment').val(),json.station.lat,json.station.long,$('#incident_line_id').val(),json.station.name)
- 	      })
- 	    }
-      })
+      e.preventDefault();
+      if ($(this).valid()) {
+        $.ajax({
+   	    type: "POST",
+   	    url: $(this).attr("action"),
+   	    data: "incident[comment]="+$('#incident_comment').val()+"&incident[line_id]="+$('#incident_line_id').val()+"&incident[station_id]="+$('#incident_station_id').val()+"&incident[direction_id]="+$("input:checked[type='radio'][name='incident[direction]']").val(),
+   	    success: function(html){
+   	 	  $('#incidents').html(html); 
+   	      $.getJSON("/stations/"+$('#incident_station_id').val()+".json", function(json){
+   	        new_marker( $('#incident_comment').val(),json.station.lat,json.station.long,$('#incident_line_id').val(),json.station.name)
+   	      })
+   	    }
+        })
+      };
+      
    })
+   
+   
    
    
    var dropDownMenu = {
@@ -97,6 +106,77 @@ $(function(){
    }
    
    dropDownMenu.init();
+   
+
+   
+   
+   
+     $("#new_incident").validate({
+        success: function(label) {
+          var message = '&nbsp;'; // set &nbsp; as text for IE
+          label.closest("p").removeClass("error");
+          $("span.error", label.closest("p")).remove();
+          label.html(message).addClass("valid");
+        },
+        highlight: function(element, errorClass) {
+          $(element).closest("p").addClass("error");
+          $("span.error", $('#'+element.id).closest("p")).remove();
+          switch(element.id){
+            case "incident_comment":
+              $(element).after("<span class='error'>Ups! Debes escribir la incidencia.</span>")
+            break;
+            case "incident_line_id":
+              $(element).after("<span class='error'>Ups! Debes indicar una línea.</span>")
+            break;
+            case "incident_station_id":
+              $(element).after("<span class='error'>Ups! Debes indicar una estación.</span>")
+            break;
+          }
+        },
+        rules : {
+          'incident[comment]' : {
+            required : true
+          },
+          'incident[line_id]' : {
+            required : true
+          },
+          'incident[station_id]' : {
+            required : true
+          }
+        }
+      });
+      
+      // $("#new_subscription").validate({
+      //     success: function(label) {
+      //       var message = '&nbsp;'; // set &nbsp; as text for IE
+      //       label.closest("p").removeClass("error");
+      //       $("span.error", label.closest("p")).remove();
+      //       label.html(message).addClass("valid");
+      //     },
+      //     highlight: function(element, errorClass) {
+      //       $(element).closest("p").addClass("error");
+      //       $("span.error", $('#'+element.id).closest("p")).remove();
+      //       switch(element.id){
+      //         case "subscription_email":
+      //           $(element).after("<span class='error'>Ups! Debes escribir la incidencia.</span>")
+      //         break;
+      //         case "line_ids_all":
+      //         
+      //           $(element).closest('form').append.("<span class='error'>Ups! Debes indicar una línea.</span>")
+      //         break;
+      //       }
+      //     },
+      //     rules : {
+      //       'subscription[email]' : {
+      //         required : true,
+      //         email : true
+      //       },
+      //       'line_ids[all]' : {
+      //         required : true            }
+      //     }
+      //   });
+      
+      
    
    
    

@@ -7,7 +7,8 @@
   <ul class="line_stations">
     <%@line.stations.each do |station|%><li class="<%= station_status(station)%>"><p><%= station.name %></p></li><%end%>
   </ul>
-
+  
+  <h3>Últimas incidencias</h3>
   <ul id="last_incidents">
   <%@line.incidents.each do |incident|%>
     <li>
