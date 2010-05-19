@@ -11,16 +11,20 @@ class Metrotwitt
   end
 
   def self.parse_twitt(twitt)
+    require 'ruby-debug'
       text_arr=twitt["text"].scan(/([^#]*)\s*#(\S*)\s#(\S*)\s#?(\S*)\s*(.*)/).flatten
+      text = twitt["text"]
+      incident = Incident.new
+      #Transformamos la fecha del twitt, que viene en utc, a nuestra hora local
+      incident.date = twitt["created_at"].to_time.getlocal
+      incident.user = twitt["from_user"]
+      incident.twitter_id = twitt["id"]
       unless text_arr.blank?
-          incident = Incident.new
-          #Transformamos la fecha del twitt, que viene en utc, a nuestra hora local
-          incident.date = twitt["created_at"].to_time.getlocal
-          incident.user = twitt["from_user"]
-          incident.twitter_id = twitt["id"]
           text_arr = text_arr.reject{|x| x.blank?}
-          #A partir del hashtag metroroto, buscamos los dos siguientes, el orden de los dos es lo mismo
+          #A partir del hashtag metroroto, buscamos los dos siguientes, el orden de los dos es lo mismo          
+          
           index = text_arr.index('metroroto')
+          
           if text_arr[index+1].match(/[lL]\d{1,2}/)
               line_number = text_arr[index+1].gsub(/[lL]/,"")
               station_string = text_arr[index+2]
@@ -32,7 +36,12 @@ class Metrotwitt
           else
             #suponemos que no hay linea y cogemos lo siguiente a metroroto para la estación
             station_string=text_arr[index+1]
-            line_number = nil
+            # ultimo intento para la linea
+            if text.match(/[lL]\d{1,2}/)
+              line_number = text.match(/[lL]\d{1,2}/).to_s.gsub(/[lL]/,"")
+            else
+              line_number = nil
+            end            
             i = 2
           end
           i.times do
@@ -49,22 +58,73 @@ class Metrotwitt
             stations = self.search_stations(station_string,Station)
             unless stations.blank? || stations.size > 1
               incident.station_id = stations.first.id
+              incident.line_id = stations.first.line.id
             end
 
+          end          
+          if incident.station.blank?
+            # Tratamos de encontrar la estacion a la fuerza bruta
+            Station.all.each do |station|
+              next unless (text.match(station.name) || text.parameterize.match(station.nicename))
+              station_string = if text.match(station.name)
+                 text.match(station.name).to_s
+               else
+                  text.parameterize.match(station.nicename).to_s
+               end
+               if line
+                 stations = self.search_stations(station_string,line.stations)
+                 unless stations.blank?
+                   incident.station_id = stations.uniq.first.id
+                 end
+               else
+                 incident.station_id = station.id 
+               end
+               break
+            end              
           end
-          if incident.station
+       else
+         #no cuadra nada del twitt, buscamos a la fuerza bruta!!
+         if text.match(/[lL]\d{1,2}/)
+           line_number = text.match(/[lL]\d{1,2}/).to_s.gsub(/[lL]/,"")
+           if line = Line.find_by_number(line_number)
+             incident.line_id = line.id
+           end
+         end            
+         Station.all.each do |station|
+           next unless (text.match(station.name) || text.parameterize.match(station.nicename))
+           station_string = if text.match(station.name)
+              text.match(station.name).to_s
+            else
+               text.parameterize.match(station.nicename).to_s
+            end
+            if line
+              stations = self.search_stations(station_string,line.stations)
+              unless stations.blank?
+                incident.station_id = stations.uniq.first.id
+              end
+            else
+              incident.station_id = station.id 
+            end
+            break
+         end              
+         
+       end
+       
+          
+          if incident.station && incident.line_id
             incident.station_string = station_string
-            incident.comment = text_arr.join(' ')
+            incident.comment = text_arr.blank? ? text.gsub(/#(.*)/,'') : text_arr.join(' ')
             incident.save!
-          else
+          else            
             # aleprosos que no encuentra nada
-            fail = FailedTwitt.new(:twitter_id => incident.twitter_id, :date => incident.date, :user => incident.user, :station_string => station_string )
+            station_string ||= ""
+            fail = FailedTwitt.new(:twitter_id => incident.twitter_id, :date => incident.date, :user => incident.user, :station_string => station_string, :twitt_body => text )
             if incident.line_id
               fail.line_id = incident.line_id
             end
             fail.save!
           end
-      end
+      
   end
 
   def self.search_stations(name,stations)
