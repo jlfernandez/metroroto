@@ -470,16 +470,17 @@ ul#last_incidents p strong {
 ##############################################################################################################################*/
 
 form#new_incident{
-  width:42em;
+  width:42.3em;
   float:left;
   clear:left;
 	padding-right: 2.5em;
 }
 
 form#new_subscription{
-	width: 42em;
-	float: left;
+	width: 42.5em;
+	float: right;
 }
+
 form#new_incident p,
 form#new_subscription p,
 form fieldset {
@@ -517,6 +518,11 @@ form#new_subscription input  {
   -moz-box-shadow:inset 1px 1px 5px #EEEEEE, 1px 1px 5px #EEEEEE ;
   -webkit-box-shadow:inset -1px -1px 2px #EEEEEE, 1px 1px 5px #EEEEEE ;
   -box-shadow:inset -1px -1px 2px #EEEEEE, 1px 1px 5px #EEEEEE ;
+}
+
+form input#incident_comment,
+form input#subscription_email {
+  width:31.1em;
 }
 
 form#new_incident option{

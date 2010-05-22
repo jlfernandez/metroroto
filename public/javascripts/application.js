@@ -108,6 +108,7 @@ $(function(){
             new_marker( $('#incident_comment').val(),json.station.lat,json.station.long,$('#incident_line_id').val(),json.station.name)
           });
           show_msg(validation_box, '<span>Gracias, por añadir la incidencia :)</span>', true);
+          incident.val('');
           setTimeout(function(){
             $.scrollTo(0, 1000, {
                easing : 'swing'
