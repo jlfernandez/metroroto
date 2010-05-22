@@ -51,6 +51,11 @@ body {
 	display: none;
 }
 
+fieldset {
+	border: none;
+}
+
+
 a {
 	color: #337CC5;
 	text-decoration:none;
@@ -670,7 +675,6 @@ li.yellow {
 }
 
 
-
 a.line{
 	color: #FFF;
 	background: #1F5570;
@@ -681,19 +685,45 @@ a.line:hover{
 	color: #FF9900;
 
 }
-fieldset {
-	border: none;
+
+
+.map_pop li {
+  overflow:hidden;
+  padding-bottom:10px;
 }
 
-span.station {
-	font-weight: bold;
-	font-size: 1.6em;
-	color: #1F5570;
+.map_pop .station{
+  color:#3383D3;
+  font-weight: normal;
+  font-size: 2.3em;
+  display:block;
+  padding-bottom:1em;
+  font-family:'YanoneRegular', Arial, Helvetica, sans-serif;
 }
-.map_pop p.date{
-	font-size: 1.3em;
-	margin-top: 0.7em;
-	font-weight: bold;
+
+.map_pop .line_number{
+  float:left;
+}
+
+.map_pop .date{
+  color:#aaa;
+  font-size:1.1em;
+  font-weight:normal;
+}
+
+.map_pop p{
+  margin-left:35px;
+}
+
+.map_pop .comment {
+  font-size:1.3em;
+  color:#666;
+  font-weight:bold;
+}
+
+.map_pop .comment span{
+  font-weight:normal;
+  font-size:inherit;
 }
 
 ul#last_incidents {
