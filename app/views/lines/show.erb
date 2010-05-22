@@ -9,21 +9,8 @@
   </ul>
   
   <h3>Últimas incidencias</h3>
-  <ul id="last_incidents">
-  <%@line.incidents.each do |incident|%>
-    <li>
-      <p>
-      <%=link_to "#{incident.line.number}", incident.line, :class => "line_number line_"+incident.line.number %>
-		  Estación de <strong><%=incident.station.name%></strong> -
-		  <span><%=l(incident.date, :format => 'long')%>.</span> -
-		  <%=incident.comment%> 
-		  <%unless incident.user.blank?%>
-			  Por <a href ="http://twitter.com/<%=incident.user%>/status/<%=incident.twitter_id%>" target="_blank">@<%=incident.user%></a>
-		  <%end%>	
-		  </p>
-		</li>
-  <%end%>
-  </ul>
+  <%= render :partial => 'incidents/last_incidents' %>
+ 
   
 </div><!-- content -->
 
