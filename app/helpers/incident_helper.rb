@@ -44,7 +44,7 @@ module IncidentHelper
       station_incidents.each do |incident|
         div_info << "<p><span class=\"line_number line_#{incident.line.number}\">#{incident.line.number}</span></p>"
         div_info << "<p class=\"date\">#{l(incident.date, :format => "long")}</p>"
-        div_info << "<p class=\"comment\">Incidencia: #{incident.comment}</p>"
+        div_info << "<p class=\"comment\">Incidencia: #{incident.comment.squish}</p>"
       end
       
       div_info << "</div>'"
