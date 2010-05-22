@@ -42,7 +42,7 @@ $(function(){
  //custom form elements
   $("select, input").uniform();
   
-  
+  $("#last_incidents span.timeago").timeago();
   
   //-------------------------------------------------------------------------
   // DROPDOWN MENU
