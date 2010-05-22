@@ -1,23 +1,24 @@
-<%remote_form_for :subscription, :url => subscriptions_path, :html => {:id => "new_subscription"} do |f|%>
+<%form_for :subscription, :url => subscriptions_path, :html => {:id => "new_subscription"} do |f|%>
   <h2>Notificaciones por correo</h2>
   <p class="tag_line">Recibe las incidencias en tu email de las líneas que te interesen. La mejor forma para estar siempre enterado. Cuando quieras podrás dejar de recibirlas.</p>
-   <div id="data">
-   <%= f.label :email, "¿Cuál es tu email?"%>
-   <%=f.text_field :email%>
-  </p>
-  <div class="lines">
-  	<p><%= f.label :line_id, "¿De qué lineas quieres recibir notificaciones?"%></p>
-    
-	<p class="all"><%= check_box_tag "line_ids[all]", "true"%>
-	<%= label_tag "line_ids[all]", "De todas"%></p>
-	<ul class="lines">
-	<% Line.all.each do |line|%>
-	<li><%= check_box_tag "line_ids[#{line.number}]", line.number%>
-	<%= label_tag "line_ids[#{line.number}]", "L.#{line.number}"%></li>
-	<% end %>
-	</ul>
-  </div>
-  </div>
+  <span class="validation_msg" style="display:none;"></span><!-- .validation_msg -->
+  
+  <div class="wrap">
+  <fieldset>
+    <%= f.label :email, "¿Cuál es tu email?"%>
+    <%=f.text_field :email%>
+  </fieldset>
 
-  <button type="submit">Guardar!!</button>  
+  <fieldset>
+   <%= f.label :line_id, "¿De qué lineas quieres recibir notificaciones?"%>
+   <ul class="lines">
+     <li class="all"><%= check_box_tag "line_ids[all]", "true", true %> <%= label_tag "line_ids[all]", "De todas"%></li>
+     <% Line.all.each do |line|%>
+     <li><%= check_box_tag "line_ids[#{line.number}]", line.number, false %><%= label_tag "line_ids[#{line.number}]", "L.#{line.number}"%></li>
+     <% end %>
+   </ul>
+  </fieldset>
+  </div>
+  
+  <button type="submit">Guardar!!</button>
 <%end%>

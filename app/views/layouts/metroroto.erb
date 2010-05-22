@@ -11,8 +11,7 @@
 
 <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=<%=Settings.google_key%>" type="text/javascript"></script>
 
-<%= auto_discovery_link_tag(:atom, {:action => params[:action], :format => :atom}, 
- {:title => "Atom Feed"}) %>
+<%= auto_discovery_link_tag(:atom, {:action => params[:action], :format => :atom}, {:title => "Atom Feed"}) %>
 
 </head>
 
@@ -49,7 +48,7 @@
 	</div><!-- #footer -->
 	
 	
-	<%= javascript_include_tag 'jquery', 'jquery.validate', 'jquery.uniform.min', 'application', 'jrails' %>
+	<%= javascript_include_tag 'jquery', 'jquery.validate', 'jquery.uniform.min', 'jquery.scrollTo-min',  'application', 'jrails' %>
   <%= yield :js_includes %>
 </body>
 </html>
