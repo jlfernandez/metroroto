@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <title>Metroroto</title>
+
+   <%= stylesheet_link_tag "metroroto", "uniform.default" %>
+
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=<%=Settings.google_key%>" type="text/javascript"></script>
+
+<%= auto_discovery_link_tag(:atom, {:action => params[:action], :format => :atom}, {:title => "Atom Feed"}) %>
+
+</head>
+
+<body class="page">
+  <div id="header">
+    
+    <div>
+      <a href="/">Metroroto</a>
+      <h1>Sistema de trackeo de incidencias del Metro de Madrid</h1>
+    </div>
+    
+    <ul>
+      <li><a href="<%=root_path%>">Incidencias</a></li>
+      <li class="lines">
+        <a href="#">Lineas</a>
+        <ul>
+		  <% @lines.each do |line|%>
+          <li><a href="<%=line_path line%>">Linea <%= line.number%></a></li>
+		  <% end %>
+        </ul>
+      </li>
+      <li><a href="#">¿Cómo se usa?</a></li>
+    </ul>
+  </div><!-- .header -->
+  
+	<%= yield%>
+	
+	<div id="footer" class="wrapper">
+	 <p>Metroroto.com 2010 - <a href="#">Aviso legal</a> - Un proyecto de @larubyroom.</p>
+	 <ul>
+	   <li><a href="#">¿Qué es metroroto?</a></li>
+	   <li><a href="#">¿Cómo se usa?</a> </li>
+	 </ul>
+	</div><!-- #footer -->
+	
+	
+	<%= javascript_include_tag 'jquery', 'jquery.validate', 'jquery.uniform.min', 'jquery.scrollTo-min',  'jquery.timeago',  'application', 'jrails' %>
+  <%= yield :js_includes %>
+</body>
+</html>
+
