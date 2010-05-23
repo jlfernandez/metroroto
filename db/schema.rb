@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100517193949) do
+ActiveRecord::Schema.define(:version => 20100523152339) do
 
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(:version => 20100517193949) do
     t.integer  "line_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "twitt_body"
   end
 
   create_table "incidents", :force => true do |t|
@@ -70,6 +71,7 @@ ActiveRecord::Schema.define(:version => 20100517193949) do
     t.integer  "line_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "verification_token"
   end
 
 end

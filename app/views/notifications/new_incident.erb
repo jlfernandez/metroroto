@@ -1,6 +1,17 @@
 <p>Hola</p>
 
-<p>Hay una nueva incidencia en la linea <%=@incident.line.number%>, en la estación de <%= @incident.station.name%> <%= @incident.direction.blank? ? "pero no tenemos muy claro en que sentido" : "en sentido #{@incident.direction.name}"%>.</p>
+<p>Hay una nueva incidencia en la línea <%=@incident.line.number%>, en la estación de <%= @incident.station.name%> <%= @incident.direction.blank? ? "pero no tenemos muy claro en que sentido" : "en sentido #{@incident.direction.name}"%>.</p>
 
 
 <p>Ya sabes, busca una alternativa si no quieres esperar mucho ;)</p>
+
+
+<p>Si quieres dejar de recibir notificaciones para la línea <%=@incident.line.number%>, puedes hacer click en el siguiente enlace:</p>
+
+<a href="<%=Settings.url%><%= edit_subscription_path(@subscription,:verification_token => @subscription.verification_token)%>"><%=Settings.url%><%= edit_subscription_path(@subscription,:verification_token => @subscription.verification_token)%></a>
+
+
+
+<p>Si quieres dejar de recibir todas las notificaciones de metroroto, puedes hacer click en el siguiente enlace:</p>
+
+<a href="<%=Settings.url%><%= edit_subscription_path(@subscription,:verification_token => @subscription.verification_token,:all => "true")%>"><%=Settings.url%><%= edit_subscription_path(@subscription,:verification_token => @subscription.verification_token, :all => "true")%></a>

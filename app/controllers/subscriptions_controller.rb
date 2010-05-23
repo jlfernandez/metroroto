@@ -23,4 +23,23 @@ class SubscriptionsController < ApplicationController
 
     end
   end
+  
+  def edit
+    if @subscription = Subscription.find(params[:id])
+      if @subscription.verification_token == params[:verification_token]
+         if params[:all] == "true"
+          Subscription.find_all_by_email(@subscription.email).each {|a| a.destroy}
+         else
+           @subscription.destroy
+         end
+         flash[:notice] = "Hemos eliminado correctamente tu suscripción :)"
+         redirect_to root_path
+      else
+        render :layout => false, :status => '404' 
+      end
+    else
+      render :layout => false, :status => '404' 
+    end
+  end
+
 end

@@ -19,11 +19,11 @@
   <p class="direction">
     <label>¿En qué sentido?</label>
     <span>
-      <input type="radio" name="incident[direction]" value="<%=Station.by_line(1).first.id%>" id="start_station"/> <label for="start_station"><%=Station.by_line(1).first.name%></label>
+      <input type="radio" name="incident[direction_id]" value="<%=Station.by_line(1).first.id%>" id="start_station"/> <label for="start_station"><%=Station.by_line(1).first.name%></label>
     </span>
     
     <span>
-      <input type="radio" name="incident[direction]" value="Station.by_line(1).last.id" id="end_station"/> <label for="end_station"><%=Station.by_line(1).last.name%></label>
+      <input type="radio" name="incident[direction_id]" value="Station.by_line(1).last.id" id="end_station"/> <label for="end_station"><%=Station.by_line(1).last.name%></label>
     </span>
   </p>
   

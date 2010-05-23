@@ -2,12 +2,14 @@ defaults: &defaults
   app:
     admin_email: "noreply@metroroto.com"
   google_key: ABQIAAAAScZd0t0Z0iHa3k8zvpRwsBT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQohyjT4ULl3Evlr-R-t-LyrhOozA
+  
 development:
   <<: *defaults
-
+  url: http://localhost:3000
 test:
   <<: *defaults
-
+  url: http://test.host:3000
 production:
   <<: *defaults
   google_key: ABQIAAAA1C00clGgtsXp_VDEhcBoSBQZJT7XrViL_bfMh_Sv1aPQR0Yw_xRiCpFKL44eKaWpFN6oH9FvMKZffA
+  url: http://metroroto.com
