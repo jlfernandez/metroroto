@@ -1,7 +1,8 @@
 class Station < ActiveRecord::Base
-  belongs_to :line
-
-   before_save :set_nicename
+  has_many :line_stations
+  has_many :lines, :through => :line_stations
+  
+  before_save :set_nicename
   has_many :incidents
   
   has_many :last_incidents, :class_name => "Incident", :conditions => "date > '#{(Time.now - 7.days).to_s(:db)}'", :order => "date DESC"
@@ -12,8 +13,9 @@ class Station < ActiveRecord::Base
   named_scope :find_from_twitt, lambda { |string|
     {:conditions => " name like '%#{string}%' or nicename like '%#{string.parameterize}%'"}
    }
+  
   named_scope :by_line, lambda { |line|
-    {:conditions => "line_id = '#{line}'"}
+    {:include => :line_stations, :conditions => "line_stations.line_id = '#{line}'"}
   }
   
   named_scope :find_outspaces, lambda {|string|

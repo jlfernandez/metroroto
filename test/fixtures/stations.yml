@@ -1,2553 +1,1883 @@
 --- 
 stations_213: 
-  name: "Santiago Bernab\xC3\xA9u"
-  created_at: 2010-05-06 20:22:06
-  updated_at: 2010-05-06 20:22:06
+  name: Alameda de Osuna
+  created_at: 2010-05-23 19:08:07
+  updated_at: 2010-05-23 19:08:07
   id: "213"
-  line_id: "10"
-  lat: "40.4516"
-  long: "-3.69038"
-  nicename: santiago-bernabeu
+  lat: "40.4578"
+  long: "-3.58752"
+  nicename: alameda-de-osuna
 stations_025: 
-  name: Cuatro Caminos
-  created_at: 2010-05-06 20:20:34
-  updated_at: 2010-05-06 20:20:34
-  id: "25"
-  line_id: "6"
-  lat: "40.447"
-  long: "-3.70397"
-  nicename: cuatro-caminos
-stations_051: 
-  name: Alonso de Mendoza
-  created_at: 2010-05-06 20:20:43
-  updated_at: 2010-05-06 20:20:43
-  id: "51"
-  line_id: "12"
-  lat: "40.3008"
-  long: "-3.73664"
-  nicename: alonso-de-mendoza
-stations_106: 
-  name: "P\xC3\xADo XII"
-  created_at: 2010-05-06 20:21:13
-  updated_at: 2010-05-06 20:21:13
-  id: "106"
-  line_id: "9"
-  lat: "40.463"
-  long: "-3.6758"
-  nicename: pio-xii
-stations_132: 
-  name: Valdeacederas
-  created_at: 2010-05-06 20:21:25
-  updated_at: 2010-05-06 20:21:25
-  id: "132"
-  line_id: "1"
-  lat: "40.4644"
-  long: "-3.69506"
-  nicename: valdeacederas
-stations_240: 
-  name: Alfonso XIII
-  created_at: 2010-05-06 20:22:18
-  updated_at: 2010-05-06 20:22:18
-  id: "240"
-  line_id: "4"
-  lat: "40.4482"
-  long: "-3.66791"
-  nicename: alfonso-xiii
-stations_214: 
-  name: Nuevos Ministerios
-  created_at: 2010-05-06 20:22:07
-  updated_at: 2010-05-06 20:22:07
-  id: "214"
-  line_id: "10"
-  lat: "40.4466"
-  long: "-3.69241"
-  nicename: nuevos-ministerios
-stations_026: 
   name: "Guzm\xC3\xA1n el Bueno"
-  created_at: 2010-05-06 20:20:34
-  updated_at: 2010-05-06 20:20:34
-  id: "26"
-  line_id: "6"
+  created_at: 2010-05-23 19:05:58
+  updated_at: 2010-05-23 19:05:58
+  id: "25"
   lat: "40.4461"
   long: "-3.71361"
   nicename: guzman-el-bueno
-stations_052: 
+stations_051: 
   name: Getafe Central
-  created_at: 2010-05-06 20:20:43
-  updated_at: 2010-05-06 20:20:43
-  id: "52"
-  line_id: "12"
+  created_at: 2010-05-23 19:06:13
+  updated_at: 2010-05-23 19:06:13
+  id: "51"
   lat: "40.3099"
   long: "-3.73403"
   nicename: getafe-central
-stations_107: 
-  name: Colombia
-  created_at: 2010-05-06 20:21:13
-  updated_at: 2010-05-06 20:21:13
-  id: "107"
-  line_id: "9"
-  lat: "40.4563"
-  long: "-3.67683"
-  nicename: colombia
-stations_133: 
-  name: "Tetu\xC3\xA1n"
-  created_at: 2010-05-06 20:21:25
-  updated_at: 2010-05-06 20:21:25
-  id: "133"
-  line_id: "1"
-  lat: "40.4606"
-  long: "-3.69825"
-  nicename: tetuan
-stations_241: 
-  name: Avenida de la Paz
-  created_at: 2010-05-06 20:22:18
-  updated_at: 2010-05-06 20:22:18
-  id: "241"
-  line_id: "4"
-  lat: "40.4535"
-  long: "-3.66118"
-  nicename: avenida-de-la-paz
-stations_215: 
-  name: "Gregorio Mara\xC3\xB1\xC3\xB3n"
-  created_at: 2010-05-06 20:22:07
-  updated_at: 2010-05-06 20:22:07
-  id: "215"
-  line_id: "10"
-  lat: "40.4383"
-  long: "-3.69149"
-  nicename: gregorio-maranon
-stations_027: 
-  name: Metropolitano
-  created_at: 2010-05-06 20:20:35
-  updated_at: 2010-05-06 20:20:35
-  id: "27"
-  line_id: "6"
-  lat: "40.4464"
-  long: "-3.71943"
-  nicename: metropolitano
-stations_053: 
-  name: Juan de la Cierva
-  created_at: 2010-05-06 20:20:44
-  updated_at: 2010-05-06 20:20:44
-  id: "53"
-  line_id: "12"
-  lat: "40.3118"
-  long: "-3.72225"
-  nicename: juan-de-la-cierva
-stations_108: 
-  name: Concha Espina
-  created_at: 2010-05-06 20:21:13
-  updated_at: 2010-05-06 20:21:13
-  id: "108"
-  line_id: "9"
-  lat: "40.4514"
-  long: "-3.67738"
-  nicename: concha-espina
-stations_134: 
-  name: Estrecho
-  created_at: 2010-05-06 20:21:25
-  updated_at: 2010-05-06 20:21:25
-  id: "134"
-  line_id: "1"
-  lat: "40.4543"
-  long: "-3.70302"
-  nicename: estrecho
-stations_160: 
-  name: Valdecarros
-  created_at: 2010-05-06 20:21:31
-  updated_at: 2010-05-06 20:21:31
-  id: "160"
-  line_id: "1"
-  lat: "40.3604"
-  long: "-3.59241"
-  nicename: valdecarros
-stations_242: 
-  name: Arturo Soria
-  created_at: 2010-05-06 20:22:19
-  updated_at: 2010-05-06 20:22:19
-  id: "242"
-  line_id: "4"
-  lat: "40.4558"
-  long: "-3.65618"
-  nicename: arturo-soria
-stations_216: 
-  name: "Alonso Mart\xC3\xADnez"
-  created_at: 2010-05-06 20:22:07
-  updated_at: 2010-05-06 20:22:07
-  id: "216"
-  line_id: "10"
-  lat: "40.4277"
-  long: "-3.69594"
-  nicename: alonso-martinez
-stations_028: 
-  name: Ciudad Universitaria
-  created_at: 2010-05-06 20:20:35
-  updated_at: 2010-05-06 20:20:35
-  id: "28"
-  line_id: "6"
-  lat: "40.444"
-  long: "-3.72609"
-  nicename: ciudad-universitaria
-stations_054: 
-  name: El Casar
-  created_at: 2010-05-06 20:20:44
-  updated_at: 2010-05-06 20:20:44
-  id: "54"
-  line_id: "12"
-  lat: "40.3186"
-  long: "-3.70985"
-  nicename: el-casar
-stations_080: 
-  name: "Avenida de Am\xC3\xA9rica"
-  created_at: 2010-05-06 20:20:57
-  updated_at: 2010-05-06 20:20:57
-  id: "80"
-  line_id: "7"
-  lat: "47.8959"
-  long: "-122.22"
-  nicename: avenida-de-america
-stations_109: 
-  name: Cruz del Rayo
-  created_at: 2010-05-06 20:21:13
-  updated_at: 2010-05-06 20:21:13
-  id: "109"
-  line_id: "9"
-  lat: "40.4443"
-  long: "-3.67821"
-  nicename: cruz-del-rayo
-stations_135: 
-  name: Alvarado
-  created_at: 2010-05-06 20:21:26
-  updated_at: 2010-05-06 20:21:26
-  id: "135"
-  line_id: "1"
-  lat: "40.4503"
-  long: "-3.70331"
-  nicename: alvarado
-stations_161: 
-  name: !binary |
-    w5NwZXJh
-
-  created_at: 2010-05-06 20:21:40
-  updated_at: 2010-05-06 20:21:40
-  id: "161"
-  line_id: "13"
-  lat: "40.4181"
-  long: "-3.70942"
-  nicename: opera
-stations_243: 
-  name: Esperanza
-  created_at: 2010-05-06 20:22:19
-  updated_at: 2010-05-06 20:22:19
-  id: "243"
-  line_id: "4"
-  lat: "40.4594"
-  long: "-3.64581"
-  nicename: esperanza
-stations_217: 
-  name: Tribunal
-  created_at: 2010-05-06 20:22:08
-  updated_at: 2010-05-06 20:22:08
-  id: "217"
-  line_id: "10"
-  lat: "40.4262"
-  long: "-3.7011"
-  nicename: tribunal
-stations_029: 
-  name: Moncloa
-  created_at: 2010-05-06 20:20:35
-  updated_at: 2010-05-06 20:20:35
-  id: "29"
-  line_id: "6"
-  lat: "40.4167"
-  long: "-3.70035"
-  nicename: moncloa
-stations_055: 
-  name: Los Espartales
-  created_at: 2010-05-06 20:20:44
-  updated_at: 2010-05-06 20:20:44
-  id: "55"
-  line_id: "12"
-  lat: "40.3242"
-  long: "-3.7182"
-  nicename: los-espartales
-stations_081: 
-  name: "Gregorio Mara\xC3\xB1\xC3\xB3n"
-  created_at: 2010-05-06 20:20:57
-  updated_at: 2010-05-06 20:20:57
-  id: "81"
-  line_id: "7"
-  lat: "40.4383"
-  long: "-3.69149"
-  nicename: gregorio-maranon
-stations_136: 
-  name: Cuatro Caminos
-  created_at: 2010-05-06 20:21:26
-  updated_at: 2010-05-06 20:21:26
-  id: "136"
-  line_id: "1"
-  lat: "40.447"
-  long: "-3.70397"
-  nicename: cuatro-caminos
-stations_162: 
-  name: "Principe P\xC3\xADo"
-  created_at: 2010-05-06 20:21:41
-  updated_at: 2010-05-06 20:21:41
-  id: "162"
-  line_id: "13"
-  lat: "40.4167"
-  long: "-3.70035"
-  nicename: principe-pio
-stations_270: 
-  name: Puerta de Toledo
-  created_at: 2010-05-06 20:22:29
-  updated_at: 2010-05-06 20:22:29
-  id: "270"
-  line_id: "5"
-  lat: "40.407"
-  long: "-3.71105"
-  nicename: puerta-de-toledo
-stations_244: 
-  name: Canillas
-  created_at: 2010-05-06 20:22:19
-  updated_at: 2010-05-06 20:22:19
-  id: "244"
-  line_id: "4"
-  lat: "40.4638"
-  long: "-3.63559"
-  nicename: canillas
-stations_056: 
-  name: El Bercial
-  created_at: 2010-05-06 20:20:44
-  updated_at: 2010-05-06 20:20:44
-  id: "56"
-  line_id: "12"
-  lat: "40.3291"
-  long: "-3.72963"
-  nicename: el-bercial
-stations_082: 
-  name: Alonso Cano
-  created_at: 2010-05-06 20:20:58
-  updated_at: 2010-05-06 20:20:58
-  id: "82"
-  line_id: "7"
-  lat: "40.4384"
-  long: "-3.69925"
-  nicename: alonso-cano
-stations_137: 
-  name: "R\xC3\xADos Rosas"
-  created_at: 2010-05-06 20:21:26
-  updated_at: 2010-05-06 20:21:26
-  id: "137"
-  line_id: "1"
-  lat: "40.4419"
-  long: "-3.70158"
-  nicename: rios-rosas
-stations_163: 
-  name: La Elipa
-  created_at: 2010-05-06 20:21:44
-  updated_at: 2010-05-06 20:21:44
-  id: "163"
-  line_id: "2"
-  lat: "40.4266"
-  long: "-3.65052"
-  nicename: la-elipa
-stations_218: 
-  name: "Plaza de Espa\xC3\xB1a"
-  created_at: 2010-05-06 20:22:08
-  updated_at: 2010-05-06 20:22:08
-  id: "218"
-  line_id: "10"
-  lat: "40.4234"
-  long: "-3.7112"
-  nicename: plaza-de-espana
-stations_271: 
-  name: Acacias
-  created_at: 2010-05-06 20:22:29
-  updated_at: 2010-05-06 20:22:29
-  id: "271"
-  line_id: "5"
-  lat: "40.4039"
-  long: "-3.70665"
-  nicename: acacias
-stations_245: 
-  name: Mar de Cristal
-  created_at: 2010-05-06 20:22:19
-  updated_at: 2010-05-06 20:22:19
-  id: "245"
-  line_id: "4"
-  lat: "40.4694"
-  long: "-3.63832"
-  nicename: mar-de-cristal
-stations_057: 
-  name: El Carrascal
-  created_at: 2010-05-06 20:20:45
-  updated_at: 2010-05-06 20:20:45
-  id: "57"
-  line_id: "12"
-  lat: "40.3366"
-  long: "-3.74018"
-  nicename: el-carrascal
-stations_083: 
-  name: Canal
-  created_at: 2010-05-06 20:20:58
-  updated_at: 2010-05-06 20:20:58
-  id: "83"
-  line_id: "7"
-  lat: "40.4384"
-  long: "-3.70433"
-  nicename: canal
-stations_138: 
-  name: Iglesia
-  created_at: 2010-05-06 20:21:26
-  updated_at: 2010-05-06 20:21:26
-  id: "138"
-  line_id: "1"
-  lat: "40.4351"
-  long: "-3.699"
-  nicename: iglesia
-stations_164: 
-  name: Ventas
-  created_at: 2010-05-06 20:21:44
-  updated_at: 2010-05-06 20:21:44
-  id: "164"
-  line_id: "2"
-  lat: "40.4309"
-  long: "-3.66366"
-  nicename: ventas
-stations_190: 
-  name: "Lavapi\xC3\xA9s"
-  created_at: 2010-05-06 20:21:54
-  updated_at: 2010-05-06 20:21:54
-  id: "190"
-  line_id: "3"
-  lat: "40.4085"
-  long: "-3.70091"
-  nicename: lavapies
-stations_219: 
-  name: "Principe P\xC3\xADo"
-  created_at: 2010-05-06 20:22:08
-  updated_at: 2010-05-06 20:22:08
-  id: "219"
-  line_id: "10"
-  lat: "40.4167"
-  long: "-3.70035"
-  nicename: principe-pio
-stations_272: 
-  name: "Pir\xC3\xA1mides"
-  created_at: 2010-05-06 20:22:29
-  updated_at: 2010-05-06 20:22:29
-  id: "272"
-  line_id: "5"
-  lat: "40.4026"
-  long: "-3.71138"
-  nicename: piramides
-stations_246: 
-  name: San Lorenzo
-  created_at: 2010-05-06 20:22:19
-  updated_at: 2010-05-06 20:22:19
-  id: "246"
-  line_id: "4"
-  lat: "40.4745"
-  long: "-3.63958"
-  nicename: san-lorenzo
-stations_058: 
-  name: "Juli\xC3\xA1n Besteiro"
-  created_at: 2010-05-06 20:20:45
-  updated_at: 2010-05-06 20:20:45
-  id: "58"
-  line_id: "12"
-  lat: "40.3347"
-  long: "-3.75266"
-  nicename: julian-besteiro
-stations_084: 
-  name: Islas Filipinas
-  created_at: 2010-05-06 20:20:58
-  updated_at: 2010-05-06 20:20:58
-  id: "84"
-  line_id: "7"
-  lat: "40.4391"
-  long: "-3.71373"
-  nicename: islas-filipinas
-stations_139: 
-  name: Bilbao
-  created_at: 2010-05-06 20:21:27
-  updated_at: 2010-05-06 20:21:27
-  id: "139"
-  line_id: "1"
-  lat: "40.4291"
-  long: "-3.70218"
-  nicename: bilbao
-stations_165: 
-  name: Manuel Becerra
-  created_at: 2010-05-06 20:21:44
-  updated_at: 2010-05-06 20:21:44
-  id: "165"
-  line_id: "2"
-  lat: "40.4279"
-  long: "-3.66926"
-  nicename: manuel-becerra
-stations_191: 
-  name: Sol
-  created_at: 2010-05-06 20:21:54
-  updated_at: 2010-05-06 20:21:54
-  id: "191"
-  line_id: "3"
-  lat: "40.4169"
-  long: "-3.70326"
-  nicename: sol
-stations_273: 
-  name: "Marqu\xC3\xA9s de Vadillo"
-  created_at: 2010-05-06 20:22:30
-  updated_at: 2010-05-06 20:22:30
-  id: "273"
-  line_id: "5"
-  lat: "40.3974"
-  long: "-3.71596"
-  nicename: marques-de-vadillo
-stations_247: 
-  name: "Parque de Santa Mar\xC3\xADa"
-  created_at: 2010-05-06 20:22:20
-  updated_at: 2010-05-06 20:22:20
-  id: "247"
-  line_id: "4"
-  lat: "40.4771"
-  long: "-3.64524"
-  nicename: parque-de-santa-maria
-stations_059: 
-  name: Casa del Reloj
-  created_at: 2010-05-06 20:20:45
-  updated_at: 2010-05-06 20:20:45
-  id: "59"
-  line_id: "12"
-  lat: "40.3266"
-  long: "-3.75942"
-  nicename: casa-del-reloj
-stations_085: 
-  name: "Guzm\xC3\xA1n el Bueno"
-  created_at: 2010-05-06 20:20:58
-  updated_at: 2010-05-06 20:20:58
-  id: "85"
-  line_id: "7"
-  lat: "40.4461"
-  long: "-3.71361"
-  nicename: guzman-el-bueno
-stations_166: 
-  name: Goya
-  created_at: 2010-05-06 20:21:45
-  updated_at: 2010-05-06 20:21:45
-  id: "166"
-  line_id: "2"
-  lat: "40.4245"
-  long: "-3.67591"
-  nicename: goya
-stations_192: 
-  name: Callao
-  created_at: 2010-05-06 20:21:54
-  updated_at: 2010-05-06 20:21:54
-  id: "192"
-  line_id: "3"
-  lat: "40.4201"
-  long: "-3.70584"
-  nicename: callao
-stations_274: 
-  name: Urgel
-  created_at: 2010-05-06 20:22:30
-  updated_at: 2010-05-06 20:22:30
-  id: "274"
-  line_id: "5"
-  lat: "40.3934"
-  long: "-3.72361"
-  nicename: urgel
-stations_248: 
-  name: Hortaleza
-  created_at: 2010-05-06 20:22:20
-  updated_at: 2010-05-06 20:22:20
-  id: "248"
-  line_id: "4"
-  lat: "40.4754"
-  long: "-3.65257"
-  nicename: hortaleza
-stations_086: 
-  name: "Francos Rodr\xC3\xADguez"
-  created_at: 2010-05-06 20:20:59
-  updated_at: 2010-05-06 20:20:59
-  id: "86"
-  line_id: "7"
-  lat: "40.4565"
-  long: "-3.71239"
-  nicename: francos-rodriguez
-stations_167: 
+stations_106: 
   name: "Pr\xC3\xADncipe de Vergara"
-  created_at: 2010-05-06 20:21:45
-  updated_at: 2010-05-06 20:21:45
-  id: "167"
-  line_id: "2"
+  created_at: 2010-05-23 19:06:51
+  updated_at: 2010-05-23 19:06:51
+  id: "106"
   lat: "40.4229"
   long: "-3.68012"
   nicename: principe-de-vergara
-stations_193: 
-  name: "Plaza de Espa\xC3\xB1a"
-  created_at: 2010-05-06 20:21:54
-  updated_at: 2010-05-06 20:21:54
-  id: "193"
-  line_id: "3"
-  lat: "40.4234"
-  long: "-3.7112"
-  nicename: plaza-de-espana
-stations_275: 
-  name: Oporto
-  created_at: 2010-05-06 20:22:30
-  updated_at: 2010-05-06 20:22:30
-  id: "275"
-  line_id: "5"
-  lat: "40.3885"
-  long: "-3.73132"
-  nicename: oporto
-stations_249: 
-  name: Manoteras
-  created_at: 2010-05-06 20:22:20
-  updated_at: 2010-05-06 20:22:20
-  id: "249"
-  line_id: "4"
-  lat: "40.4769"
-  long: "-3.6629"
-  nicename: manoteras
-stations_087: 
-  name: Valdezarza
-  created_at: 2010-05-06 20:20:59
-  updated_at: 2010-05-06 20:20:59
-  id: "87"
-  line_id: "7"
-  lat: "40.4648"
-  long: "-3.71598"
-  nicename: valdezarza
-stations_168: 
-  name: Retiro
-  created_at: 2010-05-06 20:21:45
-  updated_at: 2010-05-06 20:21:45
-  id: "168"
-  line_id: "2"
-  lat: "40.4203"
-  long: "-3.68625"
-  nicename: retiro
-stations_194: 
-  name: "Ventura Rodr\xC3\xADguez"
-  created_at: 2010-05-06 20:21:54
-  updated_at: 2010-05-06 20:21:54
-  id: "194"
-  line_id: "3"
-  lat: "40.4271"
-  long: "-3.71341"
-  nicename: ventura-rodriguez
-stations_276: 
-  name: Vista Alegre
-  created_at: 2010-05-06 20:22:30
-  updated_at: 2010-05-06 20:22:30
-  id: "276"
-  line_id: "5"
-  lat: "40.3888"
-  long: "-3.73982"
-  nicename: vista-alegre
-stations_088: 
-  name: Antonio Machado
-  created_at: 2010-05-06 20:20:59
-  updated_at: 2010-05-06 20:20:59
-  id: "88"
-  line_id: "7"
-  lat: "40.4702"
-  long: "-3.7177"
-  nicename: antonio-machado
-stations_169: 
-  name: "Banco de Espa\xC3\xB1a"
-  created_at: 2010-05-06 20:21:45
-  updated_at: 2010-05-06 20:21:45
-  id: "169"
-  line_id: "2"
-  lat: "40.4192"
-  long: "-3.69496"
-  nicename: banco-de-espana
-stations_195: 
+stations_132: 
+  name: "Gran V\xC3\xADa"
+  created_at: 2010-05-23 19:07:05
+  updated_at: 2010-05-23 19:07:05
+  id: "132"
+  lat: "40.42"
+  long: "-3.70184"
+  nicename: gran-via
+stations_214: 
+  name: El Capricho
+  created_at: 2010-05-23 19:08:08
+  updated_at: 2010-05-23 19:08:08
+  id: "214"
+  lat: "40.4535"
+  long: "-3.59401"
+  nicename: el-capricho
+stations_026: 
+  name: Metropolitano
+  created_at: 2010-05-23 19:05:58
+  updated_at: 2010-05-23 19:05:58
+  id: "26"
+  lat: "40.4464"
+  long: "-3.71943"
+  nicename: metropolitano
+stations_052: 
+  name: Juan de la Cierva
+  created_at: 2010-05-23 19:06:13
+  updated_at: 2010-05-23 19:06:13
+  id: "52"
+  lat: "40.3118"
+  long: "-3.72225"
+  nicename: juan-de-la-cierva
+stations_107: 
+  name: Ibiza
+  created_at: 2010-05-23 19:06:51
+  updated_at: 2010-05-23 19:06:51
+  id: "107"
+  lat: "40.4184"
+  long: "-3.67858"
+  nicename: ibiza
+stations_133: 
+  name: Sol
+  created_at: 2010-05-23 19:07:06
+  updated_at: 2010-05-23 19:07:06
+  id: "133"
+  lat: "40.4169"
+  long: "-3.70326"
+  nicename: sol
+stations_215: 
+  name: Canillejas
+  created_at: 2010-05-23 19:08:08
+  updated_at: 2010-05-23 19:08:08
+  id: "215"
+  lat: "40.4494"
+  long: "-3.60816"
+  nicename: canillejas
+stations_027: 
+  name: Ciudad Universitaria
+  created_at: 2010-05-23 19:05:58
+  updated_at: 2010-05-23 19:05:58
+  id: "27"
+  lat: "40.444"
+  long: "-3.72609"
+  nicename: ciudad-universitaria
+stations_053: 
+  name: El Casar
+  created_at: 2010-05-23 19:06:14
+  updated_at: 2010-05-23 19:06:14
+  id: "53"
+  lat: "40.3186"
+  long: "-3.70985"
+  nicename: el-casar
+stations_108: 
+  name: Estrella
+  created_at: 2010-05-23 19:06:52
+  updated_at: 2010-05-23 19:06:52
+  id: "108"
+  lat: "40.4115"
+  long: "-3.66179"
+  nicename: estrella
+stations_134: 
+  name: Tirso de Molina
+  created_at: 2010-05-23 19:07:06
+  updated_at: 2010-05-23 19:07:06
+  id: "134"
+  lat: "40.4123"
+  long: "-3.70466"
+  nicename: tirso-de-molina
+stations_160: 
+  name: San Bernardo
+  created_at: 2010-05-23 19:07:24
+  updated_at: 2010-05-23 19:07:24
+  id: "160"
+  lat: "40.43"
+  long: "-3.70557"
+  nicename: san-bernardo
+stations_216: 
+  name: Torre Arias
+  created_at: 2010-05-23 19:08:08
+  updated_at: 2010-05-23 19:08:08
+  id: "216"
+  lat: "40.4437"
+  long: "-3.617"
+  nicename: torre-arias
+stations_028: 
+  name: Moncloa
+  created_at: 2010-05-23 19:05:59
+  updated_at: 2010-05-23 19:08:16
+  id: "28"
+  lat: "40.4352"
+  long: "-3.71919"
+  nicename: moncloa
+stations_054: 
+  name: Los Espartales
+  created_at: 2010-05-23 19:06:14
+  updated_at: 2010-05-23 19:06:14
+  id: "54"
+  lat: "40.3242"
+  long: "-3.7182"
+  nicename: los-espartales
+stations_080: 
+  name: Alonso Cano
+  created_at: 2010-05-23 19:06:28
+  updated_at: 2010-05-23 19:06:28
+  id: "80"
+  lat: "40.4384"
+  long: "-3.69925"
+  nicename: alonso-cano
+stations_109: 
+  name: Vinateros
+  created_at: 2010-05-23 19:06:52
+  updated_at: 2010-05-23 19:06:52
+  id: "109"
+  lat: "40.4102"
+  long: "-3.65273"
+  nicename: vinateros
+stations_135: 
+  name: "Ant\xC3\xB3n Mart\xC3\xADn"
+  created_at: 2010-05-23 19:07:06
+  updated_at: 2010-05-23 19:07:06
+  id: "135"
+  lat: "40.4125"
+  long: "-3.69937"
+  nicename: anton-martin
+stations_161: 
+  name: Quevedo
+  created_at: 2010-05-23 19:07:24
+  updated_at: 2010-05-23 19:07:24
+  id: "161"
+  lat: "40.4332"
+  long: "-3.70434"
+  nicename: quevedo
+stations_217: 
+  name: Suanzes
+  created_at: 2010-05-23 19:08:09
+  updated_at: 2010-05-23 19:08:09
+  id: "217"
+  lat: "40.4408"
+  long: "-3.62684"
+  nicename: suanzes
+stations_029: 
   name: "Arg\xC3\xBCelles"
-  created_at: 2010-05-06 20:21:55
-  updated_at: 2010-05-06 20:21:55
-  id: "195"
-  line_id: "3"
+  created_at: 2010-05-23 19:05:59
+  updated_at: 2010-05-23 19:05:59
+  id: "29"
   lat: "40.4305"
   long: "-3.71582"
   nicename: arguelles
-stations_277: 
-  name: Carabanchel
-  created_at: 2010-05-06 20:22:31
-  updated_at: 2010-05-06 20:22:31
-  id: "277"
-  line_id: "5"
-  lat: "40.3878"
-  long: "-3.74488"
-  nicename: carabanchel
-stations_089: 
+stations_055: 
+  name: El Bercial
+  created_at: 2010-05-23 19:06:14
+  updated_at: 2010-05-23 19:06:14
+  id: "55"
+  lat: "40.3291"
+  long: "-3.72963"
+  nicename: el-bercial
+stations_081: 
+  name: Canal
+  created_at: 2010-05-23 19:06:28
+  updated_at: 2010-05-23 19:06:28
+  id: "81"
+  lat: "40.4384"
+  long: "-3.70433"
+  nicename: canal
+stations_136: 
+  name: Atocha
+  created_at: 2010-05-23 19:07:07
+  updated_at: 2010-05-23 19:07:07
+  id: "136"
+  lat: "40.4089"
+  long: "-3.69248"
+  nicename: atocha
+stations_162: 
+  name: Villaverde Alto
+  created_at: 2010-05-23 19:07:31
+  updated_at: 2010-05-23 19:07:31
+  id: "162"
+  lat: "40.3412"
+  long: "-3.71199"
+  nicename: villaverde-alto
+stations_056: 
+  name: El Carrascal
+  created_at: 2010-05-23 19:06:15
+  updated_at: 2010-05-23 19:06:15
+  id: "56"
+  lat: "40.3366"
+  long: "-3.74018"
+  nicename: el-carrascal
+stations_082: 
+  name: Islas Filipinas
+  created_at: 2010-05-23 19:06:28
+  updated_at: 2010-05-23 19:06:28
+  id: "82"
+  lat: "40.4391"
+  long: "-3.71373"
+  nicename: islas-filipinas
+stations_137: 
+  name: Atocha Renfe
+  created_at: 2010-05-23 19:07:07
+  updated_at: 2010-05-23 19:07:07
+  id: "137"
+  lat: "40.4066"
+  long: "-3.68937"
+  nicename: atocha-renfe
+stations_163: 
+  name: "San Crist\xC3\xB3bal"
+  created_at: 2010-05-23 19:07:31
+  updated_at: 2010-05-23 19:07:31
+  id: "163"
+  lat: "40.3415"
+  long: "-3.69319"
+  nicename: san-cristobal
+stations_218: 
+  name: Ciudad Lineal
+  created_at: 2010-05-23 19:08:09
+  updated_at: 2010-05-23 19:08:09
+  id: "218"
+  lat: "40.438"
+  long: "-3.63816"
+  nicename: ciudad-lineal
+stations_057: 
+  name: "Juli\xC3\xA1n Besteiro"
+  created_at: 2010-05-23 19:06:15
+  updated_at: 2010-05-23 19:06:15
+  id: "57"
+  lat: "40.3347"
+  long: "-3.75266"
+  nicename: julian-besteiro
+stations_083: 
+  name: "Francos Rodr\xC3\xADguez"
+  created_at: 2010-05-23 19:06:29
+  updated_at: 2010-05-23 19:06:29
+  id: "83"
+  lat: "40.4565"
+  long: "-3.71239"
+  nicename: francos-rodriguez
+stations_138: 
+  name: "Men\xC3\xA9ndez Pelayo"
+  created_at: 2010-05-23 19:07:07
+  updated_at: 2010-05-23 19:07:07
+  id: "138"
+  lat: "40.4044"
+  long: "-3.68098"
+  nicename: menendez-pelayo
+stations_164: 
+  name: Villaverde Bajo Cruce
+  created_at: 2010-05-23 19:07:32
+  updated_at: 2010-05-23 19:07:32
+  id: "164"
+  lat: "40.3509"
+  long: "-3.69265"
+  nicename: villaverde-bajo-cruce
+stations_190: 
+  name: "Santiago Bernab\xC3\xA9u"
+  created_at: 2010-05-23 19:07:49
+  updated_at: 2010-05-23 19:07:49
+  id: "190"
+  lat: "40.4516"
+  long: "-3.69038"
+  nicename: santiago-bernabeu
+stations_219: 
+  name: Quintana
+  created_at: 2010-05-23 19:08:10
+  updated_at: 2010-05-23 19:08:10
+  id: "219"
+  lat: "40.4336"
+  long: "-3.64736"
+  nicename: quintana
+stations_058: 
+  name: Casa del Reloj
+  created_at: 2010-05-23 19:06:15
+  updated_at: 2010-05-23 19:06:15
+  id: "58"
+  lat: "40.3266"
+  long: "-3.75942"
+  nicename: casa-del-reloj
+stations_084: 
+  name: Valdezarza
+  created_at: 2010-05-23 19:06:29
+  updated_at: 2010-05-23 19:06:29
+  id: "84"
+  lat: "40.4648"
+  long: "-3.71598"
+  nicename: valdezarza
+stations_139: 
+  name: Puente de Vallecas
+  created_at: 2010-05-23 19:07:08
+  updated_at: 2010-05-23 19:07:08
+  id: "139"
+  lat: "40.3982"
+  long: "-3.66906"
+  nicename: puente-de-vallecas
+stations_165: 
+  name: "Ciudad de los \xC3\x81ngeles"
+  created_at: 2010-05-23 19:07:32
+  updated_at: 2010-05-23 19:07:32
+  id: "165"
+  lat: "40.3596"
+  long: "-3.69363"
+  nicename: ciudad-de-los-angeles
+stations_191: 
+  name: "Alonso Mart\xC3\xADnez"
+  created_at: 2010-05-23 19:07:50
+  updated_at: 2010-05-23 19:07:50
+  id: "191"
+  lat: "40.4277"
+  long: "-3.69594"
+  nicename: alonso-martinez
+stations_059: 
+  name: Hospital Severo Ochoa
+  created_at: 2010-05-23 19:06:15
+  updated_at: 2010-05-23 19:06:15
+  id: "59"
+  lat: "40.3218"
+  long: "-3.76797"
+  nicename: hospital-severo-ochoa
+stations_085: 
+  name: Antonio Machado
+  created_at: 2010-05-23 19:06:29
+  updated_at: 2010-05-23 19:06:29
+  id: "85"
+  lat: "40.4702"
+  long: "-3.7177"
+  nicename: antonio-machado
+stations_166: 
+  name: "San Ferm\xC3\xADn - Orcasur"
+  created_at: 2010-05-23 19:07:32
+  updated_at: 2010-05-23 19:07:32
+  id: "166"
+  lat: "40.37"
+  long: "-3.69417"
+  nicename: san-fermin-orcasur
+stations_192: 
+  name: Lago
+  created_at: 2010-05-23 19:07:51
+  updated_at: 2010-05-23 19:07:51
+  id: "192"
+  lat: "40.4164"
+  long: "-3.73563"
+  nicename: lago
+stations_086: 
   name: "Pe\xC3\xB1agrande"
-  created_at: 2010-05-06 20:20:59
-  updated_at: 2010-05-06 20:20:59
-  id: "89"
-  line_id: "7"
+  created_at: 2010-05-23 19:06:30
+  updated_at: 2010-05-23 19:06:30
+  id: "86"
   lat: "40.4759"
   long: "-3.71582"
   nicename: penagrande
-stations_196: 
-  name: Moncloa
-  created_at: 2010-05-06 20:21:55
-  updated_at: 2010-05-06 20:21:55
-  id: "196"
-  line_id: "3"
-  lat: "40.4167"
-  long: "-3.70035"
-  nicename: moncloa
-stations_278: 
-  name: Eugenia de Montijo
-  created_at: 2010-05-06 20:22:31
-  updated_at: 2010-05-06 20:22:31
-  id: "278"
-  line_id: "5"
-  lat: "40.3844"
-  long: "-3.75121"
-  nicename: eugenia-de-montijo
-stations_197: 
-  name: "Hospital Infanta Sof\xC3\xADa"
-  created_at: 2010-05-06 20:22:02
-  updated_at: 2010-05-06 20:22:02
-  id: "197"
-  line_id: "10"
-  lat: "40.5597"
-  long: "-3.61184"
-  nicename: hospital-infanta-sofia
-stations_279: 
-  name: Aluche
-  created_at: 2010-05-06 20:22:31
-  updated_at: 2010-05-06 20:22:31
-  id: "279"
-  line_id: "5"
-  lat: "40.3856"
+stations_167: 
+  name: Hospital 12 de Octubre
+  created_at: 2010-05-23 19:07:32
+  updated_at: 2010-05-23 19:07:32
+  id: "167"
+  lat: "40.375"
+  long: "-3.69585"
+  nicename: hospital-12-de-octubre
+stations_193: 
+  name: !binary |
+    QmF0w6Fu
+
+  created_at: 2010-05-23 19:07:51
+  updated_at: 2010-05-23 19:07:51
+  id: "193"
+  lat: "40.4079"
+  long: "-3.75311"
+  nicename: batan
+stations_087: 
+  name: "Avenida de la Ilustraci\xC3\xB3n"
+  created_at: 2010-05-23 19:06:30
+  updated_at: 2010-05-23 19:06:30
+  id: "87"
+  lat: "40.4801"
+  long: "-3.7184"
+  nicename: avenida-de-la-ilustracion
+stations_168: 
+  name: Almendrales
+  created_at: 2010-05-23 19:07:33
+  updated_at: 2010-05-23 19:07:33
+  id: "168"
+  lat: "40.3841"
+  long: "-3.69797"
+  nicename: almendrales
+stations_194: 
+  name: Casa de Campo
+  created_at: 2010-05-23 19:07:51
+  updated_at: 2010-05-23 19:07:51
+  id: "194"
+  lat: "40.4032"
   long: "-3.7608"
-  nicename: aluche
+  nicename: casa-de-campo
+stations_088: 
+  name: Lacoma
+  created_at: 2010-05-23 19:06:30
+  updated_at: 2010-05-23 19:06:30
+  id: "88"
+  lat: "40.485"
+  long: "-3.72305"
+  nicename: lacoma
+stations_169: 
+  name: Delicias
+  created_at: 2010-05-23 19:07:33
+  updated_at: 2010-05-23 19:07:33
+  id: "169"
+  lat: "40.3999"
+  long: "-3.6942"
+  nicename: delicias
+stations_195: 
+  name: "Colonia Jard\xC3\xADn"
+  created_at: 2010-05-23 19:07:52
+  updated_at: 2010-05-23 19:07:52
+  id: "195"
+  lat: "40.397"
+  long: "-3.77461"
+  nicename: colonia-jardin
+stations_089: 
+  name: Pitis
+  created_at: 2010-05-23 19:06:31
+  updated_at: 2010-05-23 19:06:31
+  id: "89"
+  lat: "40.4951"
+  long: "-3.72589"
+  nicename: pitis
+stations_196: 
+  name: "Aviaci\xC3\xB3n Espa\xC3\xB1ola"
+  created_at: 2010-05-23 19:07:52
+  updated_at: 2010-05-23 19:07:52
+  id: "196"
+  lat: "40.3836"
+  long: "-3.78392"
+  nicename: aviacion-espanola
+stations_197: 
+  name: Cuatro Vientos
+  created_at: 2010-05-23 19:07:52
+  updated_at: 2010-05-23 19:07:52
+  id: "197"
+  lat: "40.3777"
+  long: "-3.79152"
+  nicename: cuatro-vientos
 stations_198: 
-  name: "Reyes Cat\xC3\xB3licos"
-  created_at: 2010-05-06 20:22:02
-  updated_at: 2010-05-06 20:22:02
+  name: "Joaqu\xC3\xADn Vilumbrales"
+  created_at: 2010-05-23 19:07:53
+  updated_at: 2010-05-23 19:07:53
   id: "198"
-  line_id: "10"
-  lat: "40.5502"
-  long: "-3.62407"
-  nicename: reyes-catolicos
+  lat: "40.3498"
+  long: "-3.8072"
+  nicename: joaquin-vilumbrales
 stations_199: 
-  name: Baunatal
-  created_at: 2010-05-06 20:22:02
-  updated_at: 2010-05-06 20:22:02
+  name: !binary |
+    Q29sw7Nu
+
+  created_at: 2010-05-23 19:07:58
+  updated_at: 2010-05-23 19:08:16
   id: "199"
-  line_id: "10"
-  lat: "40.5544"
-  long: "-3.63513"
-  nicename: baunatal
+  lat: "40.4254"
+  long: "-3.691"
+  nicename: colon
 stations_010: 
   name: "Opa\xC3\xB1el"
-  created_at: 2010-05-06 20:20:31
-  updated_at: 2010-05-06 20:20:31
+  created_at: 2010-05-23 19:05:53
+  updated_at: 2010-05-23 19:05:53
   id: "10"
-  line_id: "6"
   lat: "40.3869"
   long: "-3.72313"
   nicename: opanel
 stations_011: 
-  name: "Plaza El\xC3\xADptica"
-  created_at: 2010-05-06 20:20:31
-  updated_at: 2010-05-06 20:20:31
-  id: "11"
-  line_id: "6"
-  lat: "40.4167"
-  long: "-3.70035"
-  nicename: plaza-eliptica
-stations_012: 
   name: Usera
-  created_at: 2010-05-06 20:20:31
-  updated_at: 2010-05-06 20:20:31
-  id: "12"
-  line_id: "6"
+  created_at: 2010-05-23 19:05:53
+  updated_at: 2010-05-23 19:05:53
+  id: "11"
   lat: "40.3871"
   long: "-3.70689"
   nicename: usera
-stations_200: 
-  name: Manuel de Falla
-  created_at: 2010-05-06 20:22:02
-  updated_at: 2010-05-06 20:22:02
-  id: "200"
-  line_id: "10"
-  lat: "40.5501"
-  long: "-3.64705"
-  nicename: manuel-de-falla
-stations_013: 
+stations_012: 
   name: Legazpi
-  created_at: 2010-05-06 20:20:31
-  updated_at: 2010-05-06 20:20:31
-  id: "13"
-  line_id: "6"
+  created_at: 2010-05-23 19:05:53
+  updated_at: 2010-05-23 19:05:53
+  id: "12"
   lat: "40.3912"
   long: "-3.69512"
   nicename: legazpi
-stations_120: 
-  name: "Vic\xC3\xA1lvaro"
-  created_at: 2010-05-06 20:21:16
-  updated_at: 2010-05-06 20:21:16
-  id: "120"
-  line_id: "9"
-  lat: "40.4042"
-  long: "-3.60886"
-  nicename: vicalvaro
-stations_201: 
-  name: "Marqu\xC3\xA9s de la Valdavia"
-  created_at: 2010-05-06 20:22:02
-  updated_at: 2010-05-06 20:22:02
-  id: "201"
-  line_id: "10"
-  lat: "40.541"
-  long: "-3.63738"
-  nicename: marques-de-la-valdavia
-stations_014: 
-  name: Arganzuela - Planetario
-  created_at: 2010-05-06 20:20:32
-  updated_at: 2010-05-06 20:20:32
-  id: "14"
-  line_id: "6"
-  lat: "40.3931"
-  long: "-3.68864"
-  nicename: arganzuela-planetario
-stations_040: 
-  name: "M\xC3\xB3stoles Central"
-  created_at: 2010-05-06 20:20:41
-  updated_at: 2010-05-06 20:20:41
-  id: "40"
-  line_id: "12"
-  lat: "40.3285"
-  long: "-3.86354"
-  nicename: mostoles-central
-stations_121: 
-  name: San Cipriano
-  created_at: 2010-05-06 20:21:16
-  updated_at: 2010-05-06 20:21:16
-  id: "121"
-  line_id: "9"
-  lat: "40.4038"
-  long: "-3.6024"
-  nicename: san-cipriano
-stations_202: 
-  name: La Moraleja
-  created_at: 2010-05-06 20:22:03
-  updated_at: 2010-05-06 20:22:03
-  id: "202"
-  line_id: "10"
-  lat: "40.5317"
-  long: "-3.6356"
-  nicename: la-moraleja
-stations_015: 
-  name: "M\xC3\xA9ndez \xC3\x81lvaro"
-  created_at: 2010-05-06 20:20:32
-  updated_at: 2010-05-06 20:20:32
-  id: "15"
-  line_id: "6"
-  lat: "40.3972"
-  long: "-3.68201"
-  nicename: mendez-alvaro
-stations_041: 
-  name: Pradillo
-  created_at: 2010-05-06 20:20:41
-  updated_at: 2010-05-06 20:20:41
-  id: "41"
-  line_id: "12"
-  lat: "40.3217"
-  long: "-3.86489"
-  nicename: pradillo
-stations_122: 
-  name: Puerta de Arganda
-  created_at: 2010-05-06 20:21:16
-  updated_at: 2010-05-06 20:21:16
-  id: "122"
-  line_id: "9"
-  lat: "40.4013"
-  long: "-3.59598"
-  nicename: puerta-de-arganda
-stations_203: 
-  name: La Granja
-  created_at: 2010-05-06 20:22:04
-  updated_at: 2010-05-06 20:22:04
-  id: "203"
-  line_id: "10"
-  lat: "40.5276"
-  long: "-3.65862"
-  nicename: la-granja
-stations_230: 
-  name: Bilbao
-  created_at: 2010-05-06 20:22:16
-  updated_at: 2010-05-06 20:22:16
-  id: "230"
-  line_id: "4"
-  lat: "40.4291"
-  long: "-3.70218"
-  nicename: bilbao
-stations_016: 
-  name: "Pac\xC3\xADfico"
-  created_at: 2010-05-06 20:20:32
-  updated_at: 2010-05-06 20:20:32
-  id: "16"
-  line_id: "6"
-  lat: "40.4013"
-  long: "-3.67513"
-  nicename: pacifico
-stations_042: 
-  name: "Hospital de M\xC3\xB3stoles"
-  created_at: 2010-05-06 20:20:41
-  updated_at: 2010-05-06 20:20:41
-  id: "42"
-  line_id: "12"
-  lat: "40.3165"
-  long: "-3.87471"
-  nicename: hospital-de-mostoles
-stations_123: 
-  name: Rivas Urbanizaciones
-  created_at: 2010-05-06 20:21:17
-  updated_at: 2010-05-06 20:21:17
-  id: "123"
-  line_id: "9"
-  lat: "40.3668"
-  long: "-3.54728"
-  nicename: rivas-urbanizaciones
-stations_204: 
-  name: "Ronda de la Comunicaci\xC3\xB3n"
-  created_at: 2010-05-06 20:22:04
-  updated_at: 2010-05-06 20:22:04
-  id: "204"
-  line_id: "10"
-  lat: "40.5155"
-  long: "-3.66277"
-  nicename: ronda-de-la-comunicacion
-stations_231: 
-  name: "Alonso Mart\xC3\xADnez"
-  created_at: 2010-05-06 20:22:16
-  updated_at: 2010-05-06 20:22:16
-  id: "231"
-  line_id: "4"
-  lat: "40.4277"
-  long: "-3.69594"
-  nicename: alonso-martinez
-stations_017: 
-  name: Conde de Casal
-  created_at: 2010-05-06 20:20:32
-  updated_at: 2010-05-06 20:20:32
-  id: "17"
-  line_id: "6"
-  lat: "40.407"
-  long: "-3.6704"
-  nicename: conde-de-casal
-stations_043: 
-  name: "Manuela Malasa\xC3\xB1a"
-  created_at: 2010-05-06 20:20:41
-  updated_at: 2010-05-06 20:20:41
-  id: "43"
-  line_id: "12"
-  lat: "40.309"
-  long: "-3.86402"
-  nicename: manuela-malasana
-stations_124: 
-  name: Rivas Futura
-  created_at: 2010-05-06 20:21:17
-  updated_at: 2010-05-06 20:21:17
-  id: "124"
-  line_id: "9"
-  lat: "40.3413"
-  long: "-3.52479"
-  nicename: rivas-futura
-stations_150: 
-  name: Nueva Numancia
-  created_at: 2010-05-06 20:21:29
-  updated_at: 2010-05-06 20:21:29
-  id: "150"
-  line_id: "1"
-  lat: "40.3955"
-  long: "-3.66414"
-  nicename: nueva-numancia
-stations_205: 
-  name: Las Tablas
-  created_at: 2010-05-06 20:22:04
-  updated_at: 2010-05-06 20:22:04
-  id: "205"
-  line_id: "10"
-  lat: "40.5083"
-  long: "-3.66934"
-  nicename: las-tablas
-stations_232: 
-  name: !binary |
-    Q29sw7Nu
-
-  created_at: 2010-05-06 20:22:16
-  updated_at: 2010-05-06 20:22:16
-  id: "232"
-  line_id: "4"
-  lat: "40.4254"
-  long: "-3.691"
-  nicename: colon
-stations_018: 
-  name: Sainz de Baranda
-  created_at: 2010-05-06 20:20:32
-  updated_at: 2010-05-06 20:20:32
-  id: "18"
-  line_id: "6"
-  lat: "40.4145"
-  long: "-3.66987"
-  nicename: sainz-de-baranda
-stations_044: 
-  name: Loranca
-  created_at: 2010-05-06 20:20:42
-  updated_at: 2010-05-06 20:20:42
-  id: "44"
-  line_id: "12"
-  lat: "40.2968"
-  long: "-3.83769"
-  nicename: loranca
-stations_070: 
-  name: "Estadio Ol\xC3\xADmpico"
-  created_at: 2010-05-06 20:20:55
-  updated_at: 2010-05-06 20:20:55
-  id: "70"
-  line_id: "7"
-  lat: "40.4334"
-  long: "-3.60015"
-  nicename: estadio-olimpico
-stations_125: 
-  name: Rivas Vaciamadrid
-  created_at: 2010-05-06 20:21:17
-  updated_at: 2010-05-06 20:21:17
-  id: "125"
-  line_id: "9"
-  lat: "40.3284"
-  long: "-3.5206"
-  nicename: rivas-vaciamadrid
-stations_151: 
-  name: Portazgo
-  created_at: 2010-05-06 20:21:29
-  updated_at: 2010-05-06 20:21:29
-  id: "151"
-  line_id: "1"
-  lat: "40.3927"
-  long: "-3.65868"
-  nicename: portazgo
-stations_206: 
-  name: Montecarmelo
-  created_at: 2010-05-06 20:22:05
-  updated_at: 2010-05-06 20:22:05
-  id: "206"
-  line_id: "10"
-  lat: "40.5057"
-  long: "-3.69544"
-  nicename: montecarmelo
-stations_233: 
+stations_200: 
   name: Serrano
-  created_at: 2010-05-06 20:22:17
-  updated_at: 2010-05-06 20:22:17
-  id: "233"
-  line_id: "4"
+  created_at: 2010-05-23 19:07:58
+  updated_at: 2010-05-23 19:07:58
+  id: "200"
   lat: "40.4254"
   long: "-3.68663"
   nicename: serrano
-stations_019: 
-  name: "O\xC2\xB4Donnell"
-  created_at: 2010-05-06 20:20:33
-  updated_at: 2010-05-06 20:20:33
-  id: "19"
-  line_id: "6"
-  lat: "40.4229"
-  long: "-3.66859"
-  nicename: o-donnell
-stations_045: 
-  name: Hospital de Fuenlabrada
-  created_at: 2010-05-06 20:20:42
-  updated_at: 2010-05-06 20:20:42
-  id: "45"
-  line_id: "12"
-  lat: "40.2858"
-  long: "-3.81642"
-  nicename: hospital-de-fuenlabrada
-stations_071: 
-  name: Las Musas
-  created_at: 2010-05-06 20:20:55
-  updated_at: 2010-05-06 20:20:55
-  id: "71"
-  line_id: "7"
-  lat: "40.433"
-  long: "-3.60788"
-  nicename: las-musas
-stations_126: 
-  name: La Poveda
-  created_at: 2010-05-06 20:21:17
-  updated_at: 2010-05-06 20:21:17
-  id: "126"
-  line_id: "9"
-  lat: "40.319"
-  long: "-3.47745"
-  nicename: la-poveda
-stations_152: 
-  name: Buenos Aires
-  created_at: 2010-05-06 20:21:30
-  updated_at: 2010-05-06 20:21:30
-  id: "152"
-  line_id: "1"
-  lat: "40.3916"
-  long: "-3.65391"
-  nicename: buenos-aires
-stations_207: 
-  name: Tres Olivos
-  created_at: 2010-05-06 20:22:05
-  updated_at: 2010-05-06 20:22:05
-  id: "207"
-  line_id: "10"
-  lat: "40.5012"
-  long: "-3.6952"
-  nicename: tres-olivos
-stations_260: 
-  name: Ventas
-  created_at: 2010-05-06 20:22:27
-  updated_at: 2010-05-06 20:22:27
-  id: "260"
-  line_id: "5"
-  lat: "40.4309"
-  long: "-3.66366"
-  nicename: ventas
-stations_234: 
-  name: "Vel\xC3\xA1zquez"
-  created_at: 2010-05-06 20:22:17
-  updated_at: 2010-05-06 20:22:17
-  id: "234"
-  line_id: "4"
-  lat: "40.425"
-  long: "-3.68291"
-  nicename: velazquez
-stations_046: 
-  name: Parque Europa
-  created_at: 2010-05-06 20:20:42
-  updated_at: 2010-05-06 20:20:42
-  id: "46"
-  line_id: "12"
-  lat: "40.2852"
-  long: "-3.80632"
-  nicename: parque-europa
-stations_072: 
-  name: San Blas
-  created_at: 2010-05-06 20:20:55
-  updated_at: 2010-05-06 20:20:55
-  id: "72"
-  line_id: "7"
-  lat: "40.428"
-  long: "-3.61546"
-  nicename: san-blas
-stations_127: 
+stations_013: 
+  name: Arganzuela - Planetario
+  created_at: 2010-05-23 19:05:54
+  updated_at: 2010-05-23 19:05:54
+  id: "13"
+  lat: "40.3931"
+  long: "-3.68864"
+  nicename: arganzuela-planetario
+stations_120: 
   name: Arganda del Rey
-  created_at: 2010-05-06 20:21:18
-  updated_at: 2010-05-06 20:21:18
-  id: "127"
-  line_id: "9"
+  created_at: 2010-05-23 19:06:56
+  updated_at: 2010-05-23 19:06:56
+  id: "120"
   lat: "40.3045"
   long: "-3.44768"
   nicename: arganda-del-rey
-stations_153: 
-  name: Alto del Arenal
-  created_at: 2010-05-06 20:21:30
-  updated_at: 2010-05-06 20:21:30
-  id: "153"
-  line_id: "1"
-  lat: "40.3898"
-  long: "-3.64522"
-  nicename: alto-del-arenal
-stations_208: 
-  name: Fuencarral
-  created_at: 2010-05-06 20:22:05
-  updated_at: 2010-05-06 20:22:05
-  id: "208"
-  line_id: "10"
-  lat: "40.4951"
-  long: "-3.69283"
-  nicename: fuencarral
-stations_261: 
-  name: "Diego de Le\xC3\xB3n"
-  created_at: 2010-05-06 20:22:27
-  updated_at: 2010-05-06 20:22:27
-  id: "261"
-  line_id: "5"
-  lat: "40.4347"
-  long: "-3.67496"
-  nicename: diego-de-leon
-stations_235: 
-  name: Goya
-  created_at: 2010-05-06 20:22:17
-  updated_at: 2010-05-06 20:22:17
-  id: "235"
-  line_id: "4"
-  lat: "40.4245"
-  long: "-3.67591"
-  nicename: goya
-stations_047: 
-  name: Fuenlabrada Central
-  created_at: 2010-05-06 20:20:42
-  updated_at: 2010-05-06 20:20:42
-  id: "47"
-  line_id: "12"
-  lat: "40.2827"
-  long: "-3.7989"
-  nicename: fuenlabrada-central
-stations_073: 
-  name: Simancas
-  created_at: 2010-05-06 20:20:56
-  updated_at: 2010-05-06 20:20:56
-  id: "73"
-  line_id: "7"
-  lat: "40.428"
-  long: "-3.62572"
-  nicename: simancas
-stations_128: 
+stations_201: 
+  name: "Vel\xC3\xA1zquez"
+  created_at: 2010-05-23 19:07:59
+  updated_at: 2010-05-23 19:07:59
+  id: "201"
+  lat: "40.425"
+  long: "-3.68291"
+  nicename: velazquez
+stations_014: 
+  name: "M\xC3\xA9ndez \xC3\x81lvaro"
+  created_at: 2010-05-23 19:05:54
+  updated_at: 2010-05-23 19:05:54
+  id: "14"
+  lat: "40.3972"
+  long: "-3.68201"
+  nicename: mendez-alvaro
+stations_040: 
+  name: Pradillo
+  created_at: 2010-05-23 19:06:10
+  updated_at: 2010-05-23 19:06:10
+  id: "40"
+  lat: "40.3217"
+  long: "-3.86489"
+  nicename: pradillo
+stations_121: 
   name: "Pinar de Chamart\xC3\xAD\xC2\xADn"
-  created_at: 2010-05-06 20:21:24
-  updated_at: 2010-05-06 20:21:24
-  id: "128"
-  line_id: "1"
-  lat: "40.4167"
-  long: "-3.70035"
+  created_at: 2010-05-23 19:07:02
+  updated_at: 2010-05-23 19:08:16
+  id: "121"
+  lat: "40.4801"
+  long: "-3.6668"
   nicename: pinar-de-chamartin
-stations_154: 
-  name: "Miguel Hern\xC3\xA1ndez"
-  created_at: 2010-05-06 20:21:30
-  updated_at: 2010-05-06 20:21:30
-  id: "154"
-  line_id: "1"
-  lat: "40.3873"
-  long: "-3.63951"
-  nicename: miguel-hernandez
-stations_180: 
-  name: "San Crist\xC3\xB3bal"
-  created_at: 2010-05-06 20:21:51
-  updated_at: 2010-05-06 20:21:51
-  id: "180"
-  line_id: "3"
-  lat: "40.3415"
-  long: "-3.69319"
-  nicename: san-cristobal
-stations_209: 
-  name: "Bego\xC3\xB1a"
-  created_at: 2010-05-06 20:22:05
-  updated_at: 2010-05-06 20:22:05
-  id: "209"
-  line_id: "10"
-  lat: "40.4804"
-  long: "-3.68584"
-  nicename: begona
-stations_262: 
-  name: "N\xC3\xBA\xC3\xB1ez de Balboa"
-  created_at: 2010-05-06 20:22:27
-  updated_at: 2010-05-06 20:22:27
-  id: "262"
-  line_id: "5"
-  lat: "40.4326"
-  long: "-3.67972"
-  nicename: nunez-de-balboa
-stations_236: 
+stations_202: 
   name: Lista
-  created_at: 2010-05-06 20:22:17
-  updated_at: 2010-05-06 20:22:17
-  id: "236"
-  line_id: "4"
+  created_at: 2010-05-23 19:07:59
+  updated_at: 2010-05-23 19:07:59
+  id: "202"
   lat: "40.4292"
   long: "-3.67541"
   nicename: lista
-stations_048: 
-  name: Parque de los Estados
-  created_at: 2010-05-06 20:20:43
-  updated_at: 2010-05-06 20:20:43
-  id: "48"
-  line_id: "12"
-  lat: "40.2868"
-  long: "-3.78698"
-  nicename: parque-de-los-estados
-stations_074: 
-  name: "Garc\xC3\xADa Noblejas"
-  created_at: 2010-05-06 20:20:56
-  updated_at: 2010-05-06 20:20:56
-  id: "74"
-  line_id: "7"
-  lat: "40.4284"
-  long: "-3.6333"
-  nicename: garcia-noblejas
-stations_129: 
+stations_015: 
+  name: "Pac\xC3\xADfico"
+  created_at: 2010-05-23 19:05:55
+  updated_at: 2010-05-23 19:05:55
+  id: "15"
+  lat: "40.4013"
+  long: "-3.67513"
+  nicename: pacifico
+stations_041: 
+  name: "Hospital de M\xC3\xB3stoles"
+  created_at: 2010-05-23 19:06:10
+  updated_at: 2010-05-23 19:06:10
+  id: "41"
+  lat: "40.3165"
+  long: "-3.87471"
+  nicename: hospital-de-mostoles
+stations_122: 
   name: !binary |
     QmFtYsO6
 
-  created_at: 2010-05-06 20:21:24
-  updated_at: 2010-05-06 20:21:24
-  id: "129"
-  line_id: "1"
+  created_at: 2010-05-23 19:07:02
+  updated_at: 2010-05-23 19:07:02
+  id: "122"
   lat: "40.4756"
   long: "-3.67664"
   nicename: bambu
-stations_155: 
-  name: Sierra de Guadalupe
-  created_at: 2010-05-06 20:21:30
-  updated_at: 2010-05-06 20:21:30
-  id: "155"
-  line_id: "1"
-  lat: "40.3822"
-  long: "-3.62468"
-  nicename: sierra-de-guadalupe
-stations_181: 
-  name: Villaverde Bajo Cruce
-  created_at: 2010-05-06 20:21:51
-  updated_at: 2010-05-06 20:21:51
-  id: "181"
-  line_id: "3"
-  lat: "40.3509"
-  long: "-3.69265"
-  nicename: villaverde-bajo-cruce
-stations_263: 
-  name: !binary |
-    UnViw6luIERhcsOtbw==
-
-  created_at: 2010-05-06 20:22:28
-  updated_at: 2010-05-06 20:22:28
-  id: "263"
-  line_id: "5"
-  lat: "40.4332"
-  long: "-3.68954"
-  nicename: ruben-dario
-stations_237: 
-  name: "Diego de Le\xC3\xB3n"
-  created_at: 2010-05-06 20:22:17
-  updated_at: 2010-05-06 20:22:17
-  id: "237"
-  line_id: "4"
-  lat: "40.4347"
-  long: "-3.67496"
-  nicename: diego-de-leon
-stations_075: 
-  name: Ascao
-  created_at: 2010-05-06 20:20:56
-  updated_at: 2010-05-06 20:20:56
-  id: "75"
-  line_id: "7"
-  lat: "40.4304"
-  long: "-3.64069"
-  nicename: ascao
-stations_156: 
-  name: Villa de Vallecas
-  created_at: 2010-05-06 20:21:31
-  updated_at: 2010-05-06 20:21:31
-  id: "156"
-  line_id: "1"
-  lat: "40.3796"
-  long: "-3.6213"
-  nicename: villa-de-vallecas
-stations_182: 
-  name: "Ciudad de los \xC3\x81ngeles"
-  created_at: 2010-05-06 20:21:52
-  updated_at: 2010-05-06 20:21:52
-  id: "182"
-  line_id: "3"
-  lat: "40.3596"
-  long: "-3.69363"
-  nicename: ciudad-de-los-angeles
-stations_049: 
-  name: Arroyo Culebro
-  created_at: 2010-05-06 20:20:43
-  updated_at: 2010-05-06 20:20:43
-  id: "49"
-  line_id: "12"
-  lat: "40.2887"
-  long: "-3.75682"
-  nicename: arroyo-culebro
-stations_264: 
-  name: "Alonso Mart\xC3\xADnez"
-  created_at: 2010-05-06 20:22:28
-  updated_at: 2010-05-06 20:22:28
-  id: "264"
-  line_id: "5"
-  lat: "40.4277"
-  long: "-3.69594"
-  nicename: alonso-martinez
-stations_238: 
-  name: "Avenida de Am\xC3\xA9rica"
-  created_at: 2010-05-06 20:22:18
-  updated_at: 2010-05-06 20:22:18
-  id: "238"
-  line_id: "4"
-  lat: "47.8959"
-  long: "-122.22"
-  nicename: avenida-de-america
-stations_076: 
-  name: Pueblo Nuevo
-  created_at: 2010-05-06 20:20:56
-  updated_at: 2010-05-06 20:20:56
-  id: "76"
-  line_id: "7"
-  lat: "40.4363"
-  long: "-3.64178"
-  nicename: pueblo-nuevo
-stations_157: 
-  name: Congosto
-  created_at: 2010-05-06 20:21:31
-  updated_at: 2010-05-06 20:21:31
-  id: "157"
-  line_id: "1"
-  lat: "40.3724"
-  long: "-3.61884"
-  nicename: congosto
-stations_183: 
-  name: "San Ferm\xC3\xADn - Orcasur"
-  created_at: 2010-05-06 20:21:52
-  updated_at: 2010-05-06 20:21:52
-  id: "183"
-  line_id: "3"
-  lat: "40.37"
-  long: "-3.69417"
-  nicename: san-fermin-orcasur
-stations_265: 
-  name: Chueca
-  created_at: 2010-05-06 20:22:28
-  updated_at: 2010-05-06 20:22:28
-  id: "265"
-  line_id: "5"
-  lat: "40.4229"
-  long: "-3.69761"
-  nicename: chueca
-stations_239: 
+stations_203: 
   name: Prosperidad
-  created_at: 2010-05-06 20:22:18
-  updated_at: 2010-05-06 20:22:18
-  id: "239"
-  line_id: "4"
+  created_at: 2010-05-23 19:08:00
+  updated_at: 2010-05-23 19:08:00
+  id: "203"
   lat: "40.4442"
   long: "-3.67482"
   nicename: prosperidad
-stations_158: 
-  name: La Gavia
-  created_at: 2010-05-06 20:21:31
-  updated_at: 2010-05-06 20:21:31
-  id: "158"
-  line_id: "1"
-  lat: "40.3702"
-  long: "-3.61347"
-  nicename: la-gavia
-stations_184: 
-  name: Hospital 12 de Octubre
-  created_at: 2010-05-06 20:21:52
-  updated_at: 2010-05-06 20:21:52
-  id: "184"
-  line_id: "3"
-  lat: "40.375"
-  long: "-3.69585"
-  nicename: hospital-12-de-octubre
-stations_077: 
-  name: "Barrio de la Concepci\xC3\xB3n"
-  created_at: 2010-05-06 20:20:56
-  updated_at: 2010-05-06 20:20:56
-  id: "77"
-  line_id: "7"
-  lat: "40.4391"
-  long: "-3.652"
-  nicename: barrio-de-la-concepcion
-stations_266: 
-  name: "Gran V\xC3\xADa"
-  created_at: 2010-05-06 20:22:28
-  updated_at: 2010-05-06 20:22:28
-  id: "266"
-  line_id: "5"
-  lat: "40.42"
-  long: "-3.70184"
-  nicename: gran-via
-stations_159: 
-  name: Las Suertes
-  created_at: 2010-05-06 20:21:31
-  updated_at: 2010-05-06 20:21:31
-  id: "159"
-  line_id: "1"
-  lat: "40.3636"
-  long: "-3.59971"
-  nicename: las-suertes
-stations_185: 
-  name: Almendrales
-  created_at: 2010-05-06 20:21:52
-  updated_at: 2010-05-06 20:21:52
-  id: "185"
-  line_id: "3"
-  lat: "40.3841"
-  long: "-3.69797"
-  nicename: almendrales
-stations_078: 
-  name: Parque de las Avenidas
-  created_at: 2010-05-06 20:20:57
-  updated_at: 2010-05-06 20:20:57
-  id: "78"
-  line_id: "7"
-  lat: "40.4391"
-  long: "-3.66309"
-  nicename: parque-de-las-avenidas
-stations_267: 
-  name: Callao
-  created_at: 2010-05-06 20:22:28
-  updated_at: 2010-05-06 20:22:28
-  id: "267"
-  line_id: "5"
-  lat: "40.4201"
-  long: "-3.70584"
-  nicename: callao
-stations_186: 
-  name: Legazpi
-  created_at: 2010-05-06 20:21:53
-  updated_at: 2010-05-06 20:21:53
-  id: "186"
-  line_id: "3"
-  lat: "40.3912"
-  long: "-3.69512"
-  nicename: legazpi
-stations_079: 
-  name: Cartagena
-  created_at: 2010-05-06 20:20:57
-  updated_at: 2010-05-06 20:20:57
-  id: "79"
-  line_id: "7"
-  lat: "40.4395"
-  long: "-3.6722"
-  nicename: cartagena
-stations_268: 
+stations_230: 
+  name: Carabanchel
+  created_at: 2010-05-23 19:08:15
+  updated_at: 2010-05-23 19:08:15
+  id: "230"
+  lat: "40.3878"
+  long: "-3.74488"
+  nicename: carabanchel
+stations_016: 
+  name: Conde de Casal
+  created_at: 2010-05-23 19:05:55
+  updated_at: 2010-05-23 19:05:55
+  id: "16"
+  lat: "40.407"
+  long: "-3.6704"
+  nicename: conde-de-casal
+stations_042: 
+  name: "Manuela Malasa\xC3\xB1a"
+  created_at: 2010-05-23 19:06:10
+  updated_at: 2010-05-23 19:06:10
+  id: "42"
+  lat: "40.309"
+  long: "-3.86402"
+  nicename: manuela-malasana
+stations_123: 
+  name: "Chamart\xC3\xADn"
+  created_at: 2010-05-23 19:07:02
+  updated_at: 2010-05-23 19:07:02
+  id: "123"
+  lat: "40.472"
+  long: "-3.68259"
+  nicename: chamartin
+stations_204: 
+  name: Alfonso XIII
+  created_at: 2010-05-23 19:08:00
+  updated_at: 2010-05-23 19:08:00
+  id: "204"
+  lat: "40.4482"
+  long: "-3.66791"
+  nicename: alfonso-xiii
+stations_231: 
+  name: Eugenia de Montijo
+  created_at: 2010-05-23 19:08:15
+  updated_at: 2010-05-23 19:08:15
+  id: "231"
+  lat: "40.3844"
+  long: "-3.75121"
+  nicename: eugenia-de-montijo
+stations_017: 
+  name: Sainz de Baranda
+  created_at: 2010-05-23 19:05:55
+  updated_at: 2010-05-23 19:05:55
+  id: "17"
+  lat: "40.4145"
+  long: "-3.66987"
+  nicename: sainz-de-baranda
+stations_043: 
+  name: Loranca
+  created_at: 2010-05-23 19:06:11
+  updated_at: 2010-05-23 19:06:11
+  id: "43"
+  lat: "40.2968"
+  long: "-3.83769"
+  nicename: loranca
+stations_124: 
+  name: Valdeacederas
+  created_at: 2010-05-23 19:07:03
+  updated_at: 2010-05-23 19:07:03
+  id: "124"
+  lat: "40.4644"
+  long: "-3.69506"
+  nicename: valdeacederas
+stations_150: 
+  name: Valdecarros
+  created_at: 2010-05-23 19:07:11
+  updated_at: 2010-05-23 19:07:11
+  id: "150"
+  lat: "40.3604"
+  long: "-3.59241"
+  nicename: valdecarros
+stations_205: 
+  name: Avenida de la Paz
+  created_at: 2010-05-23 19:08:01
+  updated_at: 2010-05-23 19:08:01
+  id: "205"
+  lat: "40.4535"
+  long: "-3.66118"
+  nicename: avenida-de-la-paz
+stations_232: 
+  name: Aluche
+  created_at: 2010-05-23 19:08:16
+  updated_at: 2010-05-23 19:08:16
+  id: "232"
+  lat: "40.3856"
+  long: "-3.7608"
+  nicename: aluche
+stations_018: 
+  name: "O\xC2\xB4Donnell"
+  created_at: 2010-05-23 19:05:55
+  updated_at: 2010-05-23 19:05:55
+  id: "18"
+  lat: "40.4229"
+  long: "-3.66859"
+  nicename: o-donnell
+stations_044: 
+  name: Hospital de Fuenlabrada
+  created_at: 2010-05-23 19:06:11
+  updated_at: 2010-05-23 19:06:11
+  id: "44"
+  lat: "40.2858"
+  long: "-3.81642"
+  nicename: hospital-de-fuenlabrada
+stations_070: 
+  name: Las Musas
+  created_at: 2010-05-23 19:06:24
+  updated_at: 2010-05-23 19:06:24
+  id: "70"
+  lat: "40.433"
+  long: "-3.60788"
+  nicename: las-musas
+stations_125: 
+  name: "Tetu\xC3\xA1n"
+  created_at: 2010-05-23 19:07:03
+  updated_at: 2010-05-23 19:07:03
+  id: "125"
+  lat: "40.4606"
+  long: "-3.69825"
+  nicename: tetuan
+stations_151: 
   name: !binary |
     w5NwZXJh
 
-  created_at: 2010-05-06 20:22:29
-  updated_at: 2010-05-06 20:22:29
-  id: "268"
-  line_id: "5"
+  created_at: 2010-05-23 19:07:16
+  updated_at: 2010-05-23 19:07:16
+  id: "151"
   lat: "40.4181"
   long: "-3.70942"
   nicename: opera
+stations_206: 
+  name: Arturo Soria
+  created_at: 2010-05-23 19:08:01
+  updated_at: 2010-05-23 19:08:01
+  id: "206"
+  lat: "40.4558"
+  long: "-3.65618"
+  nicename: arturo-soria
+stations_233: 
+  name: Empalme
+  created_at: 2010-05-23 19:08:16
+  updated_at: 2010-05-23 19:08:16
+  id: "233"
+  lat: "40.3906"
+  long: "-3.76535"
+  nicename: empalme
+stations_019: 
+  name: Manuel Becerra
+  created_at: 2010-05-23 19:05:56
+  updated_at: 2010-05-23 19:05:56
+  id: "19"
+  lat: "40.4279"
+  long: "-3.66926"
+  nicename: manuel-becerra
+stations_045: 
+  name: Parque Europa
+  created_at: 2010-05-23 19:06:11
+  updated_at: 2010-05-23 19:06:11
+  id: "45"
+  lat: "40.2852"
+  long: "-3.80632"
+  nicename: parque-europa
+stations_071: 
+  name: San Blas
+  created_at: 2010-05-23 19:06:25
+  updated_at: 2010-05-23 19:06:25
+  id: "71"
+  lat: "40.428"
+  long: "-3.61546"
+  nicename: san-blas
+stations_126: 
+  name: Estrecho
+  created_at: 2010-05-23 19:07:03
+  updated_at: 2010-05-23 19:07:03
+  id: "126"
+  lat: "40.4543"
+  long: "-3.70302"
+  nicename: estrecho
+stations_152: 
+  name: La Elipa
+  created_at: 2010-05-23 19:07:20
+  updated_at: 2010-05-23 19:07:20
+  id: "152"
+  lat: "40.4266"
+  long: "-3.65052"
+  nicename: la-elipa
+stations_207: 
+  name: Esperanza
+  created_at: 2010-05-23 19:08:01
+  updated_at: 2010-05-23 19:08:01
+  id: "207"
+  lat: "40.4594"
+  long: "-3.64581"
+  nicename: esperanza
+stations_234: 
+  name: Campamento
+  created_at: 2010-05-23 19:08:16
+  updated_at: 2010-05-23 19:08:16
+  id: "234"
+  lat: "40.3948"
+  long: "-3.76813"
+  nicename: campamento
+stations_046: 
+  name: Fuenlabrada Central
+  created_at: 2010-05-23 19:06:12
+  updated_at: 2010-05-23 19:06:12
+  id: "46"
+  lat: "40.2827"
+  long: "-3.7989"
+  nicename: fuenlabrada-central
+stations_072: 
+  name: Simancas
+  created_at: 2010-05-23 19:06:25
+  updated_at: 2010-05-23 19:06:25
+  id: "72"
+  lat: "40.428"
+  long: "-3.62572"
+  nicename: simancas
+stations_127: 
+  name: Alvarado
+  created_at: 2010-05-23 19:07:04
+  updated_at: 2010-05-23 19:07:04
+  id: "127"
+  lat: "40.4503"
+  long: "-3.70331"
+  nicename: alvarado
+stations_153: 
+  name: Ventas
+  created_at: 2010-05-23 19:07:21
+  updated_at: 2010-05-23 19:07:21
+  id: "153"
+  lat: "40.4309"
+  long: "-3.66366"
+  nicename: ventas
+stations_208: 
+  name: Canillas
+  created_at: 2010-05-23 19:08:02
+  updated_at: 2010-05-23 19:08:02
+  id: "208"
+  lat: "40.4638"
+  long: "-3.63559"
+  nicename: canillas
+stations_047: 
+  name: Parque de los Estados
+  created_at: 2010-05-23 19:06:12
+  updated_at: 2010-05-23 19:06:12
+  id: "47"
+  lat: "40.2868"
+  long: "-3.78698"
+  nicename: parque-de-los-estados
+stations_073: 
+  name: "Garc\xC3\xADa Noblejas"
+  created_at: 2010-05-23 19:06:25
+  updated_at: 2010-05-23 19:06:25
+  id: "73"
+  lat: "40.4284"
+  long: "-3.6333"
+  nicename: garcia-noblejas
+stations_128: 
+  name: "R\xC3\xADos Rosas"
+  created_at: 2010-05-23 19:07:04
+  updated_at: 2010-05-23 19:07:04
+  id: "128"
+  lat: "40.4419"
+  long: "-3.70158"
+  nicename: rios-rosas
+stations_154: 
+  name: Goya
+  created_at: 2010-05-23 19:07:21
+  updated_at: 2010-05-23 19:07:21
+  id: "154"
+  lat: "40.4245"
+  long: "-3.67591"
+  nicename: goya
+stations_180: 
+  name: "Marqu\xC3\xA9s de la Valdavia"
+  created_at: 2010-05-23 19:07:45
+  updated_at: 2010-05-23 19:07:45
+  id: "180"
+  lat: "40.541"
+  long: "-3.63738"
+  nicename: marques-de-la-valdavia
+stations_209: 
+  name: San Lorenzo
+  created_at: 2010-05-23 19:08:02
+  updated_at: 2010-05-23 19:08:02
+  id: "209"
+  lat: "40.4745"
+  long: "-3.63958"
+  nicename: san-lorenzo
+stations_048: 
+  name: Arroyo Culebro
+  created_at: 2010-05-23 19:06:12
+  updated_at: 2010-05-23 19:06:12
+  id: "48"
+  lat: "40.2887"
+  long: "-3.75682"
+  nicename: arroyo-culebro
+stations_074: 
+  name: Ascao
+  created_at: 2010-05-23 19:06:26
+  updated_at: 2010-05-23 19:06:26
+  id: "74"
+  lat: "40.4304"
+  long: "-3.64069"
+  nicename: ascao
+stations_129: 
+  name: Iglesia
+  created_at: 2010-05-23 19:07:05
+  updated_at: 2010-05-23 19:07:05
+  id: "129"
+  lat: "40.4351"
+  long: "-3.699"
+  nicename: iglesia
+stations_155: 
+  name: Retiro
+  created_at: 2010-05-23 19:07:22
+  updated_at: 2010-05-23 19:07:22
+  id: "155"
+  lat: "40.4203"
+  long: "-3.68625"
+  nicename: retiro
+stations_181: 
+  name: La Moraleja
+  created_at: 2010-05-23 19:07:45
+  updated_at: 2010-05-23 19:07:45
+  id: "181"
+  lat: "40.5317"
+  long: "-3.6356"
+  nicename: la-moraleja
+stations_075: 
+  name: Pueblo Nuevo
+  created_at: 2010-05-23 19:06:26
+  updated_at: 2010-05-23 19:06:26
+  id: "75"
+  lat: "40.4363"
+  long: "-3.64178"
+  nicename: pueblo-nuevo
+stations_156: 
+  name: "Banco de Espa\xC3\xB1a"
+  created_at: 2010-05-23 19:07:22
+  updated_at: 2010-05-23 19:07:22
+  id: "156"
+  lat: "40.4192"
+  long: "-3.69496"
+  nicename: banco-de-espana
+stations_182: 
+  name: La Granja
+  created_at: 2010-05-23 19:07:45
+  updated_at: 2010-05-23 19:07:45
+  id: "182"
+  lat: "40.5276"
+  long: "-3.65862"
+  nicename: la-granja
+stations_049: 
+  name: Conservatorio
+  created_at: 2010-05-23 19:06:12
+  updated_at: 2010-05-23 19:06:12
+  id: "49"
+  lat: "40.2932"
+  long: "-3.74577"
+  nicename: conservatorio
+stations_076: 
+  name: "Barrio de la Concepci\xC3\xB3n"
+  created_at: 2010-05-23 19:06:26
+  updated_at: 2010-05-23 19:06:26
+  id: "76"
+  lat: "40.4391"
+  long: "-3.652"
+  nicename: barrio-de-la-concepcion
+stations_157: 
+  name: Sevilla
+  created_at: 2010-05-23 19:07:22
+  updated_at: 2010-05-23 19:07:22
+  id: "157"
+  lat: "40.4181"
+  long: "-3.69925"
+  nicename: sevilla
+stations_183: 
+  name: "Ronda de la Comunicaci\xC3\xB3n"
+  created_at: 2010-05-23 19:07:46
+  updated_at: 2010-05-23 19:07:46
+  id: "183"
+  lat: "40.5155"
+  long: "-3.66277"
+  nicename: ronda-de-la-comunicacion
+stations_158: 
+  name: Santo Domingo
+  created_at: 2010-05-23 19:07:23
+  updated_at: 2010-05-23 19:07:23
+  id: "158"
+  lat: "40.4213"
+  long: "-3.70796"
+  nicename: santo-domingo
+stations_184: 
+  name: Las Tablas
+  created_at: 2010-05-23 19:07:46
+  updated_at: 2010-05-23 19:07:46
+  id: "184"
+  lat: "40.5083"
+  long: "-3.66934"
+  nicename: las-tablas
+stations_077: 
+  name: Parque de las Avenidas
+  created_at: 2010-05-23 19:06:26
+  updated_at: 2010-05-23 19:06:26
+  id: "77"
+  lat: "40.4391"
+  long: "-3.66309"
+  nicename: parque-de-las-avenidas
+stations_159: 
+  name: Noviciado
+  created_at: 2010-05-23 19:07:24
+  updated_at: 2010-05-23 19:07:24
+  id: "159"
+  lat: "40.4248"
+  long: "-3.70742"
+  nicename: noviciado
+stations_185: 
+  name: Montecarmelo
+  created_at: 2010-05-23 19:07:46
+  updated_at: 2010-05-23 19:07:46
+  id: "185"
+  lat: "40.5057"
+  long: "-3.69544"
+  nicename: montecarmelo
+stations_078: 
+  name: Cartagena
+  created_at: 2010-05-23 19:06:27
+  updated_at: 2010-05-23 19:06:27
+  id: "78"
+  lat: "40.4395"
+  long: "-3.6722"
+  nicename: cartagena
+stations_186: 
+  name: Tres Olivos
+  created_at: 2010-05-23 19:07:47
+  updated_at: 2010-05-23 19:07:47
+  id: "186"
+  lat: "40.5012"
+  long: "-3.6952"
+  nicename: tres-olivos
+stations_079: 
+  name: "Gregorio Mara\xC3\xB1\xC3\xB3n"
+  created_at: 2010-05-23 19:06:27
+  updated_at: 2010-05-23 19:06:27
+  id: "79"
+  lat: "40.4383"
+  long: "-3.69149"
+  nicename: gregorio-maranon
 stations_187: 
-  name: Delicias
-  created_at: 2010-05-06 20:21:53
-  updated_at: 2010-05-06 20:21:53
+  name: Fuencarral
+  created_at: 2010-05-23 19:07:47
+  updated_at: 2010-05-23 19:07:47
   id: "187"
-  line_id: "3"
-  lat: "40.3999"
-  long: "-3.6942"
-  nicename: delicias
-stations_269: 
-  name: La Latina
-  created_at: 2010-05-06 20:22:29
-  updated_at: 2010-05-06 20:22:29
-  id: "269"
-  line_id: "5"
-  lat: "40.4113"
-  long: "-3.70816"
-  nicename: la-latina
+  lat: "40.4951"
+  long: "-3.69283"
+  nicename: fuencarral
 stations_188: 
-  name: Palos de la Frontera
-  created_at: 2010-05-06 20:21:53
-  updated_at: 2010-05-06 20:21:53
+  name: "Bego\xC3\xB1a"
+  created_at: 2010-05-23 19:07:47
+  updated_at: 2010-05-23 19:07:47
   id: "188"
-  line_id: "3"
-  lat: "40.4031"
-  long: "-3.69423"
-  nicename: palos-de-la-frontera
+  lat: "40.4804"
+  long: "-3.68584"
+  nicename: begona
 stations_189: 
-  name: Embajadores
-  created_at: 2010-05-06 20:21:53
-  updated_at: 2010-05-06 20:21:53
+  name: Cuzco
+  created_at: 2010-05-23 19:07:48
+  updated_at: 2010-05-23 19:07:48
   id: "189"
-  line_id: "3"
-  lat: "40.4051"
-  long: "-3.70268"
-  nicename: embajadores
+  lat: "40.4584"
+  long: "-3.68986"
+  nicename: cuzco
 stations_001: 
   name: "Plaza El\xC3\xADptica"
-  created_at: 2010-05-06 20:20:27
-  updated_at: 2010-05-06 20:20:27
+  created_at: 2010-05-23 19:05:45
+  updated_at: 2010-05-23 19:08:16
   id: "1"
-  line_id: "11"
-  lat: "40.4167"
-  long: "-3.70035"
+  lat: "40.3846"
+  long: "-3.71847"
   nicename: plaza-eliptica
 stations_002: 
   name: Abrantes
-  created_at: 2010-05-06 20:20:27
-  updated_at: 2010-05-06 20:20:27
+  created_at: 2010-05-23 19:05:46
+  updated_at: 2010-05-23 19:05:46
   id: "2"
-  line_id: "11"
   lat: "40.3808"
   long: "-3.72791"
   nicename: abrantes
 stations_003: 
   name: Pan Bendito
-  created_at: 2010-05-06 20:20:27
-  updated_at: 2010-05-06 20:20:27
+  created_at: 2010-05-23 19:05:46
+  updated_at: 2010-05-23 19:05:46
   id: "3"
-  line_id: "11"
   lat: "40.3759"
   long: "-3.73417"
   nicename: pan-bendito
 stations_110: 
-  name: "Avenida de Am\xC3\xA9rica"
-  created_at: 2010-05-06 20:21:14
-  updated_at: 2010-05-06 20:21:14
+  name: Artilleros
+  created_at: 2010-05-23 19:06:52
+  updated_at: 2010-05-23 19:06:52
   id: "110"
-  line_id: "9"
-  lat: "47.8959"
-  long: "-122.22"
-  nicename: avenida-de-america
+  lat: "40.4052"
+  long: "-3.64181"
+  nicename: artilleros
 stations_004: 
   name: San Francisco
-  created_at: 2010-05-06 20:20:28
-  updated_at: 2010-05-06 20:20:28
+  created_at: 2010-05-23 19:05:46
+  updated_at: 2010-05-23 19:05:46
   id: "4"
-  line_id: "11"
   lat: "40.3736"
   long: "-3.7391"
   nicename: san-francisco
 stations_030: 
-  name: "Arg\xC3\xBCelles"
-  created_at: 2010-05-06 20:20:35
-  updated_at: 2010-05-06 20:20:35
+  name: "Principe P\xC3\xADo"
+  created_at: 2010-05-23 19:05:59
+  updated_at: 2010-05-23 19:08:16
   id: "30"
-  line_id: "6"
-  lat: "40.4305"
-  long: "-3.71582"
-  nicename: arguelles
+  lat: "40.4211"
+  long: "-3.72038"
+  nicename: principe-pio
 stations_111: 
-  name: "N\xC3\xBA\xC3\xB1ez de Balboa"
-  created_at: 2010-05-06 20:21:14
-  updated_at: 2010-05-06 20:21:14
+  name: Pavones
+  created_at: 2010-05-23 19:06:53
+  updated_at: 2010-05-23 19:06:53
   id: "111"
-  line_id: "9"
-  lat: "40.4326"
-  long: "-3.67972"
-  nicename: nunez-de-balboa
+  lat: "40.4005"
+  long: "-3.63512"
+  nicename: pavones
 stations_005: 
   name: Carabanchel Alto
-  created_at: 2010-05-06 20:20:28
-  updated_at: 2010-05-06 20:20:28
+  created_at: 2010-05-23 19:05:46
+  updated_at: 2010-05-23 19:05:46
   id: "5"
-  line_id: "11"
   lat: "40.3719"
   long: "-3.75197"
   nicename: carabanchel-alto
 stations_031: 
-  name: "Principe P\xC3\xADo"
-  created_at: 2010-05-06 20:20:36
-  updated_at: 2010-05-06 20:20:36
+  name: "Puerta del \xC3\x81ngel"
+  created_at: 2010-05-23 19:05:59
+  updated_at: 2010-05-23 19:05:59
   id: "31"
-  line_id: "6"
-  lat: "40.4167"
-  long: "-3.70035"
-  nicename: principe-pio
+  lat: "40.4139"
+  long: "-3.72724"
+  nicename: puerta-del-angel
 stations_112: 
-  name: "Pr\xC3\xADncipe de Vergara"
-  created_at: 2010-05-06 20:21:14
-  updated_at: 2010-05-06 20:21:14
+  name: Valdebernardo
+  created_at: 2010-05-23 19:06:53
+  updated_at: 2010-05-23 19:06:53
   id: "112"
-  line_id: "9"
-  lat: "40.4229"
-  long: "-3.68012"
-  nicename: principe-de-vergara
+  lat: "40.4"
+  long: "-3.62156"
+  nicename: valdebernardo
 stations_006: 
   name: La Peseta
-  created_at: 2010-05-06 20:20:28
-  updated_at: 2010-05-06 20:20:28
+  created_at: 2010-05-23 19:05:47
+  updated_at: 2010-05-23 19:05:47
   id: "6"
-  line_id: "11"
   lat: "40.3642"
   long: "-3.7569"
   nicename: la-peseta
 stations_032: 
-  name: "Puerta del \xC3\x81ngel"
-  created_at: 2010-05-06 20:20:36
-  updated_at: 2010-05-06 20:20:36
+  name: Alto de Extremadura
+  created_at: 2010-05-23 19:06:00
+  updated_at: 2010-05-23 19:06:00
   id: "32"
-  line_id: "6"
-  lat: "40.4139"
-  long: "-3.72724"
-  nicename: puerta-del-angel
+  lat: "40.4099"
+  long: "-3.73893"
+  nicename: alto-de-extremadura
 stations_113: 
-  name: Ibiza
-  created_at: 2010-05-06 20:21:14
-  updated_at: 2010-05-06 20:21:14
+  name: "Vic\xC3\xA1lvaro"
+  created_at: 2010-05-23 19:06:53
+  updated_at: 2010-05-23 19:06:53
   id: "113"
-  line_id: "9"
-  lat: "40.4184"
-  long: "-3.67858"
-  nicename: ibiza
+  lat: "40.4042"
+  long: "-3.60886"
+  nicename: vicalvaro
 stations_220: 
-  name: Lago
-  created_at: 2010-05-06 20:22:08
-  updated_at: 2010-05-06 20:22:08
+  name: El Carmen
+  created_at: 2010-05-23 19:08:10
+  updated_at: 2010-05-23 19:08:10
   id: "220"
-  line_id: "10"
-  lat: "40.4164"
-  long: "-3.73563"
-  nicename: lago
+  lat: "40.4319"
+  long: "-3.65758"
+  nicename: el-carmen
 stations_007: 
   name: Laguna
-  created_at: 2010-05-06 20:20:30
-  updated_at: 2010-05-06 20:20:30
+  created_at: 2010-05-23 19:05:52
+  updated_at: 2010-05-23 19:05:52
   id: "7"
-  line_id: "6"
   lat: "40.3992"
   long: "-3.74427"
   nicename: laguna
 stations_033: 
-  name: Alto de Extremadura
-  created_at: 2010-05-06 20:20:36
-  updated_at: 2010-05-06 20:20:36
+  name: Lucero
+  created_at: 2010-05-23 19:06:00
+  updated_at: 2010-05-23 19:06:00
   id: "33"
-  line_id: "6"
-  lat: "40.4099"
-  long: "-3.73893"
-  nicename: alto-de-extremadura
+  lat: "40.4051"
+  long: "-3.74534"
+  nicename: lucero
 stations_114: 
-  name: Sainz de Baranda
-  created_at: 2010-05-06 20:21:15
-  updated_at: 2010-05-06 20:21:15
+  name: San Cipriano
+  created_at: 2010-05-23 19:06:53
+  updated_at: 2010-05-23 19:06:53
   id: "114"
-  line_id: "9"
-  lat: "40.4145"
-  long: "-3.66987"
-  nicename: sainz-de-baranda
+  lat: "40.4038"
+  long: "-3.6024"
+  nicename: san-cipriano
 stations_140: 
-  name: Tribunal
-  created_at: 2010-05-06 20:21:27
-  updated_at: 2010-05-06 20:21:27
+  name: Nueva Numancia
+  created_at: 2010-05-23 19:07:08
+  updated_at: 2010-05-23 19:07:08
   id: "140"
-  line_id: "1"
-  lat: "40.4262"
-  long: "-3.7011"
-  nicename: tribunal
+  lat: "40.3955"
+  long: "-3.66414"
+  nicename: nueva-numancia
 stations_221: 
   name: !binary |
-    QmF0w6Fu
+    UnViw6luIERhcsOtbw==
 
-  created_at: 2010-05-06 20:22:09
-  updated_at: 2010-05-06 20:22:09
+  created_at: 2010-05-23 19:08:11
+  updated_at: 2010-05-23 19:08:11
   id: "221"
-  line_id: "10"
-  lat: "40.4079"
-  long: "-3.75311"
-  nicename: batan
+  lat: "40.4332"
+  long: "-3.68954"
+  nicename: ruben-dario
 stations_008: 
   name: Carpetana
-  created_at: 2010-05-06 20:20:30
-  updated_at: 2010-05-06 20:20:30
+  created_at: 2010-05-23 19:05:52
+  updated_at: 2010-05-23 19:05:52
   id: "8"
-  line_id: "6"
   lat: "40.3927"
   long: "-3.74099"
   nicename: carpetana
 stations_034: 
-  name: Lucero
-  created_at: 2010-05-06 20:20:36
-  updated_at: 2010-05-06 20:20:36
+  name: Puerta del Sur
+  created_at: 2010-05-23 19:06:08
+  updated_at: 2010-05-23 19:06:08
   id: "34"
-  line_id: "6"
-  lat: "40.4051"
-  long: "-3.74534"
-  nicename: lucero
+  lat: "40.3452"
+  long: "-3.81211"
+  nicename: puerta-del-sur
 stations_060: 
-  name: Hospital Severo Ochoa
-  created_at: 2010-05-06 20:20:45
-  updated_at: 2010-05-06 20:20:45
+  name: "Legan\xC3\xA9s Central"
+  created_at: 2010-05-23 19:06:16
+  updated_at: 2010-05-23 19:06:16
   id: "60"
-  line_id: "12"
-  lat: "40.3218"
-  long: "-3.76797"
-  nicename: hospital-severo-ochoa
+  lat: "40.329"
+  long: "-3.77154"
+  nicename: leganes-central
 stations_115: 
-  name: Estrella
-  created_at: 2010-05-06 20:21:15
-  updated_at: 2010-05-06 20:21:15
+  name: Puerta de Arganda
+  created_at: 2010-05-23 19:06:54
+  updated_at: 2010-05-23 19:06:54
   id: "115"
-  line_id: "9"
-  lat: "40.4115"
-  long: "-3.66179"
-  nicename: estrella
+  lat: "40.4013"
+  long: "-3.59598"
+  nicename: puerta-de-arganda
 stations_141: 
-  name: "Gran V\xC3\xADa"
-  created_at: 2010-05-06 20:21:27
-  updated_at: 2010-05-06 20:21:27
+  name: Portazgo
+  created_at: 2010-05-23 19:07:08
+  updated_at: 2010-05-23 19:07:08
   id: "141"
-  line_id: "1"
-  lat: "40.42"
-  long: "-3.70184"
-  nicename: gran-via
+  lat: "40.3927"
+  long: "-3.65868"
+  nicename: portazgo
 stations_222: 
-  name: Casa de Campo
-  created_at: 2010-05-06 20:22:09
-  updated_at: 2010-05-06 20:22:09
+  name: Chueca
+  created_at: 2010-05-23 19:08:12
+  updated_at: 2010-05-23 19:08:12
   id: "222"
-  line_id: "10"
-  lat: "40.4032"
-  long: "-3.7608"
-  nicename: casa-de-campo
+  lat: "40.4229"
+  long: "-3.69761"
+  nicename: chueca
 stations_223: 
-  name: "Colonia Jard\xC3\xADn"
-  created_at: 2010-05-06 20:22:09
-  updated_at: 2010-05-06 20:22:09
+  name: La Latina
+  created_at: 2010-05-23 19:08:13
+  updated_at: 2010-05-23 19:08:13
   id: "223"
-  line_id: "10"
-  lat: "40.397"
-  long: "-3.77461"
-  nicename: colonia-jardin
+  lat: "40.4113"
+  long: "-3.70816"
+  nicename: la-latina
 stations_009: 
   name: Oporto
-  created_at: 2010-05-06 20:20:30
-  updated_at: 2010-05-06 20:20:30
+  created_at: 2010-05-23 19:05:52
+  updated_at: 2010-05-23 19:05:52
   id: "9"
-  line_id: "6"
   lat: "40.3885"
   long: "-3.73132"
   nicename: oporto
 stations_035: 
-  name: Puerta del Sur
-  created_at: 2010-05-06 20:20:40
-  updated_at: 2010-05-06 20:20:40
-  id: "35"
-  line_id: "12"
-  lat: "40.3452"
-  long: "-3.81211"
-  nicename: puerta-del-sur
-stations_061: 
-  name: "Legan\xC3\xA9s Central"
-  created_at: 2010-05-06 20:20:45
-  updated_at: 2010-05-06 20:20:45
-  id: "61"
-  line_id: "12"
-  lat: "40.329"
-  long: "-3.77154"
-  nicename: leganes-central
-stations_116: 
-  name: Vinateros
-  created_at: 2010-05-06 20:21:15
-  updated_at: 2010-05-06 20:21:15
-  id: "116"
-  line_id: "9"
-  lat: "40.4102"
-  long: "-3.65273"
-  nicename: vinateros
-stations_142: 
-  name: Sol
-  created_at: 2010-05-06 20:21:27
-  updated_at: 2010-05-06 20:21:27
-  id: "142"
-  line_id: "1"
-  lat: "40.4169"
-  long: "-3.70326"
-  nicename: sol
-stations_250: 
-  name: "Pinar de Chamart\xC3\xAD\xC2\xADn"
-  created_at: 2010-05-06 20:22:20
-  updated_at: 2010-05-06 20:22:20
-  id: "250"
-  line_id: "4"
-  lat: "40.4167"
-  long: "-3.70035"
-  nicename: pinar-de-chamartin
-stations_224: 
-  name: "Aviaci\xC3\xB3n Espa\xC3\xB1ola"
-  created_at: 2010-05-06 20:22:09
-  updated_at: 2010-05-06 20:22:09
-  id: "224"
-  line_id: "10"
-  lat: "40.3836"
-  long: "-3.78392"
-  nicename: aviacion-espanola
-stations_036: 
   name: Parque Lisboa
-  created_at: 2010-05-06 20:20:40
-  updated_at: 2010-05-06 20:20:40
-  id: "36"
-  line_id: "12"
+  created_at: 2010-05-23 19:06:08
+  updated_at: 2010-05-23 19:06:08
+  id: "35"
   lat: "40.3497"
   long: "-3.82119"
   nicename: parque-lisboa
-stations_062: 
+stations_061: 
   name: San Nicasio
-  created_at: 2010-05-06 20:20:46
-  updated_at: 2010-05-06 20:20:46
-  id: "62"
-  line_id: "12"
+  created_at: 2010-05-23 19:06:16
+  updated_at: 2010-05-23 19:06:16
+  id: "61"
   lat: "40.3362"
   long: "-3.77587"
   nicename: san-nicasio
-stations_117: 
-  name: Artilleros
-  created_at: 2010-05-06 20:21:15
-  updated_at: 2010-05-06 20:21:15
-  id: "117"
-  line_id: "9"
-  lat: "40.4052"
-  long: "-3.64181"
-  nicename: artilleros
-stations_143: 
-  name: Tirso de Molina
-  created_at: 2010-05-06 20:21:27
-  updated_at: 2010-05-06 20:21:27
-  id: "143"
-  line_id: "1"
-  lat: "40.4123"
-  long: "-3.70466"
-  nicename: tirso-de-molina
-stations_251: 
-  name: Alameda de Osuna
-  created_at: 2010-05-06 20:22:25
-  updated_at: 2010-05-06 20:22:25
-  id: "251"
-  line_id: "5"
-  lat: "40.4578"
-  long: "-3.58752"
-  nicename: alameda-de-osuna
-stations_225: 
-  name: Cuatro Vientos
-  created_at: 2010-05-06 20:22:09
-  updated_at: 2010-05-06 20:22:09
-  id: "225"
-  line_id: "10"
-  lat: "40.3777"
-  long: "-3.79152"
-  nicename: cuatro-vientos
-stations_037: 
+stations_116: 
+  name: Rivas Urbanizaciones
+  created_at: 2010-05-23 19:06:54
+  updated_at: 2010-05-23 19:06:54
+  id: "116"
+  lat: "40.3668"
+  long: "-3.54728"
+  nicename: rivas-urbanizaciones
+stations_142: 
+  name: Buenos Aires
+  created_at: 2010-05-23 19:07:09
+  updated_at: 2010-05-23 19:07:09
+  id: "142"
+  lat: "40.3916"
+  long: "-3.65391"
+  nicename: buenos-aires
+stations_224: 
+  name: Puerta de Toledo
+  created_at: 2010-05-23 19:08:13
+  updated_at: 2010-05-23 19:08:13
+  id: "224"
+  lat: "40.407"
+  long: "-3.71105"
+  nicename: puerta-de-toledo
+stations_036: 
   name: "Alcorc\xC3\xB3n Central"
-  created_at: 2010-05-06 20:20:40
-  updated_at: 2010-05-06 20:20:40
-  id: "37"
-  line_id: "12"
+  created_at: 2010-05-23 19:06:09
+  updated_at: 2010-05-23 19:06:09
+  id: "36"
   lat: "40.3501"
   long: "-3.83177"
   nicename: alcorcon-central
-stations_063: 
+stations_062: 
   name: Hospital del Henares
-  created_at: 2010-05-06 20:20:53
-  updated_at: 2010-05-06 20:20:53
-  id: "63"
-  line_id: "7"
+  created_at: 2010-05-23 19:06:22
+  updated_at: 2010-05-23 19:06:22
+  id: "62"
   lat: "40.4176"
   long: "-3.53453"
   nicename: hospital-del-henares
-stations_118: 
-  name: Pavones
-  created_at: 2010-05-06 20:21:15
-  updated_at: 2010-05-06 20:21:15
-  id: "118"
-  line_id: "9"
-  lat: "40.4005"
-  long: "-3.63512"
-  nicename: pavones
-stations_144: 
-  name: "Ant\xC3\xB3n Mart\xC3\xADn"
-  created_at: 2010-05-06 20:21:28
-  updated_at: 2010-05-06 20:21:28
-  id: "144"
-  line_id: "1"
-  lat: "40.4125"
-  long: "-3.69937"
-  nicename: anton-martin
-stations_170: 
-  name: Sevilla
-  created_at: 2010-05-06 20:21:46
-  updated_at: 2010-05-06 20:21:46
-  id: "170"
-  line_id: "2"
-  lat: "40.4181"
-  long: "-3.69925"
-  nicename: sevilla
-stations_252: 
-  name: El Capricho
-  created_at: 2010-05-06 20:22:25
-  updated_at: 2010-05-06 20:22:25
-  id: "252"
-  line_id: "5"
-  lat: "40.4535"
-  long: "-3.59401"
-  nicename: el-capricho
-stations_226: 
-  name: "Joaqu\xC3\xADn Vilumbrales"
-  created_at: 2010-05-06 20:22:10
-  updated_at: 2010-05-06 20:22:10
-  id: "226"
-  line_id: "10"
-  lat: "40.3498"
-  long: "-3.8072"
-  nicename: joaquin-vilumbrales
-stations_038: 
+stations_117: 
+  name: Rivas Futura
+  created_at: 2010-05-23 19:06:55
+  updated_at: 2010-05-23 19:06:55
+  id: "117"
+  lat: "40.3413"
+  long: "-3.52479"
+  nicename: rivas-futura
+stations_143: 
+  name: Alto del Arenal
+  created_at: 2010-05-23 19:07:09
+  updated_at: 2010-05-23 19:07:09
+  id: "143"
+  lat: "40.3898"
+  long: "-3.64522"
+  nicename: alto-del-arenal
+stations_225: 
+  name: Acacias
+  created_at: 2010-05-23 19:08:13
+  updated_at: 2010-05-23 19:08:13
+  id: "225"
+  lat: "40.4039"
+  long: "-3.70665"
+  nicename: acacias
+stations_037: 
   name: Parque Oeste
-  created_at: 2010-05-06 20:20:40
-  updated_at: 2010-05-06 20:20:40
-  id: "38"
-  line_id: "12"
+  created_at: 2010-05-23 19:06:09
+  updated_at: 2010-05-23 19:06:09
+  id: "37"
   lat: "40.3459"
   long: "-3.84934"
   nicename: parque-oeste
-stations_064: 
+stations_063: 
   name: Henares
-  created_at: 2010-05-06 20:20:53
-  updated_at: 2010-05-06 20:20:53
-  id: "64"
-  line_id: "7"
+  created_at: 2010-05-23 19:06:22
+  updated_at: 2010-05-23 19:06:22
+  id: "63"
   lat: "40.4178"
   long: "-3.52718"
   nicename: henares
-stations_090: 
-  name: "Avenida de la Ilustraci\xC3\xB3n"
-  created_at: 2010-05-06 20:21:00
-  updated_at: 2010-05-06 20:21:00
-  id: "90"
-  line_id: "7"
-  lat: "40.4801"
-  long: "-3.7184"
-  nicename: avenida-de-la-ilustracion
-stations_119: 
-  name: Valdebernardo
-  created_at: 2010-05-06 20:21:16
-  updated_at: 2010-05-06 20:21:16
-  id: "119"
-  line_id: "9"
-  lat: "40.4"
-  long: "-3.62156"
-  nicename: valdebernardo
-stations_145: 
-  name: Atocha
-  created_at: 2010-05-06 20:21:28
-  updated_at: 2010-05-06 20:21:28
-  id: "145"
-  line_id: "1"
-  lat: "40.4089"
-  long: "-3.69248"
-  nicename: atocha
-stations_171: 
-  name: Sol
-  created_at: 2010-05-06 20:21:46
-  updated_at: 2010-05-06 20:21:46
-  id: "171"
-  line_id: "2"
-  lat: "40.4169"
-  long: "-3.70326"
-  nicename: sol
-stations_253: 
-  name: Canillejas
-  created_at: 2010-05-06 20:22:25
-  updated_at: 2010-05-06 20:22:25
-  id: "253"
-  line_id: "5"
-  lat: "40.4494"
-  long: "-3.60816"
-  nicename: canillejas
-stations_227: 
-  name: Puerta del Sur
-  created_at: 2010-05-06 20:22:10
-  updated_at: 2010-05-06 20:22:10
-  id: "227"
-  line_id: "10"
-  lat: "40.3452"
-  long: "-3.81211"
-  nicename: puerta-del-sur
-stations_039: 
+stations_118: 
+  name: Rivas Vaciamadrid
+  created_at: 2010-05-23 19:06:55
+  updated_at: 2010-05-23 19:06:55
+  id: "118"
+  lat: "40.3284"
+  long: "-3.5206"
+  nicename: rivas-vaciamadrid
+stations_144: 
+  name: "Miguel Hern\xC3\xA1ndez"
+  created_at: 2010-05-23 19:07:09
+  updated_at: 2010-05-23 19:07:09
+  id: "144"
+  lat: "40.3873"
+  long: "-3.63951"
+  nicename: miguel-hernandez
+stations_170: 
+  name: Palos de la Frontera
+  created_at: 2010-05-23 19:07:34
+  updated_at: 2010-05-23 19:07:34
+  id: "170"
+  lat: "40.4031"
+  long: "-3.69423"
+  nicename: palos-de-la-frontera
+stations_226: 
+  name: "Pir\xC3\xA1mides"
+  created_at: 2010-05-23 19:08:14
+  updated_at: 2010-05-23 19:08:14
+  id: "226"
+  lat: "40.4026"
+  long: "-3.71138"
+  nicename: piramides
+stations_038: 
   name: Universidad Rey Juan Carlos
-  created_at: 2010-05-06 20:20:40
-  updated_at: 2010-05-06 20:20:40
-  id: "39"
-  line_id: "12"
+  created_at: 2010-05-23 19:06:09
+  updated_at: 2010-05-23 19:06:09
+  id: "38"
   lat: "40.3351"
   long: "-3.87218"
   nicename: universidad-rey-juan-carlos
-stations_065: 
+stations_064: 
   name: Jarama
-  created_at: 2010-05-06 20:20:54
-  updated_at: 2010-05-06 20:20:54
-  id: "65"
-  line_id: "7"
+  created_at: 2010-05-23 19:06:22
+  updated_at: 2010-05-23 19:06:22
+  id: "64"
   lat: "40.423"
   long: "-3.5255"
   nicename: jarama
-stations_091: 
-  name: Lacoma
-  created_at: 2010-05-06 20:21:00
-  updated_at: 2010-05-06 20:21:00
-  id: "91"
-  line_id: "7"
-  lat: "40.485"
-  long: "-3.72305"
-  nicename: lacoma
-stations_146: 
-  name: Atocha Renfe
-  created_at: 2010-05-06 20:21:28
-  updated_at: 2010-05-06 20:21:28
-  id: "146"
-  line_id: "1"
-  lat: "40.4066"
-  long: "-3.68937"
-  nicename: atocha-renfe
-stations_172: 
-  name: !binary |
-    w5NwZXJh
-
-  created_at: 2010-05-06 20:21:46
-  updated_at: 2010-05-06 20:21:46
-  id: "172"
-  line_id: "2"
-  lat: "40.4181"
-  long: "-3.70942"
-  nicename: opera
-stations_280: 
-  name: Empalme
-  created_at: 2010-05-06 20:22:31
-  updated_at: 2010-05-06 20:22:31
-  id: "280"
-  line_id: "5"
-  lat: "40.3906"
-  long: "-3.76535"
-  nicename: empalme
-stations_254: 
-  name: Torre Arias
-  created_at: 2010-05-06 20:22:25
-  updated_at: 2010-05-06 20:22:25
-  id: "254"
-  line_id: "5"
-  lat: "40.4437"
-  long: "-3.617"
-  nicename: torre-arias
-stations_228: 
-  name: "Arg\xC3\xBCelles"
-  created_at: 2010-05-06 20:22:15
-  updated_at: 2010-05-06 20:22:15
-  id: "228"
-  line_id: "4"
-  lat: "40.4305"
-  long: "-3.71582"
-  nicename: arguelles
-stations_066: 
-  name: San Fernando
-  created_at: 2010-05-06 20:20:54
-  updated_at: 2010-05-06 20:20:54
-  id: "66"
-  line_id: "7"
-  lat: "40.4244"
-  long: "-3.53541"
-  nicename: san-fernando
-stations_092: 
-  name: Pitis
-  created_at: 2010-05-06 20:21:00
-  updated_at: 2010-05-06 20:21:00
-  id: "92"
-  line_id: "7"
-  lat: "40.4951"
-  long: "-3.72589"
-  nicename: pitis
-stations_147: 
-  name: "Men\xC3\xA9ndez Pelayo"
-  created_at: 2010-05-06 20:21:28
-  updated_at: 2010-05-06 20:21:28
-  id: "147"
-  line_id: "1"
-  lat: "40.4044"
-  long: "-3.68098"
-  nicename: menendez-pelayo
-stations_173: 
-  name: Santo Domingo
-  created_at: 2010-05-06 20:21:46
-  updated_at: 2010-05-06 20:21:46
-  id: "173"
-  line_id: "2"
-  lat: "40.4213"
-  long: "-3.70796"
-  nicename: santo-domingo
-stations_281: 
-  name: Campamento
-  created_at: 2010-05-06 20:22:32
-  updated_at: 2010-05-06 20:22:32
-  id: "281"
-  line_id: "5"
-  lat: "40.3948"
-  long: "-3.76813"
-  nicename: campamento
-stations_255: 
-  name: Suanzes
-  created_at: 2010-05-06 20:22:26
-  updated_at: 2010-05-06 20:22:26
-  id: "255"
-  line_id: "5"
-  lat: "40.4408"
-  long: "-3.62684"
-  nicename: suanzes
-stations_229: 
-  name: San Bernardo
-  created_at: 2010-05-06 20:22:16
-  updated_at: 2010-05-06 20:22:16
-  id: "229"
-  line_id: "4"
-  lat: "40.43"
-  long: "-3.70557"
-  nicename: san-bernardo
-stations_067: 
-  name: La Rambla
-  created_at: 2010-05-06 20:20:54
-  updated_at: 2010-05-06 20:20:54
-  id: "67"
-  line_id: "7"
-  lat: "40.4251"
-  long: "-3.54792"
-  nicename: la-rambla
-stations_093: 
-  name: Nuevos Ministerios
-  created_at: 2010-05-06 20:21:06
-  updated_at: 2010-05-06 20:21:06
-  id: "93"
-  line_id: "8"
-  lat: "40.4466"
-  long: "-3.69241"
-  nicename: nuevos-ministerios
-stations_148: 
-  name: "Pac\xC3\xADfico"
-  created_at: 2010-05-06 20:21:29
-  updated_at: 2010-05-06 20:21:29
-  id: "148"
-  line_id: "1"
-  lat: "40.4013"
-  long: "-3.67513"
-  nicename: pacifico
-stations_174: 
-  name: Noviciado
-  created_at: 2010-05-06 20:21:47
-  updated_at: 2010-05-06 20:21:47
-  id: "174"
-  line_id: "2"
-  lat: "40.4248"
-  long: "-3.70742"
-  nicename: noviciado
-stations_282: 
-  name: Casa de Campo
-  created_at: 2010-05-06 20:22:32
-  updated_at: 2010-05-06 20:22:32
-  id: "282"
-  line_id: "5"
-  lat: "40.4032"
-  long: "-3.7608"
-  nicename: casa-de-campo
-stations_256: 
-  name: Ciudad Lineal
-  created_at: 2010-05-06 20:22:26
-  updated_at: 2010-05-06 20:22:26
-  id: "256"
-  line_id: "5"
-  lat: "40.438"
-  long: "-3.63816"
-  nicename: ciudad-lineal
-stations_068: 
-  name: Coslada Central
-  created_at: 2010-05-06 20:20:54
-  updated_at: 2010-05-06 20:20:54
-  id: "68"
-  line_id: "7"
-  lat: "40.4237"
-  long: "-3.56119"
-  nicename: coslada-central
-stations_094: 
+stations_090: 
   name: Colombia
-  created_at: 2010-05-06 20:21:06
-  updated_at: 2010-05-06 20:21:06
-  id: "94"
-  line_id: "8"
+  created_at: 2010-05-23 19:06:35
+  updated_at: 2010-05-23 19:06:35
+  id: "90"
   lat: "40.4563"
   long: "-3.67683"
   nicename: colombia
-stations_149: 
-  name: Puente de Vallecas
-  created_at: 2010-05-06 20:21:29
-  updated_at: 2010-05-06 20:21:29
-  id: "149"
-  line_id: "1"
-  lat: "40.3982"
-  long: "-3.66906"
-  nicename: puente-de-vallecas
-stations_175: 
-  name: San Bernardo
-  created_at: 2010-05-06 20:21:47
-  updated_at: 2010-05-06 20:21:47
-  id: "175"
-  line_id: "2"
-  lat: "40.43"
-  long: "-3.70557"
-  nicename: san-bernardo
-stations_257: 
-  name: Pueblo Nuevo
-  created_at: 2010-05-06 20:22:26
-  updated_at: 2010-05-06 20:22:26
-  id: "257"
-  line_id: "5"
-  lat: "40.4363"
-  long: "-3.64178"
-  nicename: pueblo-nuevo
-stations_069: 
-  name: Barrio del Puerto
-  created_at: 2010-05-06 20:20:55
-  updated_at: 2010-05-06 20:20:55
-  id: "69"
-  line_id: "7"
-  lat: "40.4225"
-  long: "-3.56919"
-  nicename: barrio-del-puerto
-stations_095: 
+stations_119: 
+  name: La Poveda
+  created_at: 2010-05-23 19:06:55
+  updated_at: 2010-05-23 19:06:55
+  id: "119"
+  lat: "40.319"
+  long: "-3.47745"
+  nicename: la-poveda
+stations_145: 
+  name: Sierra de Guadalupe
+  created_at: 2010-05-23 19:07:10
+  updated_at: 2010-05-23 19:07:10
+  id: "145"
+  lat: "40.3822"
+  long: "-3.62468"
+  nicename: sierra-de-guadalupe
+stations_171: 
+  name: Embajadores
+  created_at: 2010-05-23 19:07:34
+  updated_at: 2010-05-23 19:07:34
+  id: "171"
+  lat: "40.4051"
+  long: "-3.70268"
+  nicename: embajadores
+stations_227: 
+  name: "Marqu\xC3\xA9s de Vadillo"
+  created_at: 2010-05-23 19:08:14
+  updated_at: 2010-05-23 19:08:14
+  id: "227"
+  lat: "40.3974"
+  long: "-3.71596"
+  nicename: marques-de-vadillo
+stations_039: 
+  name: "M\xC3\xB3stoles Central"
+  created_at: 2010-05-23 19:06:09
+  updated_at: 2010-05-23 19:06:09
+  id: "39"
+  lat: "40.3285"
+  long: "-3.86354"
+  nicename: mostoles-central
+stations_065: 
+  name: San Fernando
+  created_at: 2010-05-23 19:06:23
+  updated_at: 2010-05-23 19:06:23
+  id: "65"
+  lat: "40.4244"
+  long: "-3.53541"
+  nicename: san-fernando
+stations_091: 
   name: Pinar del Rey
-  created_at: 2010-05-06 20:21:06
-  updated_at: 2010-05-06 20:21:06
-  id: "95"
-  line_id: "8"
+  created_at: 2010-05-23 19:06:36
+  updated_at: 2010-05-23 19:06:36
+  id: "91"
   lat: "40.468"
   long: "-3.64867"
   nicename: pinar-del-rey
-stations_176: 
-  name: Quevedo
-  created_at: 2010-05-06 20:21:47
-  updated_at: 2010-05-06 20:21:47
-  id: "176"
-  line_id: "2"
-  lat: "40.4332"
-  long: "-3.70434"
-  nicename: quevedo
-stations_258: 
-  name: Quintana
-  created_at: 2010-05-06 20:22:26
-  updated_at: 2010-05-06 20:22:26
-  id: "258"
-  line_id: "5"
-  lat: "40.4336"
-  long: "-3.64736"
-  nicename: quintana
-stations_096: 
+stations_146: 
+  name: Villa de Vallecas
+  created_at: 2010-05-23 19:07:10
+  updated_at: 2010-05-23 19:07:10
+  id: "146"
+  lat: "40.3796"
+  long: "-3.6213"
+  nicename: villa-de-vallecas
+stations_172: 
+  name: "Lavapi\xC3\xA9s"
+  created_at: 2010-05-23 19:07:34
+  updated_at: 2010-05-23 19:07:34
+  id: "172"
+  lat: "40.4085"
+  long: "-3.70091"
+  nicename: lavapies
+stations_228: 
+  name: Urgel
+  created_at: 2010-05-23 19:08:14
+  updated_at: 2010-05-23 19:08:14
+  id: "228"
+  lat: "40.3934"
+  long: "-3.72361"
+  nicename: urgel
+stations_066: 
+  name: La Rambla
+  created_at: 2010-05-23 19:06:23
+  updated_at: 2010-05-23 19:06:23
+  id: "66"
+  lat: "40.4251"
+  long: "-3.54792"
+  nicename: la-rambla
+stations_092: 
   name: Mar de Cristal
-  created_at: 2010-05-06 20:21:06
-  updated_at: 2010-05-06 20:21:06
-  id: "96"
-  line_id: "8"
+  created_at: 2010-05-23 19:06:36
+  updated_at: 2010-05-23 19:06:36
+  id: "92"
   lat: "40.4694"
   long: "-3.63832"
   nicename: mar-de-cristal
-stations_177: 
-  name: Canal
-  created_at: 2010-05-06 20:21:47
-  updated_at: 2010-05-06 20:21:47
-  id: "177"
-  line_id: "2"
-  lat: "40.4384"
-  long: "-3.70433"
-  nicename: canal
-stations_259: 
-  name: El Carmen
-  created_at: 2010-05-06 20:22:27
-  updated_at: 2010-05-06 20:22:27
-  id: "259"
-  line_id: "5"
-  lat: "40.4319"
-  long: "-3.65758"
-  nicename: el-carmen
-stations_097: 
+stations_147: 
+  name: Congosto
+  created_at: 2010-05-23 19:07:10
+  updated_at: 2010-05-23 19:07:10
+  id: "147"
+  lat: "40.3724"
+  long: "-3.61884"
+  nicename: congosto
+stations_173: 
+  name: Callao
+  created_at: 2010-05-23 19:07:35
+  updated_at: 2010-05-23 19:07:35
+  id: "173"
+  lat: "40.4201"
+  long: "-3.70584"
+  nicename: callao
+stations_229: 
+  name: Vista Alegre
+  created_at: 2010-05-23 19:08:15
+  updated_at: 2010-05-23 19:08:15
+  id: "229"
+  lat: "40.3888"
+  long: "-3.73982"
+  nicename: vista-alegre
+stations_067: 
+  name: Coslada Central
+  created_at: 2010-05-23 19:06:23
+  updated_at: 2010-05-23 19:06:23
+  id: "67"
+  lat: "40.4237"
+  long: "-3.56119"
+  nicename: coslada-central
+stations_093: 
   name: Campo de las Naciones
-  created_at: 2010-05-06 20:21:06
-  updated_at: 2010-05-06 20:21:06
-  id: "97"
-  line_id: "8"
+  created_at: 2010-05-23 19:06:36
+  updated_at: 2010-05-23 19:06:36
+  id: "93"
   lat: "40.4639"
   long: "-3.6162"
   nicename: campo-de-las-naciones
-stations_178: 
-  name: Cuatro Caminos
-  created_at: 2010-05-06 20:21:47
-  updated_at: 2010-05-06 20:21:47
-  id: "178"
-  line_id: "2"
-  lat: "40.447"
-  long: "-3.70397"
-  nicename: cuatro-caminos
-stations_098: 
+stations_148: 
+  name: La Gavia
+  created_at: 2010-05-23 19:07:10
+  updated_at: 2010-05-23 19:07:10
+  id: "148"
+  lat: "40.3702"
+  long: "-3.61347"
+  nicename: la-gavia
+stations_174: 
+  name: "Plaza de Espa\xC3\xB1a"
+  created_at: 2010-05-23 19:07:35
+  updated_at: 2010-05-23 19:07:35
+  id: "174"
+  lat: "40.4234"
+  long: "-3.7112"
+  nicename: plaza-de-espana
+stations_068: 
+  name: Barrio del Puerto
+  created_at: 2010-05-23 19:06:24
+  updated_at: 2010-05-23 19:06:24
+  id: "68"
+  lat: "40.4225"
+  long: "-3.56919"
+  nicename: barrio-del-puerto
+stations_094: 
   name: Aeropuerto T1 T2 T3
-  created_at: 2010-05-06 20:21:07
-  updated_at: 2010-05-06 20:21:07
-  id: "98"
-  line_id: "8"
+  created_at: 2010-05-23 19:06:36
+  updated_at: 2010-05-23 19:06:36
+  id: "94"
   lat: "40.4686"
   long: "-3.56953"
   nicename: aeropuerto-t1-t2-t3
-stations_179: 
-  name: Villaverde Alto
-  created_at: 2010-05-06 20:21:51
-  updated_at: 2010-05-06 20:21:51
-  id: "179"
-  line_id: "3"
-  lat: "40.3412"
-  long: "-3.71199"
-  nicename: villaverde-alto
-stations_099: 
+stations_149: 
+  name: Las Suertes
+  created_at: 2010-05-23 19:07:11
+  updated_at: 2010-05-23 19:07:11
+  id: "149"
+  lat: "40.3636"
+  long: "-3.59971"
+  nicename: las-suertes
+stations_175: 
+  name: "Ventura Rodr\xC3\xADguez"
+  created_at: 2010-05-23 19:07:36
+  updated_at: 2010-05-23 19:07:36
+  id: "175"
+  lat: "40.4271"
+  long: "-3.71341"
+  nicename: ventura-rodriguez
+stations_069: 
+  name: "Estadio Ol\xC3\xADmpico"
+  created_at: 2010-05-23 19:06:24
+  updated_at: 2010-05-23 19:06:24
+  id: "69"
+  lat: "40.4334"
+  long: "-3.60015"
+  nicename: estadio-olimpico
+stations_095: 
   name: Barajas
-  created_at: 2010-05-06 20:21:07
-  updated_at: 2010-05-06 20:21:07
-  id: "99"
-  line_id: "8"
+  created_at: 2010-05-23 19:06:37
+  updated_at: 2010-05-23 19:06:37
+  id: "95"
   lat: "40.4758"
   long: "-3.58258"
   nicename: barajas
-stations_100: 
+stations_176: 
+  name: "Hospital Infanta Sof\xC3\xADa"
+  created_at: 2010-05-23 19:07:44
+  updated_at: 2010-05-23 19:07:44
+  id: "176"
+  lat: "40.5597"
+  long: "-3.61184"
+  nicename: hospital-infanta-sofia
+stations_096: 
   name: Aeropuerto T4
-  created_at: 2010-05-06 20:21:07
-  updated_at: 2010-05-06 20:21:07
-  id: "100"
-  line_id: "8"
+  created_at: 2010-05-23 19:06:37
+  updated_at: 2010-05-23 19:06:37
+  id: "96"
   lat: "40.4918"
   long: "-3.59325"
   nicename: aeropuerto-t4
-stations_101: 
+stations_177: 
+  name: "Reyes Cat\xC3\xB3licos"
+  created_at: 2010-05-23 19:07:44
+  updated_at: 2010-05-23 19:07:44
+  id: "177"
+  lat: "40.5502"
+  long: "-3.62407"
+  nicename: reyes-catolicos
+stations_097: 
   name: Herrera Oria
-  created_at: 2010-05-06 20:21:11
-  updated_at: 2010-05-06 20:21:11
-  id: "101"
-  line_id: "9"
+  created_at: 2010-05-23 19:06:48
+  updated_at: 2010-05-23 19:06:48
+  id: "97"
   lat: "40.4847"
   long: "-3.70752"
   nicename: herrera-oria
-stations_020: 
-  name: Manuel Becerra
-  created_at: 2010-05-06 20:20:33
-  updated_at: 2010-05-06 20:20:33
-  id: "20"
-  line_id: "6"
-  lat: "40.4279"
-  long: "-3.66926"
-  nicename: manuel-becerra
-stations_102: 
+stations_178: 
+  name: Baunatal
+  created_at: 2010-05-23 19:07:44
+  updated_at: 2010-05-23 19:07:44
+  id: "178"
+  lat: "40.5544"
+  long: "-3.63513"
+  nicename: baunatal
+stations_098: 
   name: Barrio del Pilar
-  created_at: 2010-05-06 20:21:11
-  updated_at: 2010-05-06 20:21:11
-  id: "102"
-  line_id: "9"
+  created_at: 2010-05-23 19:06:48
+  updated_at: 2010-05-23 19:06:48
+  id: "98"
   lat: "40.4769"
   long: "-3.70316"
   nicename: barrio-del-pilar
-stations_021: 
-  name: "Diego de Le\xC3\xB3n"
-  created_at: 2010-05-06 20:20:33
-  updated_at: 2010-05-06 20:20:33
-  id: "21"
-  line_id: "6"
-  lat: "40.4347"
-  long: "-3.67496"
-  nicename: diego-de-leon
-stations_103: 
+stations_179: 
+  name: Manuel de Falla
+  created_at: 2010-05-23 19:07:45
+  updated_at: 2010-05-23 19:07:45
+  id: "179"
+  lat: "40.5501"
+  long: "-3.64705"
+  nicename: manuel-de-falla
+stations_099: 
   name: Ventilla
-  created_at: 2010-05-06 20:21:12
-  updated_at: 2010-05-06 20:21:12
-  id: "103"
-  line_id: "9"
+  created_at: 2010-05-23 19:06:48
+  updated_at: 2010-05-23 19:06:48
+  id: "99"
   lat: "40.4694"
   long: "-3.69588"
   nicename: ventilla
-stations_210: 
-  name: "Chamart\xC3\xADn"
-  created_at: 2010-05-06 20:22:06
-  updated_at: 2010-05-06 20:22:06
-  id: "210"
-  line_id: "10"
-  lat: "40.472"
-  long: "-3.68259"
-  nicename: chamartin
-stations_022: 
-  name: "Avenida de Am\xC3\xA9rica"
-  created_at: 2010-05-06 20:20:33
-  updated_at: 2010-05-06 20:20:33
-  id: "22"
-  line_id: "6"
-  lat: "47.8959"
-  long: "-122.22"
-  nicename: avenida-de-america
-stations_130: 
-  name: "Chamart\xC3\xADn"
-  created_at: 2010-05-06 20:21:24
-  updated_at: 2010-05-06 20:21:24
-  id: "130"
-  line_id: "1"
-  lat: "40.472"
-  long: "-3.68259"
-  nicename: chamartin
-stations_211: 
+stations_100: 
   name: Plaza de Castilla
-  created_at: 2010-05-06 20:22:06
-  updated_at: 2010-05-06 20:22:06
-  id: "211"
-  line_id: "10"
-  lat: "40.4167"
-  long: "-3.70035"
+  created_at: 2010-05-23 19:06:48
+  updated_at: 2010-05-23 19:08:16
+  id: "100"
+  lat: "40.4669"
+  long: "-3.68921"
   nicename: plaza-de-castilla
-stations_023: 
-  name: "Rep\xC3\xBAblica Argentina"
-  created_at: 2010-05-06 20:20:34
-  updated_at: 2010-05-06 20:20:34
-  id: "23"
-  line_id: "6"
-  lat: "40.4466"
-  long: "-3.69241"
-  nicename: republica-argentina
-stations_104: 
-  name: Plaza de Castilla
-  created_at: 2010-05-06 20:21:12
-  updated_at: 2010-05-06 20:21:12
-  id: "104"
-  line_id: "9"
-  lat: "40.4167"
-  long: "-3.70035"
-  nicename: plaza-de-castilla
-stations_131: 
-  name: Plaza de Castilla
-  created_at: 2010-05-06 20:21:25
-  updated_at: 2010-05-06 20:21:25
-  id: "131"
-  line_id: "1"
-  lat: "40.4167"
-  long: "-3.70035"
-  nicename: plaza-de-castilla
-stations_212: 
-  name: Cuzco
-  created_at: 2010-05-06 20:22:06
-  updated_at: 2010-05-06 20:22:06
-  id: "212"
-  line_id: "10"
-  lat: "40.4584"
-  long: "-3.68986"
-  nicename: cuzco
-stations_024: 
-  name: Nuevos Ministerios
-  created_at: 2010-05-06 20:20:34
-  updated_at: 2010-05-06 20:20:34
-  id: "24"
-  line_id: "6"
-  lat: "40.4466"
-  long: "-3.69241"
-  nicename: nuevos-ministerios
-stations_050: 
-  name: Conservatorio
-  created_at: 2010-05-06 20:20:43
-  updated_at: 2010-05-06 20:20:43
-  id: "50"
-  line_id: "12"
-  lat: "40.2932"
-  long: "-3.74577"
-  nicename: conservatorio
-stations_105: 
+stations_101: 
   name: Duque de Pastrana
-  created_at: 2010-05-06 20:21:12
-  updated_at: 2010-05-06 20:21:12
-  id: "105"
-  line_id: "9"
+  created_at: 2010-05-23 19:06:49
+  updated_at: 2010-05-23 19:06:49
+  id: "101"
   lat: "40.4676"
   long: "-3.67917"
   nicename: duque-de-pastrana
+stations_020: 
+  name: "Diego de Le\xC3\xB3n"
+  created_at: 2010-05-23 19:05:56
+  updated_at: 2010-05-23 19:05:56
+  id: "20"
+  lat: "40.4347"
+  long: "-3.67496"
+  nicename: diego-de-leon
+stations_102: 
+  name: "P\xC3\xADo XII"
+  created_at: 2010-05-23 19:06:49
+  updated_at: 2010-05-23 19:06:49
+  id: "102"
+  lat: "40.463"
+  long: "-3.6758"
+  nicename: pio-xii
+stations_021: 
+  name: "Avenida de Am\xC3\xA9rica"
+  created_at: 2010-05-23 19:05:56
+  updated_at: 2010-05-23 19:08:16
+  id: "21"
+  lat: "40.438"
+  long: "-3.67669"
+  nicename: avenida-de-america
+stations_103: 
+  name: Concha Espina
+  created_at: 2010-05-23 19:06:50
+  updated_at: 2010-05-23 19:06:50
+  id: "103"
+  lat: "40.4514"
+  long: "-3.67738"
+  nicename: concha-espina
+stations_210: 
+  name: "Parque de Santa Mar\xC3\xADa"
+  created_at: 2010-05-23 19:08:02
+  updated_at: 2010-05-23 19:08:02
+  id: "210"
+  lat: "40.4771"
+  long: "-3.64524"
+  nicename: parque-de-santa-maria
+stations_022: 
+  name: "Rep\xC3\xBAblica Argentina"
+  created_at: 2010-05-23 19:05:57
+  updated_at: 2010-05-23 19:05:57
+  id: "22"
+  lat: "40.4466"
+  long: "-3.69241"
+  nicename: republica-argentina
+stations_130: 
+  name: Bilbao
+  created_at: 2010-05-23 19:07:05
+  updated_at: 2010-05-23 19:07:05
+  id: "130"
+  lat: "40.4291"
+  long: "-3.70218"
+  nicename: bilbao
+stations_211: 
+  name: Hortaleza
+  created_at: 2010-05-23 19:08:03
+  updated_at: 2010-05-23 19:08:03
+  id: "211"
+  lat: "40.4754"
+  long: "-3.65257"
+  nicename: hortaleza
+stations_023: 
+  name: Nuevos Ministerios
+  created_at: 2010-05-23 19:05:57
+  updated_at: 2010-05-23 19:05:57
+  id: "23"
+  lat: "40.4466"
+  long: "-3.69241"
+  nicename: nuevos-ministerios
+stations_104: 
+  name: Cruz del Rayo
+  created_at: 2010-05-23 19:06:50
+  updated_at: 2010-05-23 19:06:50
+  id: "104"
+  lat: "40.4443"
+  long: "-3.67821"
+  nicename: cruz-del-rayo
+stations_131: 
+  name: Tribunal
+  created_at: 2010-05-23 19:07:05
+  updated_at: 2010-05-23 19:07:05
+  id: "131"
+  lat: "40.4262"
+  long: "-3.7011"
+  nicename: tribunal
+stations_212: 
+  name: Manoteras
+  created_at: 2010-05-23 19:08:03
+  updated_at: 2010-05-23 19:08:03
+  id: "212"
+  lat: "40.4769"
+  long: "-3.6629"
+  nicename: manoteras
+stations_024: 
+  name: Cuatro Caminos
+  created_at: 2010-05-23 19:05:57
+  updated_at: 2010-05-23 19:05:57
+  id: "24"
+  lat: "40.447"
+  long: "-3.70397"
+  nicename: cuatro-caminos
+stations_050: 
+  name: Alonso de Mendoza
+  created_at: 2010-05-23 19:06:13
+  updated_at: 2010-05-23 19:06:13
+  id: "50"
+  lat: "40.3008"
+  long: "-3.73664"
+  nicename: alonso-de-mendoza
+stations_105: 
+  name: "N\xC3\xBA\xC3\xB1ez de Balboa"
+  created_at: 2010-05-23 19:06:51
+  updated_at: 2010-05-23 19:06:51
+  id: "105"
+  lat: "40.4326"
+  long: "-3.67972"
+  nicename: nunez-de-balboa

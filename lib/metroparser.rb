@@ -31,7 +31,8 @@ DOCS = { "1" => "http://www.metromadrid.es/es/viaja_en_metro/red_de_metro/lineas
           unless column.blank?
             name = column.css('a').text
             lat,long = Geolocation.geolocate(name)
-            Station.find_or_create_by_name_and_line_id(:name => name, :line_id => line.id, :lat => lat , :long => long)
+            station = Station.find_or_create_by_name(:name => name, :lat => lat , :long => long)
+            station.lines << line
           end
         end
       end

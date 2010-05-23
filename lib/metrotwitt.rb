@@ -11,8 +11,8 @@ class Metrotwitt
   end
 
   def self.parse_twitt(twitt)
-    normalized_text = twitt.text.strip.gsub("\n","").squeeze
-    text_arr=normalized_text.scan(/([^#]*)\s*#(\S*)\s#(\S*)\s#?(\S*)\s*(.*)/).flatten
+    normalized_text = twitt.text.strip.gsub("\n","")
+    text_arr=normalized_text.scan(/([^#]*)\s*#(\S*)\s#(\S*)\s?#?(\S*)\s*(.*)/).flatten
     text = normalized_text
     incident = Incident.new
     #Transformamos la fecha del twitt, que viene en utc, a nuestra hora local
@@ -63,7 +63,8 @@ class Metrotwitt
         stations = self.search_stations(station_string,Station)
         unless stations.blank? || stations.size > 1
           incident.station_id = stations.first.id
-          incident.line_id = stations.first.line.id
+          # asignamos la estacion si solo tiene una linea (sino es ambigua)
+          incident.line_id = stations.first.lines.first.id if stations.first.lines.size == 1
         end
 
       end          

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100523152339) do
+ActiveRecord::Schema.define(:version => 20100523172411) do
 
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
@@ -50,6 +50,13 @@ ActiveRecord::Schema.define(:version => 20100523152339) do
     t.integer  "direction_id"
   end
 
+  create_table "line_stations", :force => true do |t|
+    t.integer  "line_id"
+    t.integer  "station_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "lines", :force => true do |t|
     t.string "number"
     t.string "name"
@@ -59,7 +66,6 @@ ActiveRecord::Schema.define(:version => 20100523152339) do
   create_table "stations", :force => true do |t|
     t.string   "name"
     t.string   "nicename"
-    t.integer  "line_id"
     t.float    "lat"
     t.float    "long"
     t.datetime "created_at"

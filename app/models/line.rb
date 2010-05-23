@@ -1,7 +1,9 @@
 class Line < ActiveRecord::Base
-  has_many :incidents, :through => :stations
-  has_many :stations,:dependent =>:destroy
-  has_many :subscriptions,:dependent =>:destroy
+  has_many :incidents
+  has_many :line_stations
+  has_many :stations, :through => :line_stations
+  has_many :subscriptions, :dependent =>:destroy
+  
   LINE_STATUS_LEVELS={"tormentoso" => 0,
                       "nublado" => 1,
                       "nubes" => 2,

@@ -1,12 +1,13 @@
 class Incident < ActiveRecord::Base
 
   belongs_to :station
+  belongs_to :line
   belongs_to :direction, :class_name => "Station"
 
   before_save :geolocate
   
   after_create :retwitt, :send_subscriptions
-  validates_presence_of :station
+  validates_presence_of :station, :line
   
   INCIDENT_LEVELS={"inmediato" => 0,
                    "hace_un_rato" => 1,
@@ -27,10 +28,6 @@ class Incident < ActiveRecord::Base
       :date => date
     }
   end
-
-  def line
-    station.line
-  end
   
   def status
     if date > Time.now - 15.minutes
@@ -42,6 +39,7 @@ class Incident < ActiveRecord::Base
     end
   end
   
+  # Devuelve un Hash con los incidentes dados agrupados por nombre de estación
   def self.group_by_station_name(incidents)
     incidents.inject({}) do |hash, incident|
       hash[incident.station.name] ||= []
