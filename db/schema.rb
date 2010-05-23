@@ -48,6 +48,8 @@ ActiveRecord::Schema.define(:version => 20100523152339) do
     t.float    "long"
     t.integer  "station_id"
     t.integer  "direction_id"
+    t.integer  "source"
+    t.text     "android_id",     :limit => 16777215
   end
 
   create_table "lines", :force => true do |t|

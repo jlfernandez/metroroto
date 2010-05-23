@@ -8,7 +8,9 @@ class HomeController < ApplicationController
     end  
   end
   
-
+  def last
+    index
+  end
 
   
 end

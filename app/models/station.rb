@@ -19,7 +19,7 @@ class Station < ActiveRecord::Base
   named_scope :find_outspaces, lambda {|string|
     {:conditions => "REPLACE(nicename,'-','') like '%#{string}%' or REPLACE(nicename,'-','') like '%#{string.parameterize}%' "}
     }
-  
+
   def status
     result = case 
     when last_incidents.map(&:status).include?(0) then 0
