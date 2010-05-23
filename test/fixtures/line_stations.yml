@@ -1,0 +1,1711 @@
+--- 
+line_stations_100: 
+  created_at: 2010-05-23 19:06:37
+  updated_at: 2010-05-23 19:06:37
+  id: "100"
+  line_id: "8"
+  station_id: "95"
+line_stations_020: 
+  created_at: 2010-05-23 19:05:56
+  updated_at: 2010-05-23 19:05:56
+  id: "20"
+  line_id: "6"
+  station_id: "19"
+line_stations_101: 
+  created_at: 2010-05-23 19:06:37
+  updated_at: 2010-05-23 19:06:37
+  id: "101"
+  line_id: "8"
+  station_id: "96"
+line_stations_021: 
+  created_at: 2010-05-23 19:05:56
+  updated_at: 2010-05-23 19:05:56
+  id: "21"
+  line_id: "6"
+  station_id: "20"
+line_stations_102: 
+  created_at: 2010-05-23 19:06:48
+  updated_at: 2010-05-23 19:06:48
+  id: "102"
+  line_id: "9"
+  station_id: "97"
+line_stations_022: 
+  created_at: 2010-05-23 19:05:56
+  updated_at: 2010-05-23 19:05:56
+  id: "22"
+  line_id: "6"
+  station_id: "21"
+line_stations_103: 
+  created_at: 2010-05-23 19:06:48
+  updated_at: 2010-05-23 19:06:48
+  id: "103"
+  line_id: "9"
+  station_id: "98"
+line_stations_210: 
+  created_at: 2010-05-23 19:07:47
+  updated_at: 2010-05-23 19:07:47
+  id: "210"
+  line_id: "10"
+  station_id: "186"
+line_stations_023: 
+  created_at: 2010-05-23 19:05:57
+  updated_at: 2010-05-23 19:05:57
+  id: "23"
+  line_id: "6"
+  station_id: "22"
+line_stations_130: 
+  created_at: 2010-05-23 19:07:02
+  updated_at: 2010-05-23 19:07:02
+  id: "130"
+  line_id: "1"
+  station_id: "121"
+line_stations_211: 
+  created_at: 2010-05-23 19:07:47
+  updated_at: 2010-05-23 19:07:47
+  id: "211"
+  line_id: "10"
+  station_id: "187"
+line_stations_024: 
+  created_at: 2010-05-23 19:05:57
+  updated_at: 2010-05-23 19:05:57
+  id: "24"
+  line_id: "6"
+  station_id: "23"
+line_stations_050: 
+  created_at: 2010-05-23 19:06:12
+  updated_at: 2010-05-23 19:06:12
+  id: "50"
+  line_id: "12"
+  station_id: "49"
+line_stations_104: 
+  created_at: 2010-05-23 19:06:48
+  updated_at: 2010-05-23 19:06:48
+  id: "104"
+  line_id: "9"
+  station_id: "99"
+line_stations_131: 
+  created_at: 2010-05-23 19:07:02
+  updated_at: 2010-05-23 19:07:02
+  id: "131"
+  line_id: "1"
+  station_id: "122"
+line_stations_212: 
+  created_at: 2010-05-23 19:07:47
+  updated_at: 2010-05-23 19:07:47
+  id: "212"
+  line_id: "10"
+  station_id: "188"
+line_stations_025: 
+  created_at: 2010-05-23 19:05:57
+  updated_at: 2010-05-23 19:05:57
+  id: "25"
+  line_id: "6"
+  station_id: "24"
+line_stations_051: 
+  created_at: 2010-05-23 19:06:13
+  updated_at: 2010-05-23 19:06:13
+  id: "51"
+  line_id: "12"
+  station_id: "50"
+line_stations_105: 
+  created_at: 2010-05-23 19:06:48
+  updated_at: 2010-05-23 19:06:48
+  id: "105"
+  line_id: "9"
+  station_id: "100"
+line_stations_132: 
+  created_at: 2010-05-23 19:07:02
+  updated_at: 2010-05-23 19:07:02
+  id: "132"
+  line_id: "1"
+  station_id: "123"
+line_stations_213: 
+  created_at: 2010-05-23 19:07:48
+  updated_at: 2010-05-23 19:07:48
+  id: "213"
+  line_id: "10"
+  station_id: "123"
+line_stations_240: 
+  created_at: 2010-05-23 19:07:59
+  updated_at: 2010-05-23 19:07:59
+  id: "240"
+  line_id: "4"
+  station_id: "20"
+line_stations_026: 
+  created_at: 2010-05-23 19:05:58
+  updated_at: 2010-05-23 19:05:58
+  id: "26"
+  line_id: "6"
+  station_id: "25"
+line_stations_052: 
+  created_at: 2010-05-23 19:06:13
+  updated_at: 2010-05-23 19:06:13
+  id: "52"
+  line_id: "12"
+  station_id: "51"
+line_stations_106: 
+  created_at: 2010-05-23 19:06:49
+  updated_at: 2010-05-23 19:06:49
+  id: "106"
+  line_id: "9"
+  station_id: "101"
+line_stations_133: 
+  created_at: 2010-05-23 19:07:03
+  updated_at: 2010-05-23 19:07:03
+  id: "133"
+  line_id: "1"
+  station_id: "100"
+line_stations_241: 
+  created_at: 2010-05-23 19:08:00
+  updated_at: 2010-05-23 19:08:00
+  id: "241"
+  line_id: "4"
+  station_id: "21"
+line_stations_053: 
+  created_at: 2010-05-23 19:06:13
+  updated_at: 2010-05-23 19:06:13
+  id: "53"
+  line_id: "12"
+  station_id: "52"
+line_stations_107: 
+  created_at: 2010-05-23 19:06:49
+  updated_at: 2010-05-23 19:06:49
+  id: "107"
+  line_id: "9"
+  station_id: "102"
+line_stations_134: 
+  created_at: 2010-05-23 19:07:03
+  updated_at: 2010-05-23 19:07:03
+  id: "134"
+  line_id: "1"
+  station_id: "124"
+line_stations_160: 
+  created_at: 2010-05-23 19:07:10
+  updated_at: 2010-05-23 19:07:10
+  id: "160"
+  line_id: "1"
+  station_id: "148"
+line_stations_214: 
+  created_at: 2010-05-23 19:07:48
+  updated_at: 2010-05-23 19:07:48
+  id: "214"
+  line_id: "10"
+  station_id: "100"
+line_stations_242: 
+  created_at: 2010-05-23 19:08:00
+  updated_at: 2010-05-23 19:08:00
+  id: "242"
+  line_id: "4"
+  station_id: "203"
+line_stations_027: 
+  created_at: 2010-05-23 19:05:58
+  updated_at: 2010-05-23 19:05:58
+  id: "27"
+  line_id: "6"
+  station_id: "26"
+line_stations_054: 
+  created_at: 2010-05-23 19:06:14
+  updated_at: 2010-05-23 19:06:14
+  id: "54"
+  line_id: "12"
+  station_id: "53"
+line_stations_080: 
+  created_at: 2010-05-23 19:06:27
+  updated_at: 2010-05-23 19:06:27
+  id: "80"
+  line_id: "7"
+  station_id: "78"
+line_stations_108: 
+  created_at: 2010-05-23 19:06:49
+  updated_at: 2010-05-23 19:06:49
+  id: "108"
+  line_id: "9"
+  station_id: "90"
+line_stations_135: 
+  created_at: 2010-05-23 19:07:03
+  updated_at: 2010-05-23 19:07:03
+  id: "135"
+  line_id: "1"
+  station_id: "125"
+line_stations_161: 
+  created_at: 2010-05-23 19:07:11
+  updated_at: 2010-05-23 19:07:11
+  id: "161"
+  line_id: "1"
+  station_id: "149"
+line_stations_215: 
+  created_at: 2010-05-23 19:07:48
+  updated_at: 2010-05-23 19:07:48
+  id: "215"
+  line_id: "10"
+  station_id: "189"
+line_stations_243: 
+  created_at: 2010-05-23 19:08:00
+  updated_at: 2010-05-23 19:08:00
+  id: "243"
+  line_id: "4"
+  station_id: "204"
+line_stations_028: 
+  created_at: 2010-05-23 19:05:58
+  updated_at: 2010-05-23 19:05:58
+  id: "28"
+  line_id: "6"
+  station_id: "27"
+line_stations_055: 
+  created_at: 2010-05-23 19:06:14
+  updated_at: 2010-05-23 19:06:14
+  id: "55"
+  line_id: "12"
+  station_id: "54"
+line_stations_081: 
+  created_at: 2010-05-23 19:06:27
+  updated_at: 2010-05-23 19:06:27
+  id: "81"
+  line_id: "7"
+  station_id: "21"
+line_stations_109: 
+  created_at: 2010-05-23 19:06:50
+  updated_at: 2010-05-23 19:06:50
+  id: "109"
+  line_id: "9"
+  station_id: "103"
+line_stations_136: 
+  created_at: 2010-05-23 19:07:03
+  updated_at: 2010-05-23 19:07:03
+  id: "136"
+  line_id: "1"
+  station_id: "126"
+line_stations_162: 
+  created_at: 2010-05-23 19:07:11
+  updated_at: 2010-05-23 19:07:11
+  id: "162"
+  line_id: "1"
+  station_id: "150"
+line_stations_216: 
+  created_at: 2010-05-23 19:07:49
+  updated_at: 2010-05-23 19:07:49
+  id: "216"
+  line_id: "10"
+  station_id: "190"
+line_stations_270: 
+  created_at: 2010-05-23 19:08:12
+  updated_at: 2010-05-23 19:08:12
+  id: "270"
+  line_id: "5"
+  station_id: "173"
+line_stations_244: 
+  created_at: 2010-05-23 19:08:01
+  updated_at: 2010-05-23 19:08:01
+  id: "244"
+  line_id: "4"
+  station_id: "205"
+line_stations_029: 
+  created_at: 2010-05-23 19:05:59
+  updated_at: 2010-05-23 19:05:59
+  id: "29"
+  line_id: "6"
+  station_id: "28"
+line_stations_056: 
+  created_at: 2010-05-23 19:06:14
+  updated_at: 2010-05-23 19:06:14
+  id: "56"
+  line_id: "12"
+  station_id: "55"
+line_stations_082: 
+  created_at: 2010-05-23 19:06:27
+  updated_at: 2010-05-23 19:06:27
+  id: "82"
+  line_id: "7"
+  station_id: "79"
+line_stations_163: 
+  created_at: 2010-05-23 19:07:16
+  updated_at: 2010-05-23 19:07:16
+  id: "163"
+  line_id: "13"
+  station_id: "151"
+line_stations_217: 
+  created_at: 2010-05-23 19:07:49
+  updated_at: 2010-05-23 19:07:49
+  id: "217"
+  line_id: "10"
+  station_id: "23"
+line_stations_271: 
+  created_at: 2010-05-23 19:08:12
+  updated_at: 2010-05-23 19:08:12
+  id: "271"
+  line_id: "5"
+  station_id: "151"
+line_stations_245: 
+  created_at: 2010-05-23 19:08:01
+  updated_at: 2010-05-23 19:08:01
+  id: "245"
+  line_id: "4"
+  station_id: "206"
+line_stations_057: 
+  created_at: 2010-05-23 19:06:15
+  updated_at: 2010-05-23 19:06:15
+  id: "57"
+  line_id: "12"
+  station_id: "56"
+line_stations_083: 
+  created_at: 2010-05-23 19:06:28
+  updated_at: 2010-05-23 19:06:28
+  id: "83"
+  line_id: "7"
+  station_id: "80"
+line_stations_137: 
+  created_at: 2010-05-23 19:07:04
+  updated_at: 2010-05-23 19:07:04
+  id: "137"
+  line_id: "1"
+  station_id: "127"
+line_stations_164: 
+  created_at: 2010-05-23 19:07:16
+  updated_at: 2010-05-23 19:07:16
+  id: "164"
+  line_id: "13"
+  station_id: "30"
+line_stations_190: 
+  created_at: 2010-05-23 19:07:34
+  updated_at: 2010-05-23 19:07:34
+  id: "190"
+  line_id: "3"
+  station_id: "170"
+line_stations_218: 
+  created_at: 2010-05-23 19:07:49
+  updated_at: 2010-05-23 19:07:49
+  id: "218"
+  line_id: "10"
+  station_id: "79"
+line_stations_272: 
+  created_at: 2010-05-23 19:08:13
+  updated_at: 2010-05-23 19:08:13
+  id: "272"
+  line_id: "5"
+  station_id: "223"
+line_stations_246: 
+  created_at: 2010-05-23 19:08:01
+  updated_at: 2010-05-23 19:08:01
+  id: "246"
+  line_id: "4"
+  station_id: "207"
+line_stations_058: 
+  created_at: 2010-05-23 19:06:15
+  updated_at: 2010-05-23 19:06:15
+  id: "58"
+  line_id: "12"
+  station_id: "57"
+line_stations_084: 
+  created_at: 2010-05-23 19:06:28
+  updated_at: 2010-05-23 19:06:28
+  id: "84"
+  line_id: "7"
+  station_id: "81"
+line_stations_138: 
+  created_at: 2010-05-23 19:07:04
+  updated_at: 2010-05-23 19:07:04
+  id: "138"
+  line_id: "1"
+  station_id: "24"
+line_stations_165: 
+  created_at: 2010-05-23 19:07:20
+  updated_at: 2010-05-23 19:07:20
+  id: "165"
+  line_id: "2"
+  station_id: "152"
+line_stations_191: 
+  created_at: 2010-05-23 19:07:34
+  updated_at: 2010-05-23 19:07:34
+  id: "191"
+  line_id: "3"
+  station_id: "171"
+line_stations_219: 
+  created_at: 2010-05-23 19:07:50
+  updated_at: 2010-05-23 19:07:50
+  id: "219"
+  line_id: "10"
+  station_id: "191"
+line_stations_273: 
+  created_at: 2010-05-23 19:08:13
+  updated_at: 2010-05-23 19:08:13
+  id: "273"
+  line_id: "5"
+  station_id: "224"
+line_stations_059: 
+  created_at: 2010-05-23 19:06:15
+  updated_at: 2010-05-23 19:06:15
+  id: "59"
+  line_id: "12"
+  station_id: "58"
+line_stations_085: 
+  created_at: 2010-05-23 19:06:28
+  updated_at: 2010-05-23 19:06:28
+  id: "85"
+  line_id: "7"
+  station_id: "82"
+line_stations_139: 
+  created_at: 2010-05-23 19:07:04
+  updated_at: 2010-05-23 19:07:04
+  id: "139"
+  line_id: "1"
+  station_id: "128"
+line_stations_166: 
+  created_at: 2010-05-23 19:07:21
+  updated_at: 2010-05-23 19:07:21
+  id: "166"
+  line_id: "2"
+  station_id: "153"
+line_stations_192: 
+  created_at: 2010-05-23 19:07:34
+  updated_at: 2010-05-23 19:07:34
+  id: "192"
+  line_id: "3"
+  station_id: "172"
+line_stations_274: 
+  created_at: 2010-05-23 19:08:13
+  updated_at: 2010-05-23 19:08:13
+  id: "274"
+  line_id: "5"
+  station_id: "225"
+line_stations_247: 
+  created_at: 2010-05-23 19:08:02
+  updated_at: 2010-05-23 19:08:02
+  id: "247"
+  line_id: "4"
+  station_id: "208"
+line_stations_086: 
+  created_at: 2010-05-23 19:06:29
+  updated_at: 2010-05-23 19:06:29
+  id: "86"
+  line_id: "7"
+  station_id: "25"
+line_stations_167: 
+  created_at: 2010-05-23 19:07:21
+  updated_at: 2010-05-23 19:07:21
+  id: "167"
+  line_id: "2"
+  station_id: "19"
+line_stations_193: 
+  created_at: 2010-05-23 19:07:35
+  updated_at: 2010-05-23 19:07:35
+  id: "193"
+  line_id: "3"
+  station_id: "133"
+line_stations_275: 
+  created_at: 2010-05-23 19:08:14
+  updated_at: 2010-05-23 19:08:14
+  id: "275"
+  line_id: "5"
+  station_id: "226"
+line_stations_248: 
+  created_at: 2010-05-23 19:08:02
+  updated_at: 2010-05-23 19:08:02
+  id: "248"
+  line_id: "4"
+  station_id: "92"
+line_stations_087: 
+  created_at: 2010-05-23 19:06:29
+  updated_at: 2010-05-23 19:06:29
+  id: "87"
+  line_id: "7"
+  station_id: "83"
+line_stations_168: 
+  created_at: 2010-05-23 19:07:21
+  updated_at: 2010-05-23 19:07:21
+  id: "168"
+  line_id: "2"
+  station_id: "154"
+line_stations_194: 
+  created_at: 2010-05-23 19:07:35
+  updated_at: 2010-05-23 19:07:35
+  id: "194"
+  line_id: "3"
+  station_id: "173"
+line_stations_276: 
+  created_at: 2010-05-23 19:08:14
+  updated_at: 2010-05-23 19:08:14
+  id: "276"
+  line_id: "5"
+  station_id: "227"
+line_stations_249: 
+  created_at: 2010-05-23 19:08:02
+  updated_at: 2010-05-23 19:08:02
+  id: "249"
+  line_id: "4"
+  station_id: "209"
+line_stations_088: 
+  created_at: 2010-05-23 19:06:29
+  updated_at: 2010-05-23 19:06:29
+  id: "88"
+  line_id: "7"
+  station_id: "84"
+line_stations_169: 
+  created_at: 2010-05-23 19:07:21
+  updated_at: 2010-05-23 19:07:21
+  id: "169"
+  line_id: "2"
+  station_id: "106"
+line_stations_195: 
+  created_at: 2010-05-23 19:07:35
+  updated_at: 2010-05-23 19:07:35
+  id: "195"
+  line_id: "3"
+  station_id: "174"
+line_stations_277: 
+  created_at: 2010-05-23 19:08:14
+  updated_at: 2010-05-23 19:08:14
+  id: "277"
+  line_id: "5"
+  station_id: "228"
+line_stations_089: 
+  created_at: 2010-05-23 19:06:29
+  updated_at: 2010-05-23 19:06:29
+  id: "89"
+  line_id: "7"
+  station_id: "85"
+line_stations_196: 
+  created_at: 2010-05-23 19:07:36
+  updated_at: 2010-05-23 19:07:36
+  id: "196"
+  line_id: "3"
+  station_id: "175"
+line_stations_278: 
+  created_at: 2010-05-23 19:08:14
+  updated_at: 2010-05-23 19:08:14
+  id: "278"
+  line_id: "5"
+  station_id: "9"
+line_stations_197: 
+  created_at: 2010-05-23 19:07:36
+  updated_at: 2010-05-23 19:07:36
+  id: "197"
+  line_id: "3"
+  station_id: "29"
+line_stations_279: 
+  created_at: 2010-05-23 19:08:15
+  updated_at: 2010-05-23 19:08:15
+  id: "279"
+  line_id: "5"
+  station_id: "229"
+line_stations_198: 
+  created_at: 2010-05-23 19:07:37
+  updated_at: 2010-05-23 19:07:37
+  id: "198"
+  line_id: "3"
+  station_id: "28"
+line_stations_199: 
+  created_at: 2010-05-23 19:07:44
+  updated_at: 2010-05-23 19:07:44
+  id: "199"
+  line_id: "10"
+  station_id: "176"
+line_stations_010: 
+  created_at: 2010-05-23 19:05:53
+  updated_at: 2010-05-23 19:05:53
+  id: "10"
+  line_id: "6"
+  station_id: "10"
+line_stations_011: 
+  created_at: 2010-05-23 19:05:53
+  updated_at: 2010-05-23 19:05:53
+  id: "11"
+  line_id: "6"
+  station_id: "1"
+line_stations_200: 
+  created_at: 2010-05-23 19:07:44
+  updated_at: 2010-05-23 19:07:44
+  id: "200"
+  line_id: "10"
+  station_id: "177"
+line_stations_012: 
+  created_at: 2010-05-23 19:05:53
+  updated_at: 2010-05-23 19:05:53
+  id: "12"
+  line_id: "6"
+  station_id: "11"
+line_stations_201: 
+  created_at: 2010-05-23 19:07:44
+  updated_at: 2010-05-23 19:07:44
+  id: "201"
+  line_id: "10"
+  station_id: "178"
+line_stations_013: 
+  created_at: 2010-05-23 19:05:53
+  updated_at: 2010-05-23 19:05:53
+  id: "13"
+  line_id: "6"
+  station_id: "12"
+line_stations_120: 
+  created_at: 2010-05-23 19:06:53
+  updated_at: 2010-05-23 19:06:53
+  id: "120"
+  line_id: "9"
+  station_id: "112"
+line_stations_202: 
+  created_at: 2010-05-23 19:07:45
+  updated_at: 2010-05-23 19:07:45
+  id: "202"
+  line_id: "10"
+  station_id: "179"
+line_stations_014: 
+  created_at: 2010-05-23 19:05:54
+  updated_at: 2010-05-23 19:05:54
+  id: "14"
+  line_id: "6"
+  station_id: "13"
+line_stations_040: 
+  created_at: 2010-05-23 19:06:09
+  updated_at: 2010-05-23 19:06:09
+  id: "40"
+  line_id: "12"
+  station_id: "39"
+line_stations_121: 
+  created_at: 2010-05-23 19:06:53
+  updated_at: 2010-05-23 19:06:53
+  id: "121"
+  line_id: "9"
+  station_id: "113"
+line_stations_015: 
+  created_at: 2010-05-23 19:05:54
+  updated_at: 2010-05-23 19:05:54
+  id: "15"
+  line_id: "6"
+  station_id: "14"
+line_stations_041: 
+  created_at: 2010-05-23 19:06:10
+  updated_at: 2010-05-23 19:06:10
+  id: "41"
+  line_id: "12"
+  station_id: "40"
+line_stations_122: 
+  created_at: 2010-05-23 19:06:53
+  updated_at: 2010-05-23 19:06:53
+  id: "122"
+  line_id: "9"
+  station_id: "114"
+line_stations_230: 
+  created_at: 2010-05-23 19:07:53
+  updated_at: 2010-05-23 19:07:53
+  id: "230"
+  line_id: "10"
+  station_id: "34"
+line_stations_042: 
+  created_at: 2010-05-23 19:06:10
+  updated_at: 2010-05-23 19:06:10
+  id: "42"
+  line_id: "12"
+  station_id: "41"
+line_stations_123: 
+  created_at: 2010-05-23 19:06:54
+  updated_at: 2010-05-23 19:06:54
+  id: "123"
+  line_id: "9"
+  station_id: "115"
+line_stations_203: 
+  created_at: 2010-05-23 19:07:45
+  updated_at: 2010-05-23 19:07:45
+  id: "203"
+  line_id: "10"
+  station_id: "180"
+line_stations_231: 
+  created_at: 2010-05-23 19:07:57
+  updated_at: 2010-05-23 19:07:57
+  id: "231"
+  line_id: "4"
+  station_id: "29"
+line_stations_016: 
+  created_at: 2010-05-23 19:05:55
+  updated_at: 2010-05-23 19:05:55
+  id: "16"
+  line_id: "6"
+  station_id: "15"
+line_stations_043: 
+  created_at: 2010-05-23 19:06:10
+  updated_at: 2010-05-23 19:06:10
+  id: "43"
+  line_id: "12"
+  station_id: "42"
+line_stations_124: 
+  created_at: 2010-05-23 19:06:54
+  updated_at: 2010-05-23 19:06:54
+  id: "124"
+  line_id: "9"
+  station_id: "115"
+line_stations_150: 
+  created_at: 2010-05-23 19:07:07
+  updated_at: 2010-05-23 19:07:07
+  id: "150"
+  line_id: "1"
+  station_id: "15"
+line_stations_204: 
+  created_at: 2010-05-23 19:07:45
+  updated_at: 2010-05-23 19:07:45
+  id: "204"
+  line_id: "10"
+  station_id: "181"
+line_stations_232: 
+  created_at: 2010-05-23 19:07:57
+  updated_at: 2010-05-23 19:07:57
+  id: "232"
+  line_id: "4"
+  station_id: "160"
+line_stations_017: 
+  created_at: 2010-05-23 19:05:55
+  updated_at: 2010-05-23 19:05:55
+  id: "17"
+  line_id: "6"
+  station_id: "16"
+line_stations_044: 
+  created_at: 2010-05-23 19:06:11
+  updated_at: 2010-05-23 19:06:11
+  id: "44"
+  line_id: "12"
+  station_id: "43"
+line_stations_070: 
+  created_at: 2010-05-23 19:06:24
+  updated_at: 2010-05-23 19:06:24
+  id: "70"
+  line_id: "7"
+  station_id: "69"
+line_stations_125: 
+  created_at: 2010-05-23 19:06:54
+  updated_at: 2010-05-23 19:06:54
+  id: "125"
+  line_id: "9"
+  station_id: "116"
+line_stations_151: 
+  created_at: 2010-05-23 19:07:08
+  updated_at: 2010-05-23 19:07:08
+  id: "151"
+  line_id: "1"
+  station_id: "139"
+line_stations_205: 
+  created_at: 2010-05-23 19:07:45
+  updated_at: 2010-05-23 19:07:45
+  id: "205"
+  line_id: "10"
+  station_id: "182"
+line_stations_233: 
+  created_at: 2010-05-23 19:07:57
+  updated_at: 2010-05-23 19:07:57
+  id: "233"
+  line_id: "4"
+  station_id: "130"
+line_stations_018: 
+  created_at: 2010-05-23 19:05:55
+  updated_at: 2010-05-23 19:05:55
+  id: "18"
+  line_id: "6"
+  station_id: "17"
+line_stations_045: 
+  created_at: 2010-05-23 19:06:11
+  updated_at: 2010-05-23 19:06:11
+  id: "45"
+  line_id: "12"
+  station_id: "44"
+line_stations_071: 
+  created_at: 2010-05-23 19:06:24
+  updated_at: 2010-05-23 19:06:24
+  id: "71"
+  line_id: "7"
+  station_id: "69"
+line_stations_152: 
+  created_at: 2010-05-23 19:07:08
+  updated_at: 2010-05-23 19:07:08
+  id: "152"
+  line_id: "1"
+  station_id: "140"
+line_stations_206: 
+  created_at: 2010-05-23 19:07:46
+  updated_at: 2010-05-23 19:07:46
+  id: "206"
+  line_id: "10"
+  station_id: "183"
+line_stations_260: 
+  created_at: 2010-05-23 19:08:09
+  updated_at: 2010-05-23 19:08:09
+  id: "260"
+  line_id: "5"
+  station_id: "75"
+line_stations_234: 
+  created_at: 2010-05-23 19:07:58
+  updated_at: 2010-05-23 19:07:58
+  id: "234"
+  line_id: "4"
+  station_id: "191"
+line_stations_019: 
+  created_at: 2010-05-23 19:05:55
+  updated_at: 2010-05-23 19:05:55
+  id: "19"
+  line_id: "6"
+  station_id: "18"
+line_stations_046: 
+  created_at: 2010-05-23 19:06:11
+  updated_at: 2010-05-23 19:06:11
+  id: "46"
+  line_id: "12"
+  station_id: "45"
+line_stations_072: 
+  created_at: 2010-05-23 19:06:24
+  updated_at: 2010-05-23 19:06:24
+  id: "72"
+  line_id: "7"
+  station_id: "70"
+line_stations_126: 
+  created_at: 2010-05-23 19:06:55
+  updated_at: 2010-05-23 19:06:55
+  id: "126"
+  line_id: "9"
+  station_id: "117"
+line_stations_153: 
+  created_at: 2010-05-23 19:07:08
+  updated_at: 2010-05-23 19:07:08
+  id: "153"
+  line_id: "1"
+  station_id: "141"
+line_stations_207: 
+  created_at: 2010-05-23 19:07:46
+  updated_at: 2010-05-23 19:07:46
+  id: "207"
+  line_id: "10"
+  station_id: "184"
+line_stations_261: 
+  created_at: 2010-05-23 19:08:10
+  updated_at: 2010-05-23 19:08:10
+  id: "261"
+  line_id: "5"
+  station_id: "219"
+line_stations_235: 
+  created_at: 2010-05-23 19:07:58
+  updated_at: 2010-05-23 19:07:58
+  id: "235"
+  line_id: "4"
+  station_id: "199"
+line_stations_047: 
+  created_at: 2010-05-23 19:06:12
+  updated_at: 2010-05-23 19:06:12
+  id: "47"
+  line_id: "12"
+  station_id: "46"
+line_stations_073: 
+  created_at: 2010-05-23 19:06:25
+  updated_at: 2010-05-23 19:06:25
+  id: "73"
+  line_id: "7"
+  station_id: "71"
+line_stations_127: 
+  created_at: 2010-05-23 19:06:55
+  updated_at: 2010-05-23 19:06:55
+  id: "127"
+  line_id: "9"
+  station_id: "118"
+line_stations_154: 
+  created_at: 2010-05-23 19:07:09
+  updated_at: 2010-05-23 19:07:09
+  id: "154"
+  line_id: "1"
+  station_id: "142"
+line_stations_180: 
+  created_at: 2010-05-23 19:07:25
+  updated_at: 2010-05-23 19:07:25
+  id: "180"
+  line_id: "2"
+  station_id: "24"
+line_stations_208: 
+  created_at: 2010-05-23 19:07:46
+  updated_at: 2010-05-23 19:07:46
+  id: "208"
+  line_id: "10"
+  station_id: "185"
+line_stations_262: 
+  created_at: 2010-05-23 19:08:10
+  updated_at: 2010-05-23 19:08:10
+  id: "262"
+  line_id: "5"
+  station_id: "220"
+line_stations_048: 
+  created_at: 2010-05-23 19:06:12
+  updated_at: 2010-05-23 19:06:12
+  id: "48"
+  line_id: "12"
+  station_id: "47"
+line_stations_074: 
+  created_at: 2010-05-23 19:06:25
+  updated_at: 2010-05-23 19:06:25
+  id: "74"
+  line_id: "7"
+  station_id: "72"
+line_stations_128: 
+  created_at: 2010-05-23 19:06:55
+  updated_at: 2010-05-23 19:06:55
+  id: "128"
+  line_id: "9"
+  station_id: "119"
+line_stations_155: 
+  created_at: 2010-05-23 19:07:09
+  updated_at: 2010-05-23 19:07:09
+  id: "155"
+  line_id: "1"
+  station_id: "143"
+line_stations_181: 
+  created_at: 2010-05-23 19:07:31
+  updated_at: 2010-05-23 19:07:31
+  id: "181"
+  line_id: "3"
+  station_id: "162"
+line_stations_209: 
+  created_at: 2010-05-23 19:07:47
+  updated_at: 2010-05-23 19:07:47
+  id: "209"
+  line_id: "10"
+  station_id: "186"
+line_stations_263: 
+  created_at: 2010-05-23 19:08:10
+  updated_at: 2010-05-23 19:08:10
+  id: "263"
+  line_id: "5"
+  station_id: "153"
+line_stations_236: 
+  created_at: 2010-05-23 19:07:58
+  updated_at: 2010-05-23 19:07:58
+  id: "236"
+  line_id: "4"
+  station_id: "200"
+line_stations_075: 
+  created_at: 2010-05-23 19:06:25
+  updated_at: 2010-05-23 19:06:25
+  id: "75"
+  line_id: "7"
+  station_id: "73"
+line_stations_129: 
+  created_at: 2010-05-23 19:06:56
+  updated_at: 2010-05-23 19:06:56
+  id: "129"
+  line_id: "9"
+  station_id: "120"
+line_stations_156: 
+  created_at: 2010-05-23 19:07:09
+  updated_at: 2010-05-23 19:07:09
+  id: "156"
+  line_id: "1"
+  station_id: "144"
+line_stations_182: 
+  created_at: 2010-05-23 19:07:31
+  updated_at: 2010-05-23 19:07:31
+  id: "182"
+  line_id: "3"
+  station_id: "163"
+line_stations_264: 
+  created_at: 2010-05-23 19:08:10
+  updated_at: 2010-05-23 19:08:10
+  id: "264"
+  line_id: "5"
+  station_id: "20"
+line_stations_237: 
+  created_at: 2010-05-23 19:07:59
+  updated_at: 2010-05-23 19:07:59
+  id: "237"
+  line_id: "4"
+  station_id: "201"
+line_stations_049: 
+  created_at: 2010-05-23 19:06:12
+  updated_at: 2010-05-23 19:06:12
+  id: "49"
+  line_id: "12"
+  station_id: "48"
+line_stations_076: 
+  created_at: 2010-05-23 19:06:26
+  updated_at: 2010-05-23 19:06:26
+  id: "76"
+  line_id: "7"
+  station_id: "74"
+line_stations_157: 
+  created_at: 2010-05-23 19:07:10
+  updated_at: 2010-05-23 19:07:10
+  id: "157"
+  line_id: "1"
+  station_id: "145"
+line_stations_183: 
+  created_at: 2010-05-23 19:07:32
+  updated_at: 2010-05-23 19:07:32
+  id: "183"
+  line_id: "3"
+  station_id: "164"
+line_stations_265: 
+  created_at: 2010-05-23 19:08:11
+  updated_at: 2010-05-23 19:08:11
+  id: "265"
+  line_id: "5"
+  station_id: "105"
+line_stations_238: 
+  created_at: 2010-05-23 19:07:59
+  updated_at: 2010-05-23 19:07:59
+  id: "238"
+  line_id: "4"
+  station_id: "154"
+line_stations_077: 
+  created_at: 2010-05-23 19:06:26
+  updated_at: 2010-05-23 19:06:26
+  id: "77"
+  line_id: "7"
+  station_id: "75"
+line_stations_158: 
+  created_at: 2010-05-23 19:07:10
+  updated_at: 2010-05-23 19:07:10
+  id: "158"
+  line_id: "1"
+  station_id: "146"
+line_stations_184: 
+  created_at: 2010-05-23 19:07:32
+  updated_at: 2010-05-23 19:07:32
+  id: "184"
+  line_id: "3"
+  station_id: "165"
+line_stations_266: 
+  created_at: 2010-05-23 19:08:11
+  updated_at: 2010-05-23 19:08:11
+  id: "266"
+  line_id: "5"
+  station_id: "221"
+line_stations_239: 
+  created_at: 2010-05-23 19:07:59
+  updated_at: 2010-05-23 19:07:59
+  id: "239"
+  line_id: "4"
+  station_id: "202"
+line_stations_078: 
+  created_at: 2010-05-23 19:06:26
+  updated_at: 2010-05-23 19:06:26
+  id: "78"
+  line_id: "7"
+  station_id: "76"
+line_stations_185: 
+  created_at: 2010-05-23 19:07:32
+  updated_at: 2010-05-23 19:07:32
+  id: "185"
+  line_id: "3"
+  station_id: "166"
+line_stations_267: 
+  created_at: 2010-05-23 19:08:11
+  updated_at: 2010-05-23 19:08:11
+  id: "267"
+  line_id: "5"
+  station_id: "191"
+line_stations_079: 
+  created_at: 2010-05-23 19:06:26
+  updated_at: 2010-05-23 19:06:26
+  id: "79"
+  line_id: "7"
+  station_id: "77"
+line_stations_159: 
+  created_at: 2010-05-23 19:07:10
+  updated_at: 2010-05-23 19:07:10
+  id: "159"
+  line_id: "1"
+  station_id: "147"
+line_stations_186: 
+  created_at: 2010-05-23 19:07:32
+  updated_at: 2010-05-23 19:07:32
+  id: "186"
+  line_id: "3"
+  station_id: "167"
+line_stations_268: 
+  created_at: 2010-05-23 19:08:12
+  updated_at: 2010-05-23 19:08:12
+  id: "268"
+  line_id: "5"
+  station_id: "222"
+line_stations_187: 
+  created_at: 2010-05-23 19:07:33
+  updated_at: 2010-05-23 19:07:33
+  id: "187"
+  line_id: "3"
+  station_id: "168"
+line_stations_188: 
+  created_at: 2010-05-23 19:07:33
+  updated_at: 2010-05-23 19:07:33
+  id: "188"
+  line_id: "3"
+  station_id: "12"
+line_stations_269: 
+  created_at: 2010-05-23 19:08:12
+  updated_at: 2010-05-23 19:08:12
+  id: "269"
+  line_id: "5"
+  station_id: "132"
+line_stations_189: 
+  created_at: 2010-05-23 19:07:33
+  updated_at: 2010-05-23 19:07:33
+  id: "189"
+  line_id: "3"
+  station_id: "169"
+line_stations_001: 
+  created_at: 2010-05-23 19:05:45
+  updated_at: 2010-05-23 19:05:45
+  id: "1"
+  line_id: "11"
+  station_id: "1"
+line_stations_002: 
+  created_at: 2010-05-23 19:05:46
+  updated_at: 2010-05-23 19:05:46
+  id: "2"
+  line_id: "11"
+  station_id: "2"
+line_stations_003: 
+  created_at: 2010-05-23 19:05:46
+  updated_at: 2010-05-23 19:05:46
+  id: "3"
+  line_id: "11"
+  station_id: "3"
+line_stations_110: 
+  created_at: 2010-05-23 19:06:50
+  updated_at: 2010-05-23 19:06:50
+  id: "110"
+  line_id: "9"
+  station_id: "104"
+line_stations_004: 
+  created_at: 2010-05-23 19:05:46
+  updated_at: 2010-05-23 19:05:46
+  id: "4"
+  line_id: "11"
+  station_id: "4"
+line_stations_030: 
+  created_at: 2010-05-23 19:05:59
+  updated_at: 2010-05-23 19:05:59
+  id: "30"
+  line_id: "6"
+  station_id: "29"
+line_stations_111: 
+  created_at: 2010-05-23 19:06:50
+  updated_at: 2010-05-23 19:06:50
+  id: "111"
+  line_id: "9"
+  station_id: "21"
+line_stations_031: 
+  created_at: 2010-05-23 19:05:59
+  updated_at: 2010-05-23 19:05:59
+  id: "31"
+  line_id: "6"
+  station_id: "30"
+line_stations_112: 
+  created_at: 2010-05-23 19:06:51
+  updated_at: 2010-05-23 19:06:51
+  id: "112"
+  line_id: "9"
+  station_id: "105"
+line_stations_005: 
+  created_at: 2010-05-23 19:05:46
+  updated_at: 2010-05-23 19:05:46
+  id: "5"
+  line_id: "11"
+  station_id: "5"
+line_stations_032: 
+  created_at: 2010-05-23 19:05:59
+  updated_at: 2010-05-23 19:05:59
+  id: "32"
+  line_id: "6"
+  station_id: "31"
+line_stations_113: 
+  created_at: 2010-05-23 19:06:51
+  updated_at: 2010-05-23 19:06:51
+  id: "113"
+  line_id: "9"
+  station_id: "106"
+line_stations_220: 
+  created_at: 2010-05-23 19:07:50
+  updated_at: 2010-05-23 19:07:50
+  id: "220"
+  line_id: "10"
+  station_id: "131"
+line_stations_033: 
+  created_at: 2010-05-23 19:06:00
+  updated_at: 2010-05-23 19:06:00
+  id: "33"
+  line_id: "6"
+  station_id: "32"
+line_stations_114: 
+  created_at: 2010-05-23 19:06:51
+  updated_at: 2010-05-23 19:06:51
+  id: "114"
+  line_id: "9"
+  station_id: "107"
+line_stations_140: 
+  created_at: 2010-05-23 19:07:05
+  updated_at: 2010-05-23 19:07:05
+  id: "140"
+  line_id: "1"
+  station_id: "129"
+line_stations_221: 
+  created_at: 2010-05-23 19:07:50
+  updated_at: 2010-05-23 19:07:50
+  id: "221"
+  line_id: "10"
+  station_id: "174"
+line_stations_006: 
+  created_at: 2010-05-23 19:05:47
+  updated_at: 2010-05-23 19:05:47
+  id: "6"
+  line_id: "11"
+  station_id: "6"
+line_stations_034: 
+  created_at: 2010-05-23 19:06:00
+  updated_at: 2010-05-23 19:06:00
+  id: "34"
+  line_id: "6"
+  station_id: "33"
+line_stations_060: 
+  created_at: 2010-05-23 19:06:15
+  updated_at: 2010-05-23 19:06:15
+  id: "60"
+  line_id: "12"
+  station_id: "59"
+line_stations_141: 
+  created_at: 2010-05-23 19:07:05
+  updated_at: 2010-05-23 19:07:05
+  id: "141"
+  line_id: "1"
+  station_id: "130"
+line_stations_222: 
+  created_at: 2010-05-23 19:07:50
+  updated_at: 2010-05-23 19:07:50
+  id: "222"
+  line_id: "10"
+  station_id: "30"
+line_stations_007: 
+  created_at: 2010-05-23 19:05:52
+  updated_at: 2010-05-23 19:05:52
+  id: "7"
+  line_id: "6"
+  station_id: "7"
+line_stations_223: 
+  created_at: 2010-05-23 19:07:51
+  updated_at: 2010-05-23 19:07:51
+  id: "223"
+  line_id: "10"
+  station_id: "192"
+line_stations_061: 
+  created_at: 2010-05-23 19:06:16
+  updated_at: 2010-05-23 19:06:16
+  id: "61"
+  line_id: "12"
+  station_id: "60"
+line_stations_115: 
+  created_at: 2010-05-23 19:06:52
+  updated_at: 2010-05-23 19:06:52
+  id: "115"
+  line_id: "9"
+  station_id: "17"
+line_stations_142: 
+  created_at: 2010-05-23 19:07:05
+  updated_at: 2010-05-23 19:07:05
+  id: "142"
+  line_id: "1"
+  station_id: "131"
+line_stations_008: 
+  created_at: 2010-05-23 19:05:52
+  updated_at: 2010-05-23 19:05:52
+  id: "8"
+  line_id: "6"
+  station_id: "8"
+line_stations_035: 
+  created_at: 2010-05-23 19:06:08
+  updated_at: 2010-05-23 19:06:08
+  id: "35"
+  line_id: "12"
+  station_id: "34"
+line_stations_250: 
+  created_at: 2010-05-23 19:08:02
+  updated_at: 2010-05-23 19:08:02
+  id: "250"
+  line_id: "4"
+  station_id: "210"
+line_stations_224: 
+  created_at: 2010-05-23 19:07:51
+  updated_at: 2010-05-23 19:07:51
+  id: "224"
+  line_id: "10"
+  station_id: "193"
+line_stations_062: 
+  created_at: 2010-05-23 19:06:16
+  updated_at: 2010-05-23 19:06:16
+  id: "62"
+  line_id: "12"
+  station_id: "61"
+line_stations_116: 
+  created_at: 2010-05-23 19:06:52
+  updated_at: 2010-05-23 19:06:52
+  id: "116"
+  line_id: "9"
+  station_id: "108"
+line_stations_143: 
+  created_at: 2010-05-23 19:07:05
+  updated_at: 2010-05-23 19:07:05
+  id: "143"
+  line_id: "1"
+  station_id: "132"
+line_stations_009: 
+  created_at: 2010-05-23 19:05:52
+  updated_at: 2010-05-23 19:05:52
+  id: "9"
+  line_id: "6"
+  station_id: "9"
+line_stations_036: 
+  created_at: 2010-05-23 19:06:08
+  updated_at: 2010-05-23 19:06:08
+  id: "36"
+  line_id: "12"
+  station_id: "35"
+line_stations_251: 
+  created_at: 2010-05-23 19:08:03
+  updated_at: 2010-05-23 19:08:03
+  id: "251"
+  line_id: "4"
+  station_id: "211"
+line_stations_117: 
+  created_at: 2010-05-23 19:06:52
+  updated_at: 2010-05-23 19:06:52
+  id: "117"
+  line_id: "9"
+  station_id: "109"
+line_stations_144: 
+  created_at: 2010-05-23 19:07:06
+  updated_at: 2010-05-23 19:07:06
+  id: "144"
+  line_id: "1"
+  station_id: "133"
+line_stations_170: 
+  created_at: 2010-05-23 19:07:22
+  updated_at: 2010-05-23 19:07:22
+  id: "170"
+  line_id: "2"
+  station_id: "155"
+line_stations_037: 
+  created_at: 2010-05-23 19:06:09
+  updated_at: 2010-05-23 19:06:09
+  id: "37"
+  line_id: "12"
+  station_id: "36"
+line_stations_063: 
+  created_at: 2010-05-23 19:06:22
+  updated_at: 2010-05-23 19:06:22
+  id: "63"
+  line_id: "7"
+  station_id: "62"
+line_stations_252: 
+  created_at: 2010-05-23 19:08:03
+  updated_at: 2010-05-23 19:08:03
+  id: "252"
+  line_id: "4"
+  station_id: "212"
+line_stations_225: 
+  created_at: 2010-05-23 19:07:51
+  updated_at: 2010-05-23 19:07:51
+  id: "225"
+  line_id: "10"
+  station_id: "194"
+line_stations_090: 
+  created_at: 2010-05-23 19:06:30
+  updated_at: 2010-05-23 19:06:30
+  id: "90"
+  line_id: "7"
+  station_id: "86"
+line_stations_118: 
+  created_at: 2010-05-23 19:06:52
+  updated_at: 2010-05-23 19:06:52
+  id: "118"
+  line_id: "9"
+  station_id: "110"
+line_stations_145: 
+  created_at: 2010-05-23 19:07:06
+  updated_at: 2010-05-23 19:07:06
+  id: "145"
+  line_id: "1"
+  station_id: "134"
+line_stations_171: 
+  created_at: 2010-05-23 19:07:22
+  updated_at: 2010-05-23 19:07:22
+  id: "171"
+  line_id: "2"
+  station_id: "156"
+line_stations_064: 
+  created_at: 2010-05-23 19:06:22
+  updated_at: 2010-05-23 19:06:22
+  id: "64"
+  line_id: "7"
+  station_id: "63"
+line_stations_253: 
+  created_at: 2010-05-23 19:08:04
+  updated_at: 2010-05-23 19:08:04
+  id: "253"
+  line_id: "4"
+  station_id: "121"
+line_stations_226: 
+  created_at: 2010-05-23 19:07:52
+  updated_at: 2010-05-23 19:07:52
+  id: "226"
+  line_id: "10"
+  station_id: "195"
+line_stations_119: 
+  created_at: 2010-05-23 19:06:53
+  updated_at: 2010-05-23 19:06:53
+  id: "119"
+  line_id: "9"
+  station_id: "111"
+line_stations_146: 
+  created_at: 2010-05-23 19:07:06
+  updated_at: 2010-05-23 19:07:06
+  id: "146"
+  line_id: "1"
+  station_id: "135"
+line_stations_172: 
+  created_at: 2010-05-23 19:07:22
+  updated_at: 2010-05-23 19:07:22
+  id: "172"
+  line_id: "2"
+  station_id: "157"
+line_stations_038: 
+  created_at: 2010-05-23 19:06:09
+  updated_at: 2010-05-23 19:06:09
+  id: "38"
+  line_id: "12"
+  station_id: "37"
+line_stations_065: 
+  created_at: 2010-05-23 19:06:22
+  updated_at: 2010-05-23 19:06:22
+  id: "65"
+  line_id: "7"
+  station_id: "64"
+line_stations_091: 
+  created_at: 2010-05-23 19:06:30
+  updated_at: 2010-05-23 19:06:30
+  id: "91"
+  line_id: "7"
+  station_id: "87"
+line_stations_280: 
+  created_at: 2010-05-23 19:08:15
+  updated_at: 2010-05-23 19:08:15
+  id: "280"
+  line_id: "5"
+  station_id: "230"
+line_stations_254: 
+  created_at: 2010-05-23 19:08:07
+  updated_at: 2010-05-23 19:08:07
+  id: "254"
+  line_id: "5"
+  station_id: "213"
+line_stations_227: 
+  created_at: 2010-05-23 19:07:52
+  updated_at: 2010-05-23 19:07:52
+  id: "227"
+  line_id: "10"
+  station_id: "196"
+line_stations_147: 
+  created_at: 2010-05-23 19:07:07
+  updated_at: 2010-05-23 19:07:07
+  id: "147"
+  line_id: "1"
+  station_id: "136"
+line_stations_173: 
+  created_at: 2010-05-23 19:07:23
+  updated_at: 2010-05-23 19:07:23
+  id: "173"
+  line_id: "2"
+  station_id: "133"
+line_stations_039: 
+  created_at: 2010-05-23 19:06:09
+  updated_at: 2010-05-23 19:06:09
+  id: "39"
+  line_id: "12"
+  station_id: "38"
+line_stations_066: 
+  created_at: 2010-05-23 19:06:23
+  updated_at: 2010-05-23 19:06:23
+  id: "66"
+  line_id: "7"
+  station_id: "65"
+line_stations_092: 
+  created_at: 2010-05-23 19:06:30
+  updated_at: 2010-05-23 19:06:30
+  id: "92"
+  line_id: "7"
+  station_id: "88"
+line_stations_281: 
+  created_at: 2010-05-23 19:08:15
+  updated_at: 2010-05-23 19:08:15
+  id: "281"
+  line_id: "5"
+  station_id: "231"
+line_stations_255: 
+  created_at: 2010-05-23 19:08:08
+  updated_at: 2010-05-23 19:08:08
+  id: "255"
+  line_id: "5"
+  station_id: "214"
+line_stations_228: 
+  created_at: 2010-05-23 19:07:52
+  updated_at: 2010-05-23 19:07:52
+  id: "228"
+  line_id: "10"
+  station_id: "197"
+line_stations_174: 
+  created_at: 2010-05-23 19:07:23
+  updated_at: 2010-05-23 19:07:23
+  id: "174"
+  line_id: "2"
+  station_id: "151"
+line_stations_067: 
+  created_at: 2010-05-23 19:06:23
+  updated_at: 2010-05-23 19:06:23
+  id: "67"
+  line_id: "7"
+  station_id: "66"
+line_stations_093: 
+  created_at: 2010-05-23 19:06:31
+  updated_at: 2010-05-23 19:06:31
+  id: "93"
+  line_id: "7"
+  station_id: "89"
+line_stations_282: 
+  created_at: 2010-05-23 19:08:16
+  updated_at: 2010-05-23 19:08:16
+  id: "282"
+  line_id: "5"
+  station_id: "232"
+line_stations_256: 
+  created_at: 2010-05-23 19:08:08
+  updated_at: 2010-05-23 19:08:08
+  id: "256"
+  line_id: "5"
+  station_id: "215"
+line_stations_229: 
+  created_at: 2010-05-23 19:07:53
+  updated_at: 2010-05-23 19:07:53
+  id: "229"
+  line_id: "10"
+  station_id: "198"
+line_stations_175: 
+  created_at: 2010-05-23 19:07:23
+  updated_at: 2010-05-23 19:07:23
+  id: "175"
+  line_id: "2"
+  station_id: "158"
+line_stations_068: 
+  created_at: 2010-05-23 19:06:23
+  updated_at: 2010-05-23 19:06:23
+  id: "68"
+  line_id: "7"
+  station_id: "67"
+line_stations_094: 
+  created_at: 2010-05-23 19:06:35
+  updated_at: 2010-05-23 19:06:35
+  id: "94"
+  line_id: "8"
+  station_id: "23"
+line_stations_148: 
+  created_at: 2010-05-23 19:07:07
+  updated_at: 2010-05-23 19:07:07
+  id: "148"
+  line_id: "1"
+  station_id: "137"
+line_stations_283: 
+  created_at: 2010-05-23 19:08:16
+  updated_at: 2010-05-23 19:08:16
+  id: "283"
+  line_id: "5"
+  station_id: "233"
+line_stations_257: 
+  created_at: 2010-05-23 19:08:08
+  updated_at: 2010-05-23 19:08:08
+  id: "257"
+  line_id: "5"
+  station_id: "216"
+line_stations_176: 
+  created_at: 2010-05-23 19:07:24
+  updated_at: 2010-05-23 19:07:24
+  id: "176"
+  line_id: "2"
+  station_id: "159"
+line_stations_069: 
+  created_at: 2010-05-23 19:06:24
+  updated_at: 2010-05-23 19:06:24
+  id: "69"
+  line_id: "7"
+  station_id: "68"
+line_stations_095: 
+  created_at: 2010-05-23 19:06:35
+  updated_at: 2010-05-23 19:06:35
+  id: "95"
+  line_id: "8"
+  station_id: "90"
+line_stations_149: 
+  created_at: 2010-05-23 19:07:07
+  updated_at: 2010-05-23 19:07:07
+  id: "149"
+  line_id: "1"
+  station_id: "138"
+line_stations_284: 
+  created_at: 2010-05-23 19:08:16
+  updated_at: 2010-05-23 19:08:16
+  id: "284"
+  line_id: "5"
+  station_id: "234"
+line_stations_096: 
+  created_at: 2010-05-23 19:06:36
+  updated_at: 2010-05-23 19:06:36
+  id: "96"
+  line_id: "8"
+  station_id: "91"
+line_stations_177: 
+  created_at: 2010-05-23 19:07:24
+  updated_at: 2010-05-23 19:07:24
+  id: "177"
+  line_id: "2"
+  station_id: "160"
+line_stations_285: 
+  created_at: 2010-05-23 19:08:16
+  updated_at: 2010-05-23 19:08:16
+  id: "285"
+  line_id: "5"
+  station_id: "194"
+line_stations_258: 
+  created_at: 2010-05-23 19:08:09
+  updated_at: 2010-05-23 19:08:09
+  id: "258"
+  line_id: "5"
+  station_id: "217"
+line_stations_097: 
+  created_at: 2010-05-23 19:06:36
+  updated_at: 2010-05-23 19:06:36
+  id: "97"
+  line_id: "8"
+  station_id: "92"
+line_stations_178: 
+  created_at: 2010-05-23 19:07:24
+  updated_at: 2010-05-23 19:07:24
+  id: "178"
+  line_id: "2"
+  station_id: "161"
+line_stations_259: 
+  created_at: 2010-05-23 19:08:09
+  updated_at: 2010-05-23 19:08:09
+  id: "259"
+  line_id: "5"
+  station_id: "218"
+line_stations_098: 
+  created_at: 2010-05-23 19:06:36
+  updated_at: 2010-05-23 19:06:36
+  id: "98"
+  line_id: "8"
+  station_id: "93"
+line_stations_179: 
+  created_at: 2010-05-23 19:07:25
+  updated_at: 2010-05-23 19:07:25
+  id: "179"
+  line_id: "2"
+  station_id: "81"
+line_stations_099: 
+  created_at: 2010-05-23 19:06:37
+  updated_at: 2010-05-23 19:06:37
+  id: "99"
+  line_id: "8"
+  station_id: "94"

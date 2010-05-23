@@ -3,13 +3,14 @@ namespace :db do
   Defaults to development database. Set RAILS_ENV to override.'
 
   task :extract_fixtures => :environment do
-    sql = "SELECT * FROM %s"
-    skip_tables = ["schema_info", "sessions"]
+    sql = "SELECT * FROM `%s`"
+    skip_tables = ["schema_info", "sessions", "delayed_jobs", "failed_twitts", "subscriptions", "schema_migrations"]
     ActiveRecord::Base.establish_connection
     tables = ENV['FIXTURES'] ? ENV['FIXTURES'].split(/,/) : ActiveRecord::Base.connection.tables - skip_tables
+    puts tables.inspect
     tables.each do |table_name|
       i = "000"
-      File.open("#{RAILS_ROOT}/db/#{table_name}.yml", 'w') do |file|
+      File.open("#{RAILS_ROOT}/test/fixtures/#{table_name}.yml", 'w') do |file|
         data = ActiveRecord::Base.connection.select_all(sql % table_name)
         file.write data.inject({}) { |hash, record|
           hash["#{table_name}_#{i.succ!}"] = record

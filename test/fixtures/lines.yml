@@ -1,60 +1,66 @@
-line_1:
-  id: 1
-  number: 1
-  name: "Linea 1"
-
-line_2:
-  id: 2
-  number: 2
-  name: "Linea 2"
-
-line_3:
-  id: 3
-  number: 3
-  name: "Linea 3"
-
-line_4:
-  id: 4
-  number: 4
-  name: "Linea 4"
-
-line_5:
-  id: 5
-  number: 5
-  name: "Linea 5"
-
-line_6:
-  id: 6
-  number: 6
-  name: "Linea 6"
-
-line_7:
-  id: 7
-  number: 7
-  name: "Linea 7"
-
-line_8:
-  id: 8
-  number: 8
-  name: "Linea 8"
-
-line_9:
-  id: 9
-  number: 9
-  name: "Linea 9"
-
-line_10:
-  id: 10
-  number: 10
-  name: "Linea 10"
-
-line_11:
-  id: 11
-  number: 11
-  name: "Linea 11"
-
-line_12:
-  id: 12
-  number: 12
-  name: "Linea 12"
-
+--- 
+lines_004: 
+  name: Linea 4
+  number: "4"
+  colour: "#B65518"
+  id: "4"
+lines_005: 
+  name: Linea 5
+  number: "5"
+  colour: "#8FD400"
+  id: "5"
+lines_006: 
+  name: Linea 6
+  number: "6"
+  colour: "#98989B"
+  id: "6"
+lines_007: 
+  name: Linea 7
+  number: "7"
+  colour: "#EE7518"
+  id: "7"
+lines_008: 
+  name: Linea 8
+  number: "8"
+  colour: "#EC82B1"
+  id: "8"
+lines_009: 
+  name: Linea 9
+  number: "9"
+  colour: "#A60084"
+  id: "9"
+lines_010: 
+  name: Linea 10
+  number: "10"
+  colour: "#005AA9"
+  id: "10"
+lines_011: 
+  name: Linea 11
+  number: "11"
+  colour: "#009B3A"
+  id: "11"
+lines_012: 
+  name: Linea 12
+  number: "12"
+  colour: "#A49800"
+  id: "12"
+lines_001: 
+  name: Linea 1
+  number: "1"
+  colour: "#2DBEF0"
+  id: "1"
+lines_013: 
+  name: Linea R
+  number: R
+  colour: FFFFFF
+  id: "13"
+lines_002: 
+  name: Linea 2
+  number: "2"
+  colour: "#ED1C24"
+  id: "2"
+lines_003: 
+  name: Linea 3
+  number: "3"
+  colour: "#FFD000"
+  id: "3"

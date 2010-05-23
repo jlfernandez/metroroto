@@ -167,7 +167,7 @@ class MetrotwittTest < ActiveSupport::TestCase
     assert_equal Incident.last.comment, "Nuevo twitt de prueba"
   end
 
-  test "debe reconocer el patron: sin linea, comment delante" do
+  test "current debe reconocer el patron: sin linea, comment delante" do
     Metrotwitt.parse_twitt(create_twitt("Nuevo twitt de prueba #metroroto #panbendito "))
     assert_equal 1,Incident.all.size
     assert_equal Incident.last.line.id,11
@@ -225,11 +225,11 @@ class MetrotwittTest < ActiveSupport::TestCase
     assert_equal Incident.last.comment, "Nuevo twitt de prueba "
   end
   def create_twitt(text)
-   {"text" => text,
+   Hashie::Mash.new({"text" => text,
      "created_at" => Time.now,
      "from_user" => "1111111",
      "id" => "12345678"
-   }
+   })
   end
 
 
