@@ -14,7 +14,7 @@ class Metrotwitt
     normalized_text = twitt.text.strip.gsub("\n","").squeeze
     text_arr=normalized_text.scan(/([^#]*)\s*#(\S*)\s#(\S*)\s#?(\S*)\s*(.*)/).flatten
     text = normalized_text
-    incident = Incident.new
+    incident = Incident.new(:source => Incident::SOURCE[:twitter])
     #Transformamos la fecha del twitt, que viene en utc, a nuestra hora local
     incident.date = twitt["created_at"].to_time.getlocal
     incident.user = twitt["from_user"]

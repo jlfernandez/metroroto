@@ -45,7 +45,9 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :incidents
   map.resources :stations
   map.resources :subscriptions
-  
+
+  map.api_incidents 'api/:version/incidents', :controller => 'api/incidents', :action => 'create', :conditions => { :method => :post }
+
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 end

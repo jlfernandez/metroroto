@@ -1,7 +1,8 @@
 class IncidentsController < ApplicationController
   
   def create
-    incident = Incident.new(params[:incident])
+    incident = Incident.new(params[:incident].merge(
+        :source => Incident::SOURCE[:web]))
     incident.date = Time.now
     incident.save!
     @incidents = Incident.last_incidents

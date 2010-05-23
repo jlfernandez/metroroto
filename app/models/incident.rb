@@ -11,6 +11,8 @@ class Incident < ActiveRecord::Base
   INCIDENT_LEVELS={"inmediato" => 0,
                    "hace_un_rato" => 1,
                    "hace_mucho" => 2}
+
+  SOURCE = { :web => 0, :twitter => 1, :android => 2}
   
   named_scope :last_incidents,:conditions => "date > '#{(Time.now - 7.days).to_s(:db)}'", :order => "date DESC"
 
