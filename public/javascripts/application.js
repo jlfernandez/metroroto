@@ -103,7 +103,8 @@ $(function(){
         url: $(this).attr("action"),
         data: $.param(form.serializeArray()),
         success: function(html){
-     	    $('#incidents').html(html); 
+     	    $('#incidents').html(html);
+     	    $("#last_incidents span.timeago").timeago();
           $.getJSON("/stations/"+$('#incident_station_id').val()+".json", function(json){
             new_marker( $('#incident_comment').val(),json.station.lat,json.station.long,$('#incident_line_id').val(),json.station.name)
           });
@@ -183,7 +184,7 @@ $(function(){
           });
       }else{
         //show error messages
-        show_msg(validation_box, msg)
+        show_msg(validation_box, msg);
       }
       
     })
