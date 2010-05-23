@@ -5,14 +5,15 @@ class Metrotwitt
     twitts = Twitter::Search.new('#metroroto').since(since).fetch().results
     twitts.reverse! #Esto se hace para que guarde primero los más antiguos, y se retwitteen en orden.
     puts "Cargando #{twitts.size} nuevos twitts"
-    twitts.each do |twitt|
-      self.parse_twitt(twitt)
+    twitts.each do |twitt|      
+      self.parse_twitt(twitt) unless twitt.from_user == "metroroto"
     end
   end
 
   def self.parse_twitt(twitt)
-    text_arr=twitt["text"].scan(/([^#]*)\s*#(\S*)\s#(\S*)\s#?(\S*)\s*(.*)/).flatten
-    text = twitt["text"]
+    normalized_text = twitt.text.strip.gsub("\n","").squeeze
+    text_arr=normalized_text.scan(/([^#]*)\s*#(\S*)\s#(\S*)\s#?(\S*)\s*(.*)/).flatten
+    text = normalized_text
     incident = Incident.new
     #Transformamos la fecha del twitt, que viene en utc, a nuestra hora local
     incident.date = twitt["created_at"].to_time.getlocal
