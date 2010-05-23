@@ -16,40 +16,21 @@
 </head>
 
 <body class="page">
-  <div id="header">
-    
-    <div>
-      <a href="/">Metroroto</a>
-      <h1>Sistema de trackeo de incidencias del Metro de Madrid</h1>
-    </div>
-    
-    <ul>
-      <li><a href="<%=root_path%>">Incidencias</a></li>
-      <li class="lines">
-        <a href="#">Lineas</a>
-        <ul>
-		  <% @lines.each do |line|%>
-          <li><a href="<%=line_path line%>">Linea <%= line.number%></a></li>
-		  <% end %>
-        </ul>
-      </li>
-      <li><a href="#">¿Cómo se usa?</a></li>
-    </ul>
-  </div><!-- .header -->
   
-	<%= yield%>
-	
-	<div id="footer" class="wrapper">
-	 <p>Metroroto.com 2010 - <a href="#">Aviso legal</a> - Un proyecto de @larubyroom.</p>
-	 <ul>
-	   <li><a href="#">¿Qué es metroroto?</a></li>
-	   <li><a href="#">¿Cómo se usa?</a> </li>
-	 </ul>
-	</div><!-- #footer -->
+  <%= render :partial => 'shared/header' %>
+
+  <div id="map_canvas" style="width:100%; height:900px"></div>
+  
+  <div id="content" class="wrapper">
+	  <%= yield%>
+	</div><!-- content -->
+
+	<%= render :partial => 'shared/footer' %>
 	
 	
 	<%= javascript_include_tag 'jquery', 'jquery.validate', 'jquery.uniform.min', 'jquery.scrollTo-min',  'jquery.timeago',  'application', 'jrails' %>
   <%= yield :js_includes %>
+
 </body>
 </html>
 

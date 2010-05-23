@@ -215,6 +215,21 @@ $(function(){
        }
     });
   
+   
+   //-------------------------------------------------------------------------
+   // AUTOFIT MAP ON PAGES
+   //-------------------------------------------------------------------------
+   if ($('body.page').length > 0){
+     var page_map = $('#map_canvas'),
+         body = $('body.page'),
+         setMapHeight = function(wh){
+           page_map.css('height', wh+'px');
+         };
+     setMapHeight(body.height());
+   }
+   
+    
+   
      
 
 });

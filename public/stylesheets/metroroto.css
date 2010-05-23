@@ -122,8 +122,8 @@ button {
 #header {
   height:5.6em;
   left:50%;
-  margin:5em 0 0 -50em;
-  width:95em;
+  margin:5em 0 0 -48em;
+  width:91em;
   padding:2.5em;
   z-index:10000;
   position:absolute;
@@ -439,6 +439,8 @@ ul#last_incidents p strong {
 #footer {
   overflow:hidden;
   padding-top:0;
+  z-index:100000;
+  position:relative;
 }
 
 #footer p {
@@ -730,6 +732,10 @@ a.line:hover{
 
 }
 
+/*----------------------------------------------------------------------------------------------------------------------------
+  INFO WINDOW IN MAPS
+##############################################################################################################################*/
+
 .map_pop ul{
   max-height:300px;
   overflow:auto;
@@ -774,6 +780,10 @@ a.line:hover{
   font-size:inherit;
 }
 
+/*----------------------------------------------------------------------------------------------------------------------------
+  last incidents
+##############################################################################################################################*/
+
 ul#last_incidents {
 	padding-bottom:2em;
 	font-size: 1.3em;
@@ -784,4 +794,72 @@ ul#last_incidents {
 
 ul#last_incidents li{
 	padding:0.3em 0;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------
+  STYLES FOR PAGES
+##############################################################################################################################*/
+
+body.page #header{
+  margin-top:0;
+  z-index:100000;
+  position:relative;
+  
+}
+
+body.page #map_canvas{
+  position:absolute;
+  z-index:0;
+  top:0;
+  left:0;
+}
+
+body.page #content{
+  margin-top:4em;
+  padding-top:0;
+}
+
+body.page #content h2{
+  padding:1em 0 .4em 0;
+}
+
+
+body.page #content p{
+  font-size:1.4em;
+  color:#999999;
+  padding-bottom:1.2em;
+  line-height:1.35em;
+}
+
+body.page #content .section,
+body.page #content .aside{
+  padding-bottom:2.4em;
+  display:inline;
+}
+
+body.page #content .section{
+  width:54em;
+  float:left;
+  clear:left;
+}
+
+body.page #content .aside{
+  width:33em;
+  float:right;
+}
+
+
+body.page #content .separator{
+  width:100%;
+  clear:both;
+  margin-top:4em;
+  padding-bottom:2em;
+  height:1px;
+  border-top:1px solid #eee;
+}
+
+body.page #content .separator hr{
+  display:none;
 }

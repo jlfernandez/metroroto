@@ -1,0 +1,20 @@
+<div id="header">
+  
+  <div>
+    <a href="/">Metroroto</a>
+    <h1>Sistema de trackeo de incidencias del Metro de Madrid</h1>
+  </div>
+  
+  <ul>
+    <li><a href="<%=root_path%>">Incidencias</a></li>
+    <li class="lines">
+      <a href="#">Lineas</a>
+      <ul>
+	  <% @lines.each do |line|%>
+        <li><a href="<%=line_path line%>">Linea <%= line.number%></a></li>
+	  <% end %>
+      </ul>
+    </li>
+    <li><a href="<%=root_path%>about">¿Cómo se usa?</a></li>
+  </ul>
+</div><!-- .header -->
