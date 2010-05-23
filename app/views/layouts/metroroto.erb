@@ -37,6 +37,13 @@
     </ul>
   </div><!-- .header -->
   
+  <div class="status_panel">
+    <h2>Estado de las líneas</h2>
+    <ul class="lines_status">
+    		<%=render :partial => "home/line", :collection => Line.find(:all)%>
+    </ul>
+  </div><!-- .status_panel -->
+  
 	<%= yield%>
 	
 	<div id="footer" class="wrapper">

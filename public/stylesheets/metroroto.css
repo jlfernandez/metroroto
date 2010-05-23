@@ -122,7 +122,7 @@ button {
 #header {
   height:5.6em;
   left:50%;
-  margin-left:-50em;
+  margin:5em 0 0 -50em;
   width:95em;
   padding:2.5em;
   z-index:10000;
@@ -257,12 +257,14 @@ color:#FFF;
   position:fixed;
   width:100%;
 /*  top:120px;*/
-  bottom:0;
+  top:0px;
   left:0;
   z-index:100000;
 /*  background:#F53333;*/
   background:#FFF;
-  padding:2em 1em .2em 2em;
+  padding:1.5em 0 .2em 0;
+  border:none;
+  margin:0;
   -webkit-border-top-left-radius: 0px;
   -webkit-border-top-right-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
@@ -281,17 +283,7 @@ color:#FFF;
 }
 
 .status_panel h2 {
-  color:#3383D3;
-  font-weight:normal;
-  font-size:1.6em;
-  position:absolute;
-  top:-25px;
-  text-transform:uppercase;
-  background:#FFF;
-  padding:4px 10px 6px 10px;
-  -moz-box-shadow: 0px -1px 1px #CCC;
-  -webkit-box-shadow: 0px -1px 1px #CCC;
-  -box-shadow: 0px -1px 1px #CCC;
+  display:none;
 }
 
 .lines_status {
