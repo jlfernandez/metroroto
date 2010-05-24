@@ -1,18 +1,6 @@
-class Api::IncidentsController < ApplicationController
+class Api::V1::IncidentsController < Api::BaseController
 
-  skip_before_filter :verify_authenticity_token
-  
   def create
-    begin 
-      send("create_#{params[:version]}")
-    rescue StandardError => e
-      logger.error("ERROR EN LA API")
-      logger.error(e.backtrace.join("\n"))
-      render :text => "Error: #{e.to_s}", :status => 500, :layout => false
-    end
-  end
-
-  def create_v1
     # En la API los parámetros son:
     # "line_id"=>"3", "direction_nicename"=>"villaverde-alto", "station_nicename"=>"san-cristobal"}
     p = params[:incident]

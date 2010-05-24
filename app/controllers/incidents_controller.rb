@@ -9,10 +9,6 @@ class IncidentsController < ApplicationController
     render :partial => "last_incidents"
   end
 
-  
-  def last
-    render :text => Incident.last_incidents.to_json
-  end
 
 
 
