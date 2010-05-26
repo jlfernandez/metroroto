@@ -1,5 +1,5 @@
 <ul id="last_incidents">
-  <%@incidents.each do |incident|%>
+  <%@incidents.slice(0,10).each  do |incident|%>
     <li>
       <p>
       <%=link_to "#{incident.line.number}", incident.line, :class => "line_number line_"+incident.line.number %>
