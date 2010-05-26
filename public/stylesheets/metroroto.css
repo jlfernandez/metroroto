@@ -125,7 +125,7 @@ button {
   margin:5em 0 0 -48em;
   width:91em;
   padding:2.5em;
-  z-index:10000;
+  z-index:10000000;
   position:absolute;
   background:#FFF;
   -webkit-border-top-left-radius: 0px;
@@ -264,6 +264,9 @@ button {
   -webkit-border-radius:10px;
   -border-radius:10px;
   margin-bottom:7px;
+  position:relative;
+  z-index:10000;
+  padding-bottom:70px;
 }
 
 
@@ -277,7 +280,7 @@ button {
 /*  top:120px;*/
   top:0px;
   left:0;
-  z-index:100000;
+  z-index:100000000000;
 /*  background:#F53333;*/
   background:#FFF;
   padding:1.5em 0 .2em 0;
@@ -500,24 +503,31 @@ ul#last_incidents p .line_number {
 ##############################################################################################################################*/
 
 #footer {
-  overflow:hidden;
   padding-top:0;
-  z-index:100000;
+  z-index:100;
   position:relative;
 }
 
 #footer p {
   float:left;
+  color:#666;
+  font-size:1.2em;
 }
 
 #footer ul {
   float:right;
+  display:inline;
+  padding-right:9em;
   width:300px;
   text-align:right;
 }
 
 #footer ul li{
   display:inline;
+}
+
+#footer ul li a{
+  font-size:1.2em;
 }
 
 
@@ -929,4 +939,16 @@ body.page #content .separator{
 
 body.page #content .separator hr{
   display:none;
+}
+
+
+.rss {
+  width:7.2em;
+  height:3.9em;
+  display:block;
+  background: url('../images/buttons.png') no-repeat bottom left;
+  text-indent:-9999em;
+  position:absolute;
+  top:-12px;
+  right:25px;
 }
