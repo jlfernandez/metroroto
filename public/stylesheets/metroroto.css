@@ -439,7 +439,51 @@ button {
 ul#last_incidents p{
   font-size:1.3em;
   color:#666;
+  overflow:hidden;
 }
+
+
+ul#last_incidents p .line_number,
+ul#last_incidents p span.station,
+ul#last_incidents p .timeago,
+ul#last_incidents p .message{
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;  
+}
+
+ul#last_incidents p .message {
+  width:39em;
+  font-size:1em;
+  border-left:1px solid #CCC;
+  padding-left:.8em;
+}
+
+ul#last_incidents p span.station{
+  display:inline-block;
+  vertical-align:middle;
+  padding-right:.5em;
+  margin-right:.4em;
+  font-size:1em;
+  border-right:1px solid #CCC;
+}
+
+ul#last_incidents p span.station span,
+ul#last_incidents p .timeago{
+  font-size:1em;
+  color:#999;
+}
+
+ul#last_incidents p .timeago{
+  padding-right:.5em;
+}
+
+ul#last_incidents p span.station strong{
+  font-size:1em;
+}
+
 p.tag_line{
 	padding-bottom: 1em;
 	font-size:1.3em;
@@ -448,10 +492,6 @@ p.tag_line{
 
 ul#last_incidents p .line_number {
   font-size:1em;
-}
-
-ul#last_incidents p strong {
-  font-size:inherit;
 }
 
 

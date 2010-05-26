@@ -250,12 +250,16 @@ $(function(){
      // DYNAMIC POSITION OF CONTENT DEPENDING ON  WINDOW HEIGHT
      //-------------------------------------------------------------------------
      var setContentHeight = {
+       target : $('#cont_wrap'),
        w_h : 0 ,
        w_h_fn : function(){ setContentHeight.w_h = $(window).height() },
        resize : function(w_h){
         if (setContentHeight.w_h < 870 ){
-          $('#cont_wrap').stop().animate({top : (w_h-150)+'px' }, 1000);
-        }  
+          var pos =  (w_h-150);
+        }else{
+          var pos =  780;
+        }
+        setContentHeight.target.stop().animate({top : pos+'px' }, 1000);
        },
        win_resize : function(){
         $(window).bind('resize', function(){
