@@ -905,9 +905,19 @@ body.page #content h2{
 
 body.page #content p{
   font-size:1.4em;
-  color:#999999;
-  padding-bottom:1.2em;
-  line-height:1.35em;
+  color:#888;
+  padding-bottom:1em;
+  line-height:1.25em;
+}
+
+body.page #content strong{
+  font-size:inherit;
+}
+
+body.page #content p.example{
+  padding:1em .8em;
+  background:#eee;
+  margin-bottom:1em;
 }
 
 body.page #content .section,
@@ -928,11 +938,18 @@ body.page #content .aside{
 }
 
 
+body.page #content h3{
+  font-size:2.2em;
+  padding:.8em 0 .4em 0;
+  color:#666;
+}
+
+
 body.page #content .separator{
   width:100%;
   clear:both;
   margin-top:4em;
-  padding-bottom:2em;
+  padding-bottom:1em;
   height:1px;
   border-top:1px solid #eee;
 }

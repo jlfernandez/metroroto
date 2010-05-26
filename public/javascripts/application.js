@@ -238,7 +238,7 @@ $(function(){
          setMapHeight = function(wh){
            page_map.css('height', wh+'px');
          };
-     setMapHeight(body.height());
+     setMapHeight(body.height()+30);
      
      
      //-------------------------------------------------------------------------
