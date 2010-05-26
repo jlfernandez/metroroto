@@ -67,7 +67,8 @@ class Incident < ActiveRecord::Base
   end
   
   def retwitt
-    Metrotwitt.send_later(:retwitt,self)
+    #Metrotwitt.send_later(:retwitt,self)
+    Metrotwitt.retwitt(self)
   end
   
   def send_subscriptions
