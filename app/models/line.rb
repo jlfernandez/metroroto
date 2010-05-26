@@ -1,5 +1,5 @@
 class Line < ActiveRecord::Base
-  has_many :incidents
+  has_many :incidents, :order => "date DESC"
   has_many :line_stations
   has_many :stations, :through => :line_stations
   has_many :subscriptions, :dependent =>:destroy

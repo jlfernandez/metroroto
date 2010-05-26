@@ -5,7 +5,6 @@ class Incident < ActiveRecord::Base
   belongs_to :direction, :class_name => "Station"
 
   before_save :geolocate
-  
   after_create :retwitt, :send_subscriptions
   validates_presence_of :station, :line
   
@@ -16,7 +15,12 @@ class Incident < ActiveRecord::Base
   SOURCE = { :web => 0, :twitter => 1, :android => 2}
   
   named_scope :last_incidents,:conditions => "date > '#{(Time.now.beginning_of_day + 5.hours).to_s(:db)}'", :order => "date DESC"
-
+  named_scope :by_line, lambda { |line|
+    { :conditions => "line_id = '#{line.id}'"}
+  }
+  named_scope :by_station, lambda { |station|
+    { :conditions => "station_id = '#{station.id}'"}
+  }
 
   def self.last_twitterid
     Incident.maximum(:twitter_id)

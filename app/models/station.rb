@@ -6,6 +6,7 @@ class Station < ActiveRecord::Base
   has_many :incidents
   
   has_many :last_incidents, :class_name => "Incident", :conditions => "date > '#{(Time.now - 7.days).to_s(:db)}'", :order => "date DESC"
+
   named_scope :find_exact_from_twitt, lambda { |string|
     {:conditions => " name = '#{string}' or nicename='#{string.parameterize}'"}
    }
@@ -22,10 +23,10 @@ class Station < ActiveRecord::Base
     {:conditions => "REPLACE(nicename,'-','') like '%#{string}%' or REPLACE(nicename,'-','') like '%#{string.parameterize}%' "}
     }
 
-  def status
+  def status_by_line(line)
     result = case 
-    when last_incidents.map(&:status).include?(0) then 0
-    when last_incidents.map(&:status).include?(1) then 1
+    when last_incidents.by_line(line).map(&:status).include?(0) then 0
+    when last_incidents.by_line(line).map(&:status).include?(1) then 1
     else 2
     end
     result
