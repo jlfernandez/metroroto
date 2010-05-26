@@ -196,8 +196,8 @@ button {
   position:absolute;
   top:40px;
   width:14em;
-  padding:1.5em;
-  background:#F53333;
+  padding:2em 1.5em 1.5em;
+  background:#FFF;
   -webkit-border-top-left-radius: 0px;
   -webkit-border-top-right-radius: 0px;
   -webkit-border-bottom-right-radius: 4px;
@@ -215,13 +215,25 @@ button {
 #header ul ul li {
   float:none;
   display:block;
-  padding:0 0 .4em .4em;
+  padding:0 0 1em .4em;
   background:none;
 }
 
 #header ul ul li a{
-color:#FFF;
+  color:#666;
+  font-size:1.2em;
 }
+
+#header ul ul li a:hover{
+  text-decoration:none;
+  color:#333;
+}
+
+#header ul ul li a span{
+  font-size:.9em;
+  width:20px;
+  padding:.2em 0;
+} 
 
 /*----------------------------------------------------------------------------------------------------------------------------
   MAP

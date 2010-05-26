@@ -11,7 +11,7 @@
       <a href="#">Lineas</a>
       <ul>
 	  <% @lines.each do |line|%>
-        <li><a href="<%=line_path line%>">Linea <%= line.number%></a></li>
+        <li><a href="<%=line_path line%>"> <span class="line_number line_<%=line.number%>"><%= line.number%></span>Linea <%= line.number%></a></li>
 	  <% end %>
       </ul>
     </li>
