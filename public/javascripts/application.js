@@ -230,8 +230,7 @@ $(function(){
          };
      setMapHeight(body.height());
    }
-   
-    
+
    
      
 
