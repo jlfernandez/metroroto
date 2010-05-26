@@ -1,6 +1,6 @@
 <p>Hola</p>
 
-<p>Hay una nueva incidencia en la línea <%=@incident.line.number%>, en la estación de <%= @incident.station.name%> <%= @incident.direction.blank? ? "pero no tenemos muy claro en que sentido" : "en sentido #{@incident.direction.name}"%>.</p>
+<p>Hay una nueva incidencia en la línea <%=@incident.line.number%>, en la estación de <%= @incident.station.name%>, <%= get_direction(@incident).downcase%>.</p>
 
 
 <p>Ya sabes, busca una alternativa si no quieres esperar mucho ;)</p>

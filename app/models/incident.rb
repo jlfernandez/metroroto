@@ -31,6 +31,7 @@ class Incident < ActiveRecord::Base
     }
   end
   
+
   def status
     if date > Time.now - 15.minutes
       INCIDENT_LEVELS["inmediato"]

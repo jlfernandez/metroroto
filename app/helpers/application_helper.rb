@@ -8,4 +8,14 @@ module ApplicationHelper
     when 2 then 'green'
     end
   end
+  
+  def get_direction(incident)
+    if incident.direction_id == 0
+      "En ambos sentidos"
+    elsif incident.direction
+      "Sentido #{incident.direction.name}"
+    else
+      "No sabemos el sentido"
+    end
+  end
 end

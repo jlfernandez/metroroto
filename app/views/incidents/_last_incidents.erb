@@ -3,7 +3,7 @@
     <li>
       <p>
       <%=link_to "#{incident.line.number}", incident.line, :class => "line_number line_"+incident.line.number %>
-		  <span class="station">Estación de <strong><%=incident.station.name%></strong><br /><span class="direction">Sentido <%=incident.direction_id%></span></span>
+		  <span class="station">Estación de <strong><%=incident.station.name%></strong><br /><span class="direction"><%= get_direction(incident) %></span></span>
 		  <span class="timeago" title="<%=incident.date.getutc.iso8601%>"><%=l(incident.date, :format => 'long')%>.</span>
 		  <span class="message"><%=incident.comment%>
 		  <%unless incident.user.blank?%>
