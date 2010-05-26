@@ -3,7 +3,7 @@ module IncidentHelper
     js_code = ""
     
     incidents.each do |incident|
-     div_info ="'<div class=\"map_pop\"><a href=\"/lines/#{incident.line.number}\" class=\"line_number line_#{incident.line.number}\">#{incident.line.number}</a><ul><li><span class=\"station\">#{incident.station.name}</span></p><p class=\"date\">#{l(incident.date, :format => "long")}</p><p class=\"comment\">Incidencia: #{incident.comment}</p></li></ul></div>'"
+     div_info ="'<div class=\"map_pop\"><a href=\"/lines/#{incident.line.number}\" class=\"line_number line_#{incident.line.number}\">#{incident.line.number}</a><ul><li><span class=\"station\">#{incident.station.name}</span></p><p class=\"date\">#{l(incident.date, :format => "long")}</p><p class=\"comment\">Incidencia: #{escape_javascript(incident.comment)}</p></li></ul></div>'"
      append_incident_marker_js(js_code, incident, div_info)
     end unless incidents.blank?
     
@@ -45,7 +45,7 @@ module IncidentHelper
       station_incidents.each do |incident|
         div_info << "<li><a href=\"/lines/#{incident.line.number}\" class=\"line_number line_#{incident.line.number}\">#{incident.line.number}</a>"
         div_info << "<p class=\"date\">#{l(incident.date, :format => "long")}</p>"
-        div_info << "<p class=\"comment\"><span>Incidencia:</span> #{incident.comment.squish}</p></li>"
+        div_info << "<p class=\"comment\"><span>Incidencia:</span> #{escape_javascript(incident.comment.squish)}</p></li>"
       end
       div_info << "</ul>"
       div_info << "</div>'"
