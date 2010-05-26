@@ -106,15 +106,18 @@ $(function(){
      	    $('#incidents').html(html);
      	    $("#last_incidents span.timeago").timeago();
           $.getJSON("/stations/"+$('#incident_station_id').val()+".json", function(json){
-            new_marker( $('#incident_comment').val(),json.station.lat,json.station.long,$('#incident_line_id').val(),json.station.name)
+            new_marker( $('#incident_comment').val(),json.station.lat,json.station.long,$('#incident_line_id').val(),json.station.name);
+            
+            show_msg(validation_box, '<span>Gracias, por añadir la incidencia :)</span>', true);
+            incident.val('');
+            setTimeout(function(){
+              $.scrollTo(0, 1000, {
+                 easing : 'swing'
+               });
+               map.setCenter(new GLatLng(json.station.lat, json.station.long));
+            }, 1500);
           });
-          show_msg(validation_box, '<span>Gracias, por añadir la incidencia :)</span>', true);
-          incident.val('');
-          setTimeout(function(){
-            $.scrollTo(0, 1000, {
-               easing : 'swing'
-             });
-          }, 1500);
+          
         }
        })
      }else{
