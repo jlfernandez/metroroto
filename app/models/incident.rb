@@ -15,7 +15,7 @@ class Incident < ActiveRecord::Base
 
   SOURCE = { :web => 0, :twitter => 1, :android => 2}
   
-  named_scope :last_incidents,:conditions => "date > '#{(Time.now - 1.days).to_s(:db)}'", :order => "date DESC"
+  named_scope :last_incidents,:conditions => "date > '#{(Time.now.beginning_of_day + 5.hours).to_s(:db)}'", :order => "date DESC"
 
 
   def self.last_twitterid
