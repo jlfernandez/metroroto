@@ -241,7 +241,7 @@ button {
 
 #map_canvas {
   z-index:1;
-  position:relative;
+  position:absolute;
   left:0;
   top:5em;
 }
@@ -249,12 +249,16 @@ button {
 /*----------------------------------------------------------------------------------------------------------------------------
   CONTENT 
 ##############################################################################################################################*/
+#cont_wrap{
+  width:100%;
+  position:relative;
+  z-index:10000;
+  top:780px;
+}
 
 #content {
-  position:relative;
+  margin: 0 auto;
   overflow:hidden;
-  z-index:100;
-  margin-top:-17em;
   background:#FFF;
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
@@ -835,8 +839,12 @@ body.page #map_canvas{
   left:0;
 }
 
+body.page #cont_wrap{
+  margin-top:0;
+  top:6em;
+}
+
 body.page #content{
-  margin-top:4em;
   padding-top:0;
 }
 

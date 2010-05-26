@@ -26,9 +26,18 @@
     </ul>
   </div><!-- .status_panel -->
   
-	<%= yield%>
+  <div id="map_canvas" style="width:100%; height:900px"></div>
+  
+  <div id="cont_wrap">
+    
+    <%= yield%>
+    
+    <%= render :partial => 'shared/footer' %>
+    
+  </div><!-- #wrapper -->
 	
-	<%= render :partial => 'shared/footer' %>
+	
+	
 	
 	
 	<%= javascript_include_tag 'jquery', 'jquery.validate', 'jquery.uniform.min', 'jquery.scrollTo-min',  'jquery.timeago',  'application', 'jrails' %>

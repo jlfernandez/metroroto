@@ -219,17 +219,61 @@ $(function(){
     });
   
    
-   //-------------------------------------------------------------------------
-   // AUTOFIT MAP ON PAGES
-   //-------------------------------------------------------------------------
+   
+
+   
+   
+   
+   
+    //-------------------------------------------------------------------------
+    // ONLY INTERIOS PAGES
+    //-------------------------------------------------------------------------
    if ($('body.page').length > 0){
+     
+     //-------------------------------------------------------------------------
+     // AUTOFIT MAP ON INTERIOR  PAGES
+     //------------------------------------------------------------------------- 
      var page_map = $('#map_canvas'),
-         body = $('body.page'),
+         body = $(document),
          setMapHeight = function(wh){
            page_map.css('height', wh+'px');
          };
      setMapHeight(body.height());
+     
+     
+     //-------------------------------------------------------------------------
+     // ONLY MAIN PAGES
+     //-------------------------------------------------------------------------
+   }else{
+     
+     //-------------------------------------------------------------------------
+     // DYNAMIC POSITION OF CONTENT DEPENDING ON  WINDOW HEIGHT
+     //-------------------------------------------------------------------------
+     var setContentHeight = {
+       w_h : 0 ,
+       w_h_fn : function(){ setContentHeight.w_h = $(window).height() },
+       resize : function(w_h){
+        if (setContentHeight.w_h < 870 ){
+          $('#cont_wrap').stop().animate({top : (w_h-150)+'px' }, 1000);
+        }  
+       },
+       win_resize : function(){
+        $(window).bind('resize', function(){
+          setContentHeight.w_h_fn();  
+          setContentHeight.resize(setContentHeight.w_h);
+        })
+       },
+       init: function(){
+         setContentHeight.w_h_fn();
+         setContentHeight.resize(setContentHeight.w_h);
+         setContentHeight.win_resize();
+       }
+     }
+     setContentHeight.init();
+
+     
    }
+     
 
    
      
