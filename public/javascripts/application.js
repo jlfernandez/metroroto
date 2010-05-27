@@ -255,9 +255,9 @@ $(function(){
        w_h_fn : function(){ setContentHeight.w_h = $(window).height() },
        resize : function(w_h){
         if (setContentHeight.w_h < 870 ){
-          var pos =  (w_h-150);
+          var pos =  (w_h-80);
         }else{
-          var pos =  780;
+          var pos =  850;
         }
         setContentHeight.target.stop().animate({top : pos+'px' }, 1000);
        },
