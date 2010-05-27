@@ -598,6 +598,15 @@ form#new_incident option{
   padding:0 5px 2px 5px;
 }
 
+form#new_incident #uniform-incident_comment,
+form#new_incident #uniform-incident_comment select {
+  width:290px;
+} 
+
+form#new_incident #uniform-incident_comment span{
+  width:260px;
+}
+
 form#new_incident .selector span {
   font-size:1.1em;
 }
