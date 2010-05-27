@@ -5,7 +5,7 @@
       <%=link_to "#{incident.line.number}", incident.line, :class => "line_number line_"+incident.line.number %>
 		  <span class="station">Estación de <strong><%=incident.station.name%></strong><br /><span class="direction"><%= get_direction(incident) %></span></span>
 		  <span class="timeago" title="<%=incident.date.getutc.iso8601%>"><%=l(incident.date, :format => 'long')%>.</span>
-		  <span class="message"><%=incident.comment%>
+		  <span class="message"><%=h(incident.comment)%>
 		  <%unless incident.user.blank?%>
 			  Por <a href ="http://twitter.com/<%=incident.user%>/status/<%=incident.twitter_id%>" target="_blank">@<%=incident.user%></a>
 		  <%end%>	
