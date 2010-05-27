@@ -21,3 +21,12 @@ Line.create(:name => "Linea 11", :number => "11", :colour => "#009B3A", :center_
 Line.create(:name => "Linea 12", :number => "12", :colour => "#A49800", :center_lat => 40.2777, :center_long => -3.80127, :zoom => 12)
 Line.create(:name => "Linea R", :number => "R", :colour => "FFFFFF", :center_lat => 40.4174, :center_long => -3.71531, :zoom => 16)
 
+
+
+IncidentTemplate.create(:comment => "Tren parado durante 5 minutos")
+IncidentTemplate.create(:comment => "Linea estropeada durante 15 minutos")
+IncidentTemplate.create(:comment => "Linea lenta")
+IncidentTemplate.create(:comment => "Parados en mitad del túnel")
+IncidentTemplate.create(:comment => "Tren desalojado")
+IncidentTemplate.create(:comment => "Tren estropeado")
+IncidentTemplate.create(:comment => "Línea cortada y va para largo")

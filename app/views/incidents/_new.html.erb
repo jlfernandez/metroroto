@@ -5,7 +5,8 @@
   
   <p>
     <%= f.label :comment, "¿Qué pasa?"%>
-   <%=f.text_field :comment%>
+   <%=f.select :comment, IncidentTemplate.find(:all).collect {|t| [t.comment, t.comment]}%>
+   
   </p>
   <p class="line">
   	<%= f.label :line_id, "¿En qué linea?"%>
