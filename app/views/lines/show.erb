@@ -23,7 +23,7 @@
         var map = new GMap2(document.getElementById("map_canvas"));
         map.setCenter(new GLatLng(<%=@line.center_lat%>, <%=@line.center_long%>), <%=@line.zoom%>);
         map.addControl(new GSmallMapControl());
-        <%= incident_markers_grouped_by_station @line.incidents %>
+        <%= incident_markers_grouped_by_station Incident.last_incidents.by_line @line.id %>
         <%= create_map_line @line%>
       }
   });
