@@ -80,50 +80,65 @@ $(function(){
   //-------------------------------------------------------------------------
   // VALIDATION AND AJAX OF NEW INCIDENT FORM
   //-------------------------------------------------------------------------
+  var newIncidentSubmitHandler = {
+    init: function(e){
+      console.log(e)
+      e.preventDefault();
+       var form = $(this),
+           e = e,
+           validation_box = $('.validation_msg',form),
+           incident = $('#incident_comment', form),
+           button = $('button', form),
+           button_txt = button.html(),
+           show_msg = function(target, msg, success){
+             target.removeClass('valid').fadeOut('slow', function(){
+               if (success == true) { $(this).addClass('success') }else{ validation_box.removeClass('success') };
+               $(this).html(msg).fadeIn();
+             })
+           },
+           msg = '',
+           success = true;
+
+        form.unbind('submit').bind('submit', newIncidentSubmitHandler.disable);
+        button.html('<span class="sending">Enviando...</span>');
+
+       if (incident.valid() == false) {msg = '<span><strong>Ups!</strong>  Debes indicar la incidencia.</span>'; success = false; };
+
+       if (success == true) {
+         $.ajax({
+          type: "POST",
+          url: $(this).attr("action"),
+          data: $.param(form.serializeArray()),
+          success: function(html){
+       	    $('#incidents').html(html);
+       	    $("#last_incidents span.timeago").timeago();
+            $.getJSON("/stations/"+$('#incident_station_id').val()+".json", function(json){
+              new_marker( $('#incident_comment').val(),json.station.lat,json.station.long,$('#incident_line_id').val(),json.station.name);
+              show_msg(validation_box, '<span>Gracias, por añadir la incidencia :)</span>', true);
+              incident.val('');
+              setTimeout(function(){
+                $.scrollTo(0, 1000, {
+                   easing : 'swing'
+                 });
+                 map.setCenter(new GLatLng(json.station.lat, json.station.long));
+                 button.html(button_txt);
+                 form.bind('submit', newIncidentSubmitHandler.init);
+              }, 1500);
+            });
+          }
+         })
+       }else{
+         show_msg(validation_box, msg);
+       }
+    },
+    disable : function(e){
+      e.preventDefault();
+    }
+  }
+  
+  //init
   $("#new_incident")
-   .bind('submit', function(e){
-     e.preventDefault();
-     var form = $(this),
-         validation_box = $('.validation_msg',form),
-         incident = $('#incident_comment', form),
-         show_msg = function(target, msg, success){
-           target.removeClass('valid').fadeOut('slow', function(){
-             if (success == true) { $(this).addClass('success') }else{ validation_box.removeClass('success') };
-             $(this).html(msg).fadeIn();
-           })
-         },
-         msg = '',
-         success = true;
-      
-     if (incident.valid() == false) {msg = '<span><strong>Ups!</strong>  Debes indicar la incidencia.</span>'; success = false; };
-     
-     if (success == true) {
-       $.ajax({
-        type: "POST",
-        url: $(this).attr("action"),
-        data: $.param(form.serializeArray()),
-        success: function(html){
-     	    $('#incidents').html(html);
-     	    $("#last_incidents span.timeago").timeago();
-          $.getJSON("/stations/"+$('#incident_station_id').val()+".json", function(json){
-            new_marker( $('#incident_comment').val(),json.station.lat,json.station.long,$('#incident_line_id').val(),json.station.name);
-            
-            show_msg(validation_box, '<span>Gracias, por añadir la incidencia :)</span>', true);
-            incident.val('');
-            setTimeout(function(){
-              $.scrollTo(0, 1000, {
-                 easing : 'swing'
-               });
-               map.setCenter(new GLatLng(json.station.lat, json.station.long));
-            }, 1500);
-          });
-          
-        }
-       })
-     }else{
-       show_msg(validation_box, msg);
-     }
-   })
+   .bind('submit', newIncidentSubmitHandler.init)
    .validate({
       rules : {
         "incident[comment]" : {
