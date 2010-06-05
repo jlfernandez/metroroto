@@ -82,7 +82,6 @@ $(function(){
   //-------------------------------------------------------------------------
   var newIncidentSubmitHandler = {
     init: function(e){
-      //console.log(e)
       e.preventDefault();
        var form = $(this),
            e = e,

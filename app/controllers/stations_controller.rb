@@ -14,7 +14,7 @@ class StationsController < ApplicationController
     @station = Station.find(params[:id])
     respond_to do |format|
       format.json do
-        render :json => @station
+        render :json => @station.to_json(:include => :recent_incidents)
       end
     end
   end

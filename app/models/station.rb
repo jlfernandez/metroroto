@@ -6,7 +6,9 @@ class Station < ActiveRecord::Base
   has_many :incidents
   
   has_many :last_incidents, :class_name => "Incident", :conditions => "date > '#{(Time.now - 7.days).to_s(:db)}'", :order => "date DESC"
-
+  
+  has_many :recent_incidents, :class_name => "Incident", :conditions => "date > '#{(Time.now.beginning_of_day + 5.hours).to_s(:db)}'", :order => "date DESC"
+  
   named_scope :find_exact_from_twitt, lambda { |string|
     {:conditions => " name = '#{string}' or nicename='#{string.parameterize}'"}
    }
