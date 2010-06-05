@@ -3,7 +3,7 @@ class Notifications < ActionMailer::Base
   layout 'notifications'
   helper :application
   def new_incident(subscription, incident,sent_at = Time.now)
-    subject    I18n.translate("app.incident.email.new.subject", :line => incident.line.number, :station => incident.station.name, :message => truncate(incident.comment))
+    subject    I18n.translate("app.incident.email.new.subject", :line => incident.line.number, :station => incident.station.name)
     recipients subscription.email
     from       Settings.app.admin_email
     sent_on    sent_at
