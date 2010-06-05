@@ -8,6 +8,9 @@ class Api::V1::IncidentsController < Api::BaseController
     p[:direction] = Station.by_line(p[:line_id]).scoped_by_nicename(p.delete(:direction_nicename)).first
 
     incident = Incident.new(p.merge(:source => Incident::SOURCE[:android]))
+    if incident.source == 2
+      incident.comment.gsub("TESTING ANDROID APP:", "")
+    end
     
     incident.date = Time.now
     incident.save!
