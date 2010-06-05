@@ -68,7 +68,7 @@ class Incident < ActiveRecord::Base
   
   def retwitt
     #Metrotwitt.send_later(:retwitt,self)
-    Metrotwitt.retwitt(self)
+    Metrotwitt.retwitt(self) if Rails.env.production?
   end
   
   def send_subscriptions
