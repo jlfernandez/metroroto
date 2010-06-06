@@ -56,6 +56,16 @@ class Incident < ActiveRecord::Base
     end
   end
   
+  # Devuelve un Hash con los incidentes dados agrupados por estación y línea
+  def self.group_by_station_and_line(incidents)
+    incidents.sort_by(&:date).inject({}) do |hash, incident|
+      hash[incident.station] ||= {}
+      hash[incident.station][incident.line] ||= []
+      hash[incident.station][incident.line] << incident
+      hash
+    end
+  end
+  
   private
 
   def geolocate

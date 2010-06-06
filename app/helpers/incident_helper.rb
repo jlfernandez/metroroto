@@ -33,24 +33,24 @@ module IncidentHelper
   end
   
   def incident_markers_grouped_by_station(incidents)
-    incidents_by_station = Incident.group_by_station_name(incidents)
+    incidents_by_station = Incident.group_by_station_and_line(incidents)
     
     js_code = ""
     
-    incidents_by_station.each do |station_name, station_incidents|
+    incidents_by_station.each do |station, incidents_by_line|
       div_info = "'<div class=\"map_pop\">"
-      div_info << "<span class=\"station\">#{station_name}</span>"
+      div_info << "<span class=\"station\">#{station.name}</span>"
       div_info << "<ul>"
       
-      station_incidents.each do |incident|
-        div_info << "<li><a href=\"/lines/#{incident.line.number}\" class=\"line_number line_#{incident.line.number}\">#{incident.line.number}</a>"
-        div_info << "<p class=\"date\">#{l(incident.date, :format => "long")}</p>"
-        div_info << "<p class=\"comment\"><span>Incidencia:</span> #{escape_javascript(incident.comment.squish)}</p></li>"
+      incidents_by_line.each do |line, incidents|
+        unless incidents.empty?
+          div_info << escape_javascript(render(:partial => "incidents/station_marker_line_incidents", :locals => {:line => line, :incidents => incidents}))
+        end
       end
       div_info << "</ul>"
       div_info << "</div>'"
       
-      append_incident_marker_js(js_code, station_incidents.first, div_info)
+      append_incident_marker_js(js_code, incidents_by_line.values.flatten.sort_by(&:date).first, div_info)
     end unless incidents_by_station.blank?
     
     js_code

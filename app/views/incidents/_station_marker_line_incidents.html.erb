@@ -1,0 +1,11 @@
+<li>
+  <a href="<%= line_path(line.number) %>" class="line_number line_<%= line.number %>"><%= line.number %></a>
+  
+  <% incidents.each_with_index do |incident, index| %>
+  <div class="incident<%= " extra accesible" if index > 0 %>">
+    <p class="date"><%= l(incident.date, :format => "long") %></p>
+    <p class="comment"><span>Comentario:</span> <%= escape_javascript(incident.comment.squish) %></p>
+  </div>
+  <% end %>
+  <% if incidents.size > 1 %><a href="#" class="view_more">Ver más</a><% end %>
+</li>

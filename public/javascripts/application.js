@@ -234,7 +234,9 @@ $(function(){
   
    
    
-
+   $('.map_pop a.view_more').live('click', function(){
+     $('.incident.extra', $(this).parent()).toggleClass('accesible');
+   });
    
    
    
