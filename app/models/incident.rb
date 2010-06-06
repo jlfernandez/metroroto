@@ -48,7 +48,7 @@ class Incident < ActiveRecord::Base
   
   # Devuelve un Hash con los incidentes dados agrupados por nombre de estación
   def self.group_by_station_name(incidents)
-    incidents.inject({}) do |hash, incident|
+    incidents.sort_by{|i| (-i.date.to_i)}.inject({}) do |hash, incident|
       hash[incident.station.name] ||= []
       hash[incident.station.name] << incident
       hash[incident.station.name].sort{|a,b| -(a.date <=> b.date)}
@@ -58,10 +58,18 @@ class Incident < ActiveRecord::Base
   
   # Devuelve un Hash con los incidentes dados agrupados por estación y línea
   def self.group_by_station_and_line(incidents)
-    incidents.sort_by(&:date).inject({}) do |hash, incident|
+    incidents.sort_by{|i| (-i.date.to_i)}.inject(ActiveSupport::OrderedHash.new) do |hash, incident|
       hash[incident.station] ||= {}
       hash[incident.station][incident.line] ||= []
       hash[incident.station][incident.line] << incident
+      hash
+    end
+  end
+  
+  def self.group_by_line(incidents)
+    incidents.sort_by{|i| (-i.date.to_i)}.inject(ActiveSupport::OrderedHash.new) do |hash, incident|
+      hash[incident.line] ||= []
+      hash[incident.line] << incident
       hash
     end
   end
