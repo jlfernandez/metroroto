@@ -2,6 +2,7 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 
+
 function addInfoWindowToMarker(marker,info,options){
 	GEvent.addListener(marker, "click", function() {marker.openInfoWindowHtml(info,options);});
 	return marker;
@@ -233,9 +234,19 @@ $(function(){
     });
   
    
-   
-   $('.map_pop a.view_more, #last_incidents a.view_more').live('click', function(){
-     $('.incident.extra', $(this).parent()).toggleClass('accesible');
+    //-------------------------------------------------------------------------
+    // ONLY INTERIOS PAGES
+    //-------------------------------------------------------------------------
+    
+   $('#last_incidents .extra ').hide();
+   $('.map_pop a.view_more, #last_incidents a.view_more').live('click', function(e){
+     e.preventDefault();
+     $('.extra', $(this).parent()).toggle();
+     if ($(this).text() === 'ver más') {
+       $(this).text('ocultar');
+     }else{
+       $(this).text('ver más');
+     }
    });
    
    

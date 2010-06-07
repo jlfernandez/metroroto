@@ -886,9 +886,29 @@ ul#last_incidents {
 
 ul#last_incidents li{
 	padding:0.3em 0;
+	overflow:hidden;
+}
+
+ul#last_incidents li .line_number {
+  float:left;
+  display:inline;
+  margin-top:0.3em;
+}
+
+ul#last_incidents li div {
+  margin-left:3.6em;
+  border-left:1px solid #eee;
+  padding-left:10px;
+}
+
+ul#last_incidents .view_more {
+  font-size:1.2em;
 }
 
 
+.map_pop li {
+  display:block!important;
+}
 
 /*----------------------------------------------------------------------------------------------------------------------------
   STYLES FOR PAGES

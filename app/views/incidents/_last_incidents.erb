@@ -1,21 +1,25 @@
 <ul id="last_incidents">
   <% Incident.group_by_line(@incidents.slice(0,10)).each do |line, incidents|%>
     <li>
-      <p><%=link_to "#{line.number}", line, :class => "line_number line_"+line.number %></p>
-      <% incidents.each_with_index do |incident, index| %>
-      <div class="incident<%= " extra accesible" if index > 0 %>">
-        <p>
-          <span class="station">Estación de <strong><%=incident.station.name%></strong><br /><span class="direction"><%= get_direction(incident) %></span></span>
-          <span class="timeago" title="<%=incident.date.getutc.iso8601%>"><%=l(incident.date, :format => 'long')%>.</span>
-          <span class="message"><%=h(incident.comment)%>
-          <%unless incident.user.blank?%>
-          Por <a href ="http://twitter.com/<%=incident.user%>/status/<%=incident.twitter_id%>" target="_blank">@<%=incident.user%></a>
-          <%end%>  
-          </span><!-- message -->
-        </p>
+      <%=link_to "#{line.number}", line, :class => "line_number line_"+line.number %>
+      <div>
+        <ul>
+          <% incidents.each_with_index do |incident, index| %>
+          <li class="incident<%= " extra" if index > 0 %>">
+            <p>
+              <span class="station">Estación de <strong><%=incident.station.name%></strong><br /><span class="direction"><%= get_direction(incident) %></span></span>
+              <span class="timeago" title="<%=incident.date.getutc.iso8601%>"><%=l(incident.date, :format => 'long')%>.</span>
+              <span class="message"><%=h(incident.comment)%>
+              <%unless incident.user.blank?%>
+              Por <a href ="http://twitter.com/<%=incident.user%>/status/<%=incident.twitter_id%>" target="_blank">@<%=incident.user%></a>
+              <%end%>  
+              </span><!-- message -->
+            </p>
+          </li>
+          <% end %>
+        </ul>
+        <% if incidents.size > 1 %><a href="#" class="view_more">ver más</a><% end %>
       </div>
-      <% end %>
-      <% if incidents.size > 0 %><a href="#" class="view_more">Ver más</a><% end %>
     </li>
   <%end%>
 </ul>
