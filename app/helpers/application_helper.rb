@@ -18,4 +18,25 @@ module ApplicationHelper
       "No sabemos el sentido"
     end
   end
+  
+  def set_keywords
+    base = ["metroroto","Metro de madrid","averias metro","incidencias metro","metro roto"]
+    if @line
+      base << "Linea #{@line.number}"
+      base << "#{@line.stations.first.name}"
+      base << "#{@line.stations.last.name}" 
+    end
+    base.join(", ")
+  end
+  
+  def set_description
+    base = "Metroroto, Conoce al momento las incidencias y averias en la red del Metro de Madrid"
+    if params[:controller] == 'home'
+      base
+    elsif params[:controller] == 'lines'
+      "Averias e incidencias en la linea #{@line.number}, " + base
+    else 
+      base
+    end
+  end
 end
