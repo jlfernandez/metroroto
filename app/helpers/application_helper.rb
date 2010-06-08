@@ -39,4 +39,14 @@ module ApplicationHelper
       base
     end
   end
+  
+  def get_title(sep = '»')
+    base = ["Metroroto"]
+    if params[:controller] == "home"
+      base << "Home » Incidencias en el Metro de Madrid"
+    elsif params[:controller] == "lines"
+      base << "Incidencias en Linea #{@line.number}"
+    end
+    base.reverse.join(" #{sep} ")
+  end
 end
