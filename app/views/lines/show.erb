@@ -7,7 +7,7 @@
   <ul class="line_stations">
     <%@line.stations.each do |station|%><li class="<%= station_status(station,@line)%>"><p><%= station.name %></p></li><%end%>
   </ul>
-  <%if @line.incidents.size > 0%>
+  <%if @line.incidents.last_incidents.size > 0%>
   	<h3>Últimas incidencias</h3>
   	<%= render :partial => 'incidents/last_incidents' %>
   <%else%>
