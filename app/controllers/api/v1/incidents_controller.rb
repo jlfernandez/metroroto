@@ -1,8 +1,12 @@
 class Api::V1::IncidentsController < Api::BaseController
-
+  layout false
   def create
     # En la API los parámetros son:
-    # "line_id"=>"3", "direction_nicename"=>"villaverde-alto", "station_nicename"=>"san-cristobal"}
+    # {"action"=>"create",
+    #  "controller"=>"api/v1/incidents",
+    #  "incident"=>{"comment"=>"TESTING ANDROID APP: Wadus",
+    #               "line_id"=>"2", "station_nicename"=>"manuel-becerra",
+    #                "direction_nicename"=>"cuatro-caminos"}}
     p = params[:incident]
     p[:station] = Station.by_line(p[:line_id]).scoped_by_nicename(p.delete(:station_nicename)).first
     p[:direction] = Station.by_line(p[:line_id]).scoped_by_nicename(p.delete(:direction_nicename)).first
@@ -14,5 +18,11 @@ class Api::V1::IncidentsController < Api::BaseController
     incident.save!
     render :text => "¡¡Incidencia añadida!!", :status => 200, :layout => false
   end
-  
+
+  def last
+    @incidents = Incident.last_incidents.all(:limit => 20)
+    respond_to do |format|
+      format.xml
+    end
+  end
 end
