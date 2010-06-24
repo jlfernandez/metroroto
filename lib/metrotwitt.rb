@@ -134,6 +134,7 @@ class Metrotwitt
   end
 
   def self.search_stations(name,stations)
+    begin
     if !stations.find_from_twitt(name).blank?
       stations.find_from_twitt(name)
     elsif !stations.find_outspaces(name.downcase).blank?
@@ -141,7 +142,8 @@ class Metrotwitt
     else
       nil
     end
-
+    rescue
+    end
 
   end
 
