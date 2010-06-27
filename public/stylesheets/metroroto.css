@@ -1008,3 +1008,36 @@ body.page #content .separator hr{
   top:-12px;
   right:25px;
 }
+
+/*----------------------------------------------------------------------------------------------------------------------------
+  Head alert (prone to be buggy)
+##############################################################################################################################*/
+
+#header .alert {
+  position: absolute;
+  top: 13em;
+  right:0;
+  height: 8em;
+  padding: 2em;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  background: #fff;
+}
+
+body.page #header .alert {
+  display: none;
+}
+
+#header .alert h2 {
+  color: #F53333;
+}
+
+#header .alert .heading {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+#header .alert p {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
