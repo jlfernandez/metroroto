@@ -28,29 +28,30 @@ class Metrotwitt
       text_arr = text_arr.reject{|x| x.blank?}
       #A partir del hashtag metroroto, buscamos los dos siguientes, el orden de los dos es lo mismo          
 
-      index = text_arr.index('metroroto')
+      if index = text_arr.index('metroroto')
 
-      if text_arr[index+1].match(/[lL]\d{1,2}/)
-        line_number = text_arr[index+1].gsub(/[lL]/,"")
-        station_string = text_arr[index+2]
-        i = 3
-      elsif text_arr[index+2] && text_arr[index+2].match(/[lL]\d{1,2}/)
-        line_number = text_arr[index+2].gsub(/[lL]/,"")
-        station_string = text_arr[index+1]
-        i = 3
-      else
-        #suponemos que no hay linea y cogemos lo siguiente a metroroto para la estación
-        station_string=text_arr[index+1]
-        # ultimo intento para la linea
-        if text.match(/[lL]\d{1,2}/)
-          line_number = text.match(/[lL]\d{1,2}/).to_s.gsub(/[lL]/,"")
+        if text_arr[index+1].match(/[lL]\d{1,2}/)
+          line_number = text_arr[index+1].gsub(/[lL]/,"")
+          station_string = text_arr[index+2]
+          i = 3
+        elsif text_arr[index+2] && text_arr[index+2].match(/[lL]\d{1,2}/)
+          line_number = text_arr[index+2].gsub(/[lL]/,"")
+          station_string = text_arr[index+1]
+          i = 3
         else
-          line_number = nil
-        end            
-        i = 2
-      end
-      i.times do
-        text_arr.delete_at(index)
+          #suponemos que no hay linea y cogemos lo siguiente a metroroto para la estación
+          station_string=text_arr[index+1]
+          # ultimo intento para la linea
+          if text.match(/[lL]\d{1,2}/)
+            line_number = text.match(/[lL]\d{1,2}/).to_s.gsub(/[lL]/,"")
+          else
+            line_number = nil
+          end            
+          i = 2
+        end
+        i.times do
+          text_arr.delete_at(index)
+        end
       end
       if line = Line.find_by_number(line_number)
         incident.line_id = line.id
