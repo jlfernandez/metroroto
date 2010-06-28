@@ -29,12 +29,11 @@ class Metrotwitt
       #A partir del hashtag metroroto, buscamos los dos siguientes, el orden de los dos es lo mismo          
 
       if index = text_arr.index('metroroto')
-
-        if text_arr[index+1].match(/[lL]\d{1,2}/)
+        if text_arr[index+1] &&  text_arr[index+1].match(/[lL]\d{1,2}/)
           line_number = text_arr[index+1].gsub(/[lL]/,"")
           station_string = text_arr[index+2]
           i = 3
-        elsif text_arr[index+2] && text_arr[index+2].match(/[lL]\d{1,2}/)
+        elsif text_arr[index+2] && text_arr[index+2] && text_arr[index+2].match(/[lL]\d{1,2}/)
           line_number = text_arr[index+2].gsub(/[lL]/,"")
           station_string = text_arr[index+1]
           i = 3
