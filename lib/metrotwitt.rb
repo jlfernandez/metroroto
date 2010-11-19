@@ -6,7 +6,7 @@ class Metrotwitt
     twitts.reverse! #Esto se hace para que guarde primero los más antiguos, y se retwitteen en orden.
     puts "Cargando #{twitts.size} nuevos twitts"
     twitts.each do |twitt|      
-      self.parse_twitt(twitt) unless (twitt.from_user == "metroroto" || Incident.find_by_twitter_id(twitt["id"]))
+      self.parse_twitt(twitt) unless (twitt.from_user == "metroroto" || Incident.find_by_twitter_id(twitt["id"]) || twitt.text.match("RT @metroroto"))
     end
   end
 
@@ -19,8 +19,9 @@ class Metrotwitt
     incident.date = twitt["created_at"].to_time.getlocal
     incident.user = twitt["from_user"]
     incident.twitter_id = twitt["id"]
+    not_found = true
     unless text_arr.blank?
-
+      not_found = false
       # si entramos aqui, hemos encontrado una estructura standar del twitt
       # #metroroto #l1 #estrecho wadu wadus o wadus wadus #metroroto #l1 #estrecho
 
@@ -70,6 +71,7 @@ class Metrotwitt
       end          
       if incident.station.blank?
         # Tratamos de encontrar la estacion a la fuerza bruta
+        text = text.gsub('#', '')
         Station.all.each do |station|
           next unless (text.match(station.name) || text.parameterize.match(station.nicename))
           station_string = if text.match(station.name)
@@ -86,34 +88,47 @@ class Metrotwitt
             incident.station_id = station.id 
           end
           break
+        end
+        not_found = true if incident.station_id.blank? || incident.line_id.blank?              
+      end
+    end
+    if not_found
+      #no cuadra la estructura estandar del twitt, buscamos a la fuerza bruta!!
+      if incident.line_id.blank?
+        if text.match(/[lL]\d{1,2}/)
+          line_number = text.match(/[lL]\d{1,2}/).to_s.gsub(/[lL]/,"")
+          if line = Line.find_by_number(line_number)
+            incident.line_id = line.id
+          end
+        elsif text.match(/[linea|Linea|Línea|línea]\s?(\d{1,2})/)
+          line_number = $1
+          if line = Line.find_by_number(line_number)
+            incident.line_id = line.id
+          end
+        end
+      end
+      if incident.station_id.blank?        
+        Station.all.each do |station|
+          text = text.gsub('#', '')
+          next unless (text.match(station.name) || text.parameterize.match(station.nicename) || text.parameterize.match(station.nicename.gsub('-','')))
+          station_string = if text.match(station.name)
+            text.match(station.name).to_s
+          elsif text.parameterize.match(station.nicename.gsub('-',''))
+            text.parameterize.match(station.nicename.gsub('-','')).to_s
+          else
+            text.parameterize.match(station.nicename).to_s
+          end
+          if line
+            stations = self.search_stations(station_string,line.stations)
+            unless stations.blank?
+              incident.station_id = stations.uniq.first.id
+            end
+          else
+            incident.station_id = station.id 
+          end
+          break
         end              
       end
-    else
-      #no cuadra la estructura estandar del twitt, buscamos a la fuerza bruta!!
-      if text.match(/[lL]\d{1,2}/)
-        line_number = text.match(/[lL]\d{1,2}/).to_s.gsub(/[lL]/,"")
-        if line = Line.find_by_number(line_number)
-          incident.line_id = line.id
-        end
-      end            
-      Station.all.each do |station|
-        next unless (text.match(station.name) || text.parameterize.match(station.nicename))
-        station_string = if text.match(station.name)
-          text.match(station.name).to_s
-        else
-          text.parameterize.match(station.nicename).to_s
-        end
-        if line
-          stations = self.search_stations(station_string,line.stations)
-          unless stations.blank?
-            incident.station_id = stations.uniq.first.id
-          end
-        else
-          incident.station_id = station.id 
-        end
-        break
-      end              
-
     end
 
 
@@ -135,13 +150,13 @@ class Metrotwitt
 
   def self.search_stations(name,stations)
     begin
-    if !stations.find_from_twitt(name).blank?
-      stations.find_from_twitt(name)
-    elsif !stations.find_outspaces(name.downcase).blank?
-      stations.find_outspaces(name)
-    else
-      nil
-    end
+      if !stations.find_from_twitt(name).blank?
+        stations.find_from_twitt(name)
+      elsif !stations.find_outspaces(name.downcase).blank?
+        stations.find_outspaces(name)
+      else
+        nil
+      end
     rescue
     end
 
@@ -155,7 +170,7 @@ class Metrotwitt
       with_metroroto = incident.user ? "" : "#metroroto"
       begin
         client.update("#{with_metroroto} ##{incident.station.nicename.gsub("-","")} 
-       #l#{incident.line.number} #{incident.comment} #{user}")
+        #l#{incident.line.number} #{incident.comment} #{user}")
       rescue
         puts "No se ha podido retwittear la incidencia #{incident.id} por alguna razón (twitt duplicado probablemente)"
       end  
