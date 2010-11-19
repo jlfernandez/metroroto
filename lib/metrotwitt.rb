@@ -6,7 +6,7 @@ class Metrotwitt
     twitts.reverse! #Esto se hace para que guarde primero los más antiguos, y se retwitteen en orden.
     puts "Cargando #{twitts.size} nuevos twitts"
     twitts.each do |twitt|      
-      self.parse_twitt(twitt) unless twitt.from_user == "metroroto"
+      self.parse_twitt(twitt) unless (twitt.from_user == "metroroto" || Incident.find_by_twitter_id(twitt["id"]))
     end
   end
 
