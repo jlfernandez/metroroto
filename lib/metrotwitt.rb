@@ -135,7 +135,7 @@ class Metrotwitt
     if incident.station && incident.line_id
       incident.station_string = station_string
       incident.comment = text_arr.blank? ? text.gsub(/#(.*)/,'') : text_arr.join(' ')
-      incident.save!
+      incident.save! unless Incident.find_by_twitter_id(twitt["id"])
     else            
       # aleprosos que no encuentra nada
       station_string ||= ""
