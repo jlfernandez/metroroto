@@ -5,9 +5,16 @@ class Metrotwitt
     twitts = Twitter::Search.new('#metroroto').since(since).fetch().results
     twitts.reverse! #Esto se hace para que guarde primero los más antiguos, y se retwitteen en orden.
     puts "Cargando #{twitts.size} nuevos twitts"
-    twitts.each do |twitt|      
+    twitts.each do |twitt|
       self.parse_twitt(twitt) unless (twitt.from_user == "metroroto" || Incident.find_by_twitter_id(twitt["id"]) || twitt.text.match("RT @metroroto"))
     end
+    mention_twitts = Twitter::Search.new('@metroroto').since(since).fetch().results
+    mention_twitts.reverse! #Esto se hace para que guarde primero los más antiguos, y se retwitteen en orden.
+    puts "Cargando #{mention_twitts.size} nuevos twitts"
+    mention_twitts.each do |twitt|
+      self.parse_twitt(twitt) unless (twitt.from_user == "metroroto" || Incident.find_by_twitter_id(twitt["id"]) || twitt.text.match("RT @metroroto"))
+    end
+
   end
 
   def self.parse_twitt(twitt)
@@ -27,7 +34,7 @@ class Metrotwitt
 
 
       text_arr = text_arr.reject{|x| x.blank?}
-      #A partir del hashtag metroroto, buscamos los dos siguientes, el orden de los dos es lo mismo          
+      #A partir del hashtag metroroto, buscamos los dos siguientes, el orden de los dos es lo mismo
 
       if index = text_arr.index('metroroto')
         if text_arr[index+1] &&  text_arr[index+1].match(/[lL]\d{1,2}/)
@@ -46,7 +53,7 @@ class Metrotwitt
             line_number = text.match(/[lL]\d{1,2}/).to_s.gsub(/[lL]/,"")
           else
             line_number = nil
-          end            
+          end
           i = 2
         end
         i.times do
@@ -68,7 +75,7 @@ class Metrotwitt
           incident.line_id = stations.first.lines.first.id if stations.first.lines.size == 1
         end
 
-      end          
+      end
       if incident.station.blank?
         # Tratamos de encontrar la estacion a la fuerza bruta
         text = text.gsub('#', '')
@@ -85,11 +92,11 @@ class Metrotwitt
               incident.station_id = stations.uniq.first.id
             end
           else
-            incident.station_id = station.id 
+            incident.station_id = station.id
           end
           break
         end
-        not_found = true if incident.station_id.blank? || incident.line_id.blank?              
+        not_found = true if incident.station_id.blank? || incident.line_id.blank?
       end
     end
     if not_found
@@ -107,7 +114,7 @@ class Metrotwitt
           end
         end
       end
-      if incident.station_id.blank?        
+      if incident.station_id.blank?
         Station.all.each do |station|
           text = text.gsub('#', '')
           next unless (text.match(station.name) || text.parameterize.match(station.nicename) || text.parameterize.match(station.nicename.gsub('-','')))
@@ -124,10 +131,10 @@ class Metrotwitt
               incident.station_id = stations.uniq.first.id
             end
           else
-            incident.station_id = station.id 
+            incident.station_id = station.id
           end
           break
-        end              
+        end
       end
     end
 
@@ -136,7 +143,7 @@ class Metrotwitt
       incident.station_string = station_string
       incident.comment = text_arr.blank? ? text.gsub(/#(.*)/,'') : text_arr.join(' ')
       incident.save! unless Incident.find_by_twitter_id(twitt["id"])
-    else            
+    else
       # aleprosos que no encuentra nada
       station_string ||= ""
       fail = FailedTwitt.new(:twitter_id => incident.twitter_id, :date => incident.date, :user => incident.user, :station_string => station_string, :twitt_body => text )
@@ -169,11 +176,11 @@ class Metrotwitt
       user = incident.user ? "by @#{incident.user}" : ""
       with_metroroto = incident.user ? "" : "#metroroto"
       begin
-        client.update("#{with_metroroto} ##{incident.station.nicename.gsub("-","")} 
+        client.update("#{with_metroroto} ##{incident.station.nicename.gsub("-","")}
         #l#{incident.line.number} #{incident.comment} #{user}")
       rescue
         puts "No se ha podido retwittear la incidencia #{incident.id} por alguna razón (twitt duplicado probablemente)"
-      end  
+      end
     end
   end
 
