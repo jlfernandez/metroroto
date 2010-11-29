@@ -5,14 +5,14 @@ class Metrotwitt
     twitts = Twitter::Search.new('#metroroto').since(since).fetch().results
     twitts.reverse! #Esto se hace para que guarde primero los más antiguos, y se retwitteen en orden.
     puts "Cargando #{twitts.size} nuevos twitts"
-    twitts.each do |twitt|
-      self.parse_twitt(twitt) unless (twitt.from_user == "metroroto" || Incident.find_by_twitter_id(twitt["id"]) || twitt.text.match("RT @metroroto"))
+    twitts.each do |twitt|     
+      self.parse_twitt(twitt) unless (twitt.from_user == "metroroto" || Incident.find_by_twitter_id(twitt["id"]) || twitt.text.match("RT"))
     end
     mention_twitts = Twitter::Search.new('@metroroto').since(since).fetch().results
     mention_twitts.reverse! #Esto se hace para que guarde primero los más antiguos, y se retwitteen en orden.
     puts "Cargando #{mention_twitts.size} nuevos twitts"
     mention_twitts.each do |twitt|
-      self.parse_twitt(twitt) unless (twitt.from_user == "metroroto" || Incident.find_by_twitter_id(twitt["id"]) || twitt.text.match("RT @metroroto"))
+      self.parse_twitt(twitt) unless (twitt.from_user == "metroroto" || Incident.find_by_twitter_id(twitt["id"]) || twitt.text.match("RT"))
     end
 
   end
