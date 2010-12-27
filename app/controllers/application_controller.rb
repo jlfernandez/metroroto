@@ -1,11 +1,7 @@
-# Filters added to this controller apply to all controllers in the application.
-# Likewise, all the methods added will be available for all controllers.
-
 class ApplicationController < ActionController::Base
-  helper :all # include all helpers, all the time
-  protect_from_forgery # See ActionController::RequestForgeryProtection for details
-
-  layout "metroroto"
+  protect_from_forgery
+  
+    layout "metroroto"
   before_filter :load_lines
 
   def collection_to_feed(collection, options = {})
@@ -35,6 +31,5 @@ class ApplicationController < ActionController::Base
   def load_lines
     @lines = Line.find(:all)
   end
+
 end
-
-
