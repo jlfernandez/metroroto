@@ -23,6 +23,7 @@ class Api::V1::IncidentsController < Api::BaseController
     @incidents = Incident.last_incidents.all(:limit => 20)
     respond_to do |format|
       format.xml
+      format.json
     end
   end
 end
