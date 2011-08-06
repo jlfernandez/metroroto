@@ -58,7 +58,8 @@ Metroroto::Application.routes.draw do
   resources :incidents
   resources :stations
   resources :subscriptions
-
+  resources :about
+  
   namespace :api do 
     namespace :v1 do 
       resources :incidents, :only => [:create], :collection => [:last]
