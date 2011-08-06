@@ -6,7 +6,7 @@ defaults: &defaults
 staging: 
   <<: *defaults
   url: http://staging.metroroto.com
-  
+  google_key: ABQIAAAAgK6NQVGVsInMM2KApirvThQ4zgbA_cKR2RWh61LeJDZYBH7bmhSIgpftLNxA9fdylTJOGyMLFuAB8w
 development:
   <<: *defaults
   url: http://localhost:3000
