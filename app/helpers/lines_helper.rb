@@ -13,12 +13,12 @@ module LinesHelper
   def line_status(line)
     case line.status
     when Line::LINE_STATUS_LEVELS["tormentoso"]
-      "<span class=\"breakdown_2\">Línea con incidencias largas </span>"
+      content_tag(:span, 'Línea con incidencias largas', :class => "breakdown_2")
     when Line::LINE_STATUS_LEVELS["nublado"]
-      "<span class=\"breakdown_1\">Línea con incidencias cortas</span>"
+      content_tag(:span, 'Línea con incidencias cortas', :class => "breakdown_1")
     when Line::LINE_STATUS_LEVELS["solazo"]
-      "<span class=\"ok\">Línea abierta</span>"
-    end    
+      content_tag(:span, 'Línea abierta', :class => "ok")
+    end
   end
   
 end
