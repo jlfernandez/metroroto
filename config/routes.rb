@@ -50,7 +50,7 @@ Metroroto::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => "home#index"
 
-  resources :line do 
+  resources :lines do 
     resources :incidents
     resources :stations
   end
