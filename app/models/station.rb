@@ -9,19 +9,19 @@ class Station < ActiveRecord::Base
   
   has_many :recent_incidents, :class_name => "Incident", :conditions => "date > '#{(Time.now.beginning_of_day + 5.hours).to_s(:db)}'", :order => "date DESC"
   
-  named_scope :find_exact_from_twitt, lambda { |string|
+  scope :find_exact_from_twitt, lambda { |string|
     {:conditions => " name = '#{string}' or nicename='#{string.parameterize}'"}
    }
 
-  named_scope :find_from_twitt, lambda { |string|
+  scope :find_from_twitt, lambda { |string|
     {:conditions => " name like '%#{string}%' or nicename like '%#{string.parameterize}%'"}
    }
   
-  named_scope :by_line, lambda { |line|
+  scope :by_line, lambda { |line|
     {:include => :line_stations, :conditions => "line_stations.line_id = '#{line}'"}
   }
   
-  named_scope :find_outspaces, lambda {|string|
+  scope :find_outspaces, lambda {|string|
     {:conditions => "REPLACE(nicename,'-','') like '%#{string}%' or REPLACE(nicename,'-','') like '%#{string.parameterize}%' "}
     }
 

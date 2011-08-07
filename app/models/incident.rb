@@ -14,11 +14,11 @@ class Incident < ActiveRecord::Base
 
   SOURCE = { :web => 0, :twitter => 1, :android => 2}
   
-  named_scope :last_incidents,:conditions => "date > '#{(Time.now.beginning_of_day + 5.hours).to_s(:db)}'", :order => "date DESC"
-  named_scope :by_line, lambda { |line|
+  scope :last_incidents,:conditions => "date > '#{(Time.now.beginning_of_day + 5.hours).to_s(:db)}'", :order => "date DESC"
+  scope :by_line, lambda { |line|
     { :conditions => "line_id = '#{line.id}'"}
   }
-  named_scope :by_station, lambda { |station|
+  scope :by_station, lambda { |station|
     { :conditions => "station_id = '#{station.id}'"}
   }
 

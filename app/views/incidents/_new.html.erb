@@ -5,12 +5,12 @@
   
   <p>
     <%= f.label :comment, "¿Qué pasa?"%>
-   <%=f.select :comment, IncidentTemplate.find(:all).collect {|t| [t.comment, t.comment]}%>
+   <%=f.select :comment, IncidentTemplate.all.collect {|t| [t.comment, t.comment]}%>
    
   </p>
   <p class="line">
   	<%= f.label :line_id, "¿En qué linea?"%>
-    	<%=f.select :line_id, Line.find(:all).collect {|l| [l.name, l.id]}%>
+    	<%=f.select :line_id, Line.all.collect {|l| [l.name, l.id]}%>
   </p>
   <p id="station">
     <%= f.label :station_id ,"¿En qué estación?"%>

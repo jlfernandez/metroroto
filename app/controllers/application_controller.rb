@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   
-    layout "metroroto"
+  layout "metroroto"
   before_filter :load_lines
 
   def collection_to_feed(collection, options = {})
@@ -29,7 +29,7 @@ class ApplicationController < ActionController::Base
   private
 
   def load_lines
-    @lines = Line.find(:all)
+    @lines = Line.all
   end
 
 end
