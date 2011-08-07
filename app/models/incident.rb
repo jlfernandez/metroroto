@@ -85,14 +85,13 @@ class Incident < ActiveRecord::Base
   end
   
   def retwitt
-    Metrotwitt.send_later(:retwitt,self)
+    Metrotwitt.delay.retwitt (self)
     Metrotwitt.retwitt(self) if Rails.env.production?
   end
   
   def send_subscriptions
     line.subscriptions.each do |subscription|
       Notifications.deliver_new_incident(subscription,self)
-      #Notifications.send_later(:deliver_new_incident,subscription,self)
     end
   end
 
