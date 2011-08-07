@@ -4,6 +4,3 @@
 [submodule "vendor/plugins/settingslogic"]
 	path = vendor/plugins/settingslogic
 	url = git://github.com/binarylogic/settingslogic.git
-[submodule "vendor/plugins/jrails"]
-	path = vendor/plugins/jrails
-	url = git://github.com/aaronchi/jrails.git
